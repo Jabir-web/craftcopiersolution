@@ -1,0 +1,29 @@
+<?php
+
+use App\Http\Controllers\AccessoryRequestController;
+use App\Http\Controllers\ClientRentalController;
+use App\Http\Controllers\ClientRepairController;
+use App\Livewire\AboutPage;
+use App\Livewire\BlogPage;
+use App\Livewire\ContactPage;
+use App\Livewire\HomePage;
+use App\Livewire\MachinePage;
+use App\Livewire\ServicePage;
+use App\Models\Blog;
+use Illuminate\Support\Facades\Route;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// for home page route
+Route::get('/',HomePage::class)->name('homepage');
+Route::get('/aboutus',AboutPage::class)->name('aboutpage');
+Route::get('/contact',ContactPage::class)->name('contactpage');
+Route::get('/machines/{product_id?}', MachinePage::class)->name('machines');
+Route::get('/services/{service_id?}', ServicePage::class)->name('services');
+Route::get('/blogs',BlogPage::class)->name('blogpage');
+Route::post('/accessory-requests', [AccessoryRequestController::class, 'store'])->name('accessory-requests.store');
+Route::post('/client-rentals', [ClientRentalController::class, 'store'])->name('client-rentals.store');
+Route::post('/client-repairs', [ClientRepairController::class, 'store'])->name('client-repairs.store');
