@@ -39,7 +39,7 @@
     {{-- <div id="loader" class="loader">
         <div class="spinner"></div>
     </div> --}}
-    <header id="header">
+    <header id="header " class="h-100">
         <div class="header-top">
             <div class="container">
                 <div class="row align-items-center">
