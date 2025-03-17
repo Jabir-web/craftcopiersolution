@@ -39,8 +39,8 @@
     {{-- <div id="loader" class="loader">
         <div class="spinner"></div>
     </div> --}}
-    <header id="header " >
-        <div class="header-top">
+    <header id="header"  >
+        <div class="header-top ">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-sm-6 col-6 header-top-left">
@@ -78,7 +78,7 @@
                 </nav><!-- #nav-menu-container -->
             </div>
         </div>
-    </header><!-- #header -->
+    </header>
 
     {{ $slot }}
 
@@ -157,7 +157,7 @@
     <script src="{{ asset('front/js/jquery.nice-select.min.js') }}"></script>
     <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('front/js/mail-script.js') }}"></script>
-    {{-- <script src="{{ asset('front/js/main.js') }}"></script> --}}
+    <script src="{{ asset('front/js/main.js') }}"></script>
 
     @livewireScripts
 </body>
