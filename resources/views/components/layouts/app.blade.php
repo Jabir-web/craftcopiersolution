@@ -7,16 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
     {{-- <link rel="shortcut icon" href="img/fav.png"> --}}
-    <!-- Author Meta -->
-    <meta name="author" content="">
+    {{-- ==================== for seo ===================== --}}
     <!-- Meta Description -->
-    <meta name="description" content="">
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="">
-    <!-- meta character set -->
+    <meta name="description"
+        content="Get top-quality printer sales, repair, and maintenance services at Craft Copier Solution. We provide expert solutions for all printer brands. Contact us for affordable, reliable, and fast service!">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="printer repair, buy printer in Pakistan, printer maintenance, printer service center, copier repair, laser printer fixing, printer troubleshooting, printer toner refill, office printers, best printer shop Pakistan">
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Craft Copier Solution | Printer Sales & Repair Services in Pakistan">
+    <meta property="og:description"
+        content="We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!">
+    <meta property="og:image" content="https://yourwebsite.com/images/printer-repair.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Craft Copier Solution | Printer Sales & Repair Services">
+    <meta name="twitter:description"
+        content="Looking for expert printer repair or a new printer? Get the best deals and services here!">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/printer-repair.jpg">
+
+    {{-- ==================== for seo ===================== --}}
 
     <!-- Site Title -->
-    <title>@yield('title','Craft Copier Solution - Printer sale,repair and service expert')</title>
+    <title>@yield('title', 'Craft Copier Solution - Printer sale,repair and service expert')</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
@@ -39,7 +57,7 @@
     <div id="loader" class="loader">
         <div class="spinners"></div>
     </div>
-    <header id="header"  >
+    <header id="header">
         <div class="header-top ">
             <div class="container">
                 <div class="row align-items-center">
@@ -51,10 +69,13 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-6 header-top-right">
                         <div class="header-social">
-                            <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
+                                target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i
+                                    class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -69,11 +90,11 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a  wire:navigate href="{{ route('homepage') }}">Home</a></li>
-                        <li><a wire:navigate  href="{{ route('aboutpage') }}">About</a></li>
+                        <li><a wire:navigate href="{{ route('homepage') }}">Home</a></li>
+                        <li><a wire:navigate href="{{ route('aboutpage') }}">About</a></li>
                         @livewire('service-dropdown')
                         @livewire('product-dropdown')
-                        <li><a  wire:navigate href="/contact">Contact</a></li>
+                        <li><a wire:navigate href="/contact">Contact</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
@@ -90,7 +111,10 @@
                     <div class="single-footer-widget">
                         <h6>ABOUT CRAFT COPIER SOLUTION</h6>
                         <p>
-                            Craft Copier Solution specializes in high-quality printing solutions, providing cost-effective and innovative copier and printing services. Our mission is to bridge the gap between high OEM prices and low-quality alternatives by delivering premium printing solutions at competitive rates.
+                            Craft Copier Solution specializes in high-quality printing solutions, providing
+                            cost-effective and innovative copier and printing services. Our mission is to bridge the gap
+                            between high OEM prices and low-quality alternatives by delivering premium printing
+                            solutions at competitive rates.
                         </p>
                     </div>
                 </div>
@@ -115,14 +139,19 @@
                     <div class="single-footer-widget">
                         <h6>Our Social Media Accounts</h6>
                         <p>
-                            Stay updated with our latest printing solutions and exclusive offers. 
+                            Stay updated with our latest printing solutions and exclusive offers.
                         </p>
                         <div id="mc_embed_signup ">
                             <div class="row footer-social">
-                                <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a class="col-3" href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                                <a class="col-3" href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i class="fa fa-instagram"></i></a>
-                                <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
+                                <a class="col-3"
+                                    href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
+                                    target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a class="col-3" href="https://wa.me/+923282499598" target="_blank"><i
+                                        class="fa fa-whatsapp"></i></a>
+                                <a class="col-3" href="https://www.instagram.com/craftcopiersolution/#"
+                                    target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a class="col-3" href="https://www.youtube.com/@craftcopiersolution"
+                                    target="_blank"><i class="fa fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -134,10 +163,13 @@
                     Copyright © 2015-2025 Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
+                        target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i
+                            class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -146,7 +178,7 @@
 
     <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('front/js/popper.min.js') }}"></script>
-    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}"></script> 
+    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}"></script>
     {{-- <script src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA') }}"></script> --}}
     <script src="{{ asset('front/js/jquery-ui.js') }}"></script>
     <script src="{{ asset('front/js/easing.min.js') }}"></script>
