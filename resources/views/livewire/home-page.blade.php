@@ -1,6 +1,6 @@
 <div>
         <!-- start banner Area -->
-        <section class="banner-area relative">
+        <section class="banner-area relative ">
             <div class="overlay overlay-bg"></div>
             <div class="container">
                 <div class="row fullscreen align-items-center justify-content-between">

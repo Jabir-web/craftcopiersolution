@@ -2142,6 +2142,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  
 }
 
 #header.header-scrolled {
@@ -2518,6 +2519,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background: url(../img/web/printer-head.jpg) center;
   background-size: cover;
+  height: 80vh;
 }
 
 .banner-area .overlay-bg {

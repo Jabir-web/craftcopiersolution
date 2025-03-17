@@ -36,9 +36,9 @@
 </head>
 
 <body>
-    {{-- <div id="loader" class="loader">
-        <div class="spinner"></div>
-    </div> --}}
+    <div id="loader" class="loader">
+        <div class="spinners"></div>
+    </div>
     <header id="header"  >
         <div class="header-top ">
             <div class="container">
