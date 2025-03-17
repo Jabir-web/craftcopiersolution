@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{ asset('front/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.css') }}">
-    <link rel="stylesheet" href="{{ asset('front/css/mains.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/main.css') }}">
 
     @livewireStyles
 </head>
