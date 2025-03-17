@@ -36,10 +36,10 @@
 </head>
 
 <body>
-    {{-- <div id="loader" class="loader">
+    <div id="loader" class="loader">
         <div class="spinner"></div>
-    </div> --}}
-    <header id="header " class="h-100">
+    </div>
+    <header id="header " >
         <div class="header-top">
             <div class="container">
                 <div class="row align-items-center">
