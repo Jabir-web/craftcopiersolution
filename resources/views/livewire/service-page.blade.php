@@ -34,7 +34,7 @@
                                             <p class="card-text">{!! $machine->description !!}</p>
                                             <div>
                                                 <a wire:navigate href="{{ route('contactpage') }}" class="btn btn-warning">Contact Us</a>
-                                                <a  href="{{ route('contactpage') }}" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+                                                <a  href="https://wa.me/+923282499598" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
                                       
                                             </div>
                                         </div>
