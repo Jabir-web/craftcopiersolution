@@ -14,7 +14,8 @@
             @foreach($machines as $machine)
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="{{ asset('storage/app/public/' . $machine->image) }}" alt="{{ $machine->name }}">
+                        <img class="card-img-top" src="{{ Storage::url($machine->image) }}" alt="{{ $machine->name }}">
+
                         <div class="card-body">
                             <h5 class="card-title">{{ $machine->name }}</h5>
                             <p class="card-text">{{ $machine->short_description }}</p>
