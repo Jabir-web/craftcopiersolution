@@ -38,13 +38,11 @@ return [
             'report' => false,
         ],
 
-        'disks' => [
-            'public' => [
-                'driver' => 'local',
-                'root' => public_path('uploads'), // Save images directly in public/uploads
-                'url' => env('APP_URL') . '/uploads',
-                'visibility' => 'public',
-            ],
+        'public' => [
+            'driver' => 'local', // Ensure 'driver' exists
+            'root' => public_path('uploads'), // Store in public/uploads
+            'url' => env('APP_URL') . '/uploads',
+            'visibility' => 'public',
         ],
 
         's3' => [
