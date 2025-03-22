@@ -37,6 +37,8 @@ class MachineResource extends Resource
             ->schema([
                 FileUpload::make('image')
                 ->label('Image')
+                ->directory('uploads/machines') // Stores images in public/uploads/machines/
+                ->visibility('public')
                 ->placeholder('Upload image')->columnSpan('2'),
                 TextInput::make('name')
                 ->required()
