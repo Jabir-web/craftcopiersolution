@@ -94,19 +94,19 @@ $black			: #222;
 
 /* -------------------------- my css  */
 /* Loader container */
-.loader {
+/* .loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's on top of other elements */
-  display: none; /* Hide by default */
-}
+  z-index: 1000;
+  display: none; 
+} */
 
 /* Spinner animation */
 .spinner {
@@ -2140,6 +2140,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
+
   transition: all 0.5s;
   z-index: 997;
   
@@ -2519,7 +2520,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background: url(../img/web/printer-head.jpg) center;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 
 .banner-area .overlay-bg {

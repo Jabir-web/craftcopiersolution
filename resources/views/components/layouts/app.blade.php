@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -54,7 +55,7 @@
 </head>
 
 <body>
-    <div id="loader" class="loader">
+    <div id="loader" class="loader" style="display: none">
         <div class="spinners"></div>
     </div>
     <header id="header">
