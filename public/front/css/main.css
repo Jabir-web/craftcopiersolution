@@ -2501,7 +2501,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background: url(../img/web/printer-head.jpg) center;
   background-size: cover;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .banner-area .overlay-bg {
