@@ -1,22 +1,7 @@
 $(document).ready(function () {
     "use strict";
 
-    // Show the loader
-    function showLoader() {
-        document.getElementById('loader').style.display = 'flex';
-    }
-
-    // Hide the loader
-    function hideLoader() {
-        document.getElementById('loader').style.display = 'none';
-    }
-
-    // Example usage
-    showLoader(); // Show loader before an action
-    setTimeout(() => {
-        hideLoader(); // Hide loader after the action is complete
-    }, 3000); // Simulate a 3-second delay
-
+    
     var window_width = $(window).width(),
         window_height = window.innerHeight,
         header_height = $(".default-header").height(),
