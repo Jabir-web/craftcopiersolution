@@ -10,15 +10,14 @@
     {{-- #### title seo tag #### --}}
     <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | CCS')</title>
 
-    {{-- ==================== for seo ===================== --}}
+    {{-- ==================== FOR SEO TAGS ===================== --}}
     <!-- Meta Description -->
-    <meta name="description"
-        content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.
-">
+    <meta name="description" content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.">
 
     <!-- Meta Keywords -->
-    <meta name="keywords"
-        content="printer repair, buy printer in Pakistan, printer maintenance, printer service center, copier repair, laser printer fixing, printer troubleshooting, printer toner refill, office printers, best printer shop Pakistan">
+    <meta name="keywords" content="copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi">
+    
+    <meta name="author" content="Craft Copier Solution">
 
     <!-- Open Graph for Social Media -->
     <meta property="og:title" content="Craft Copier Solution | Printer Sales & Repair Services in Pakistan">
@@ -89,7 +88,7 @@
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
                     <a href="{{ route('homepage') }}">
-                        <h3 class="text-warning">Craft</h3>
+                        <h3 class="text-warning">Craft Copier Solution</h3>
                     </a>
                 </div>
                 <nav id="nav-menu-container">
