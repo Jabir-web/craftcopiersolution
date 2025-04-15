@@ -8,7 +8,7 @@
     {{-- #### favicon #### --}}
     <link rel="shortcut icon" href="img/fav.png">
     {{-- #### title seo tag #### --}}
-    <title>@yield('title', 'Home - Copier Rental & Kyocera Photocopier Dealer in Karachi')</title>
+    <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | CCS')</title>
 
     {{-- ==================== for seo ===================== --}}
     <!-- Meta Description -->
