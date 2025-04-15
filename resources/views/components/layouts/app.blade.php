@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/mai.css') }}">
 
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZKQ" async></script>
     @livewireStyles
 </head>
 
