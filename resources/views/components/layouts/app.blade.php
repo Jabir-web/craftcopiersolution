@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{-- #### favicon #### --}}
-    <link rel="shortcut icon" href="img/fav.png">
+    <link rel="shortcut icon" href="{{ asset('front/img/favicon.ico') }}">
     {{-- #### title seo tag #### --}}
     <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | CCS')</title>
 
