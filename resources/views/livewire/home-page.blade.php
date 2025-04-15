@@ -10,7 +10,9 @@
                         <p class="text-white d-none d-md-block">
                             Craft Copier Solution is your trusted provider of high-quality printers, accessories, and professional repair services. Whether you need a new printer for your office, maintenance for an existing one, or genuine accessories like toner and cartridges
                         </p>
-                        <a href="{{ route('contactpage') }}" wire:navigate class="primary-btn text-uppercase d-none d-md-block">Get a Free Consultation.</a>
+                        <div>
+                            <a href="{{ route('contactpage') }}" wire:navigate class="primary-btn text-uppercase d-none d-md-block">Get a Free Consultation.</a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 banner-right ">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
