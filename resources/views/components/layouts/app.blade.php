@@ -4,14 +4,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon-->
-    {{-- <link rel="shortcut icon" href="img/fav.png"> --}}
+    {{-- #### favicon #### --}}
+    <link rel="shortcut icon" href="img/fav.png">
+    {{-- #### title seo tag #### --}}
+    <title>@yield('title', 'Craft Copier Solution - Copier Rental & Kyocera Photocopier Dealer in Karachi')</title>
+
     {{-- ==================== for seo ===================== --}}
     <!-- Meta Description -->
     <meta name="description"
-        content="Get top-quality printer sales, repair, and maintenance services at Craft Copier Solution. We provide expert solutions for all printer brands. Contact us for affordable, reliable, and fast service!">
+        content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.
+">
 
     <!-- Meta Keywords -->
     <meta name="keywords"
@@ -34,8 +37,7 @@
 
     {{-- ==================== for seo ===================== --}}
 
-    <!-- Site Title -->
-    <title>@yield('title', 'Craft Copier Solution - Printer sale,repair and service expert')</title>
+    
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
