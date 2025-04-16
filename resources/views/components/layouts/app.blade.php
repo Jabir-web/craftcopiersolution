@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,11 +11,13 @@
 
     {{-- ==================== FOR SEO TAGS ===================== --}}
     <!-- Meta Description -->
-    <meta name="description" content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.">
+    <meta name="description"
+        content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.">
 
     <!-- Meta Keywords -->
-    <meta name="keywords" content="copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi">
-    
+    <meta name="keywords"
+        content="copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi">
+
     <meta name="author" content="Craft Copier Solution">
 
     <!-- Open Graph for Social Media -->
@@ -36,7 +37,23 @@
 
     {{-- ==================== for seo ===================== --}}
 
-    
+
+    {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-89Q28SH00Z');
+    </script>
+    {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}
+
+
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
