@@ -8,11 +8,11 @@
     <form action="{{ route('client-rentals.store') }}" method="POST" class="form-wrap">
         @csrf
         <!-- Client Name -->
-        <input type="text" class="form-control" name="client_name" placeholder="Client Name" value="{{ old('client_name') }}">
+        <input type="text" class="form-control" name="client_name" placeholder="Your Name" value="{{ old('client_name') }}">
         @error('client_name') <span class="text-danger">{{ $message }}</span> @enderror
 
         <!-- Client Company Name -->
-        <input type="text" class="form-control" name="client_company_name" placeholder="Client Company Name" value="{{ old('client_company_name') }}">
+        <input type="text" class="form-control" name="client_company_name" placeholder="Your Company Name" value="{{ old('client_company_name') }}">
         @error('client_company_name') <span class="text-danger">{{ $message }}</span> @enderror
 
         <!-- City Name -->
