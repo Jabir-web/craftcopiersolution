@@ -28,7 +28,7 @@
                             @foreach($machines as $machine)
                                 <div class="col-lg-12 col-md-12 mb-4 bg-white p-3">
                                     <div class=" row">
-                                        <img class="col-md-4 " src="{{ asset('storage/' . $machine->image) }}" alt="{{ $machine->name }}">
+                                        <img class="col-md-4" src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}">
                                         <div class=" col-md-8 d-flex flex-column justify-content-center ">
                                             <h3 class="card-title">{{ $machine->name }}</h3>
                                             <p class="card-text">{{ \Illuminate\Support\Str::limit($machine->short_description, 120, '...') }}</p>

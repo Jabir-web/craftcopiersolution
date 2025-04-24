@@ -27,3 +27,15 @@ Route::get('/blogs',BlogPage::class)->name('blogpage');
 Route::post('/accessory-requests', [AccessoryRequestController::class, 'store'])->name('accessory-requests.store');
 Route::post('/client-rentals', [ClientRentalController::class, 'store'])->name('client-rentals.store');
 Route::post('/client-repairs', [ClientRepairController::class, 'store'])->name('client-repairs.store');
+
+
+
+Route::get('/storage/{path}', function ($path) {
+    $file = storage_path('app/public/' . $path);
+
+    if (!file_exists($file)) {
+        abort(404); // Show 404 page if the file is missing
+    }
+
+    return response()->file($file);
+})->where('path', '.*'); // 🔥 This allows subfolders like uploads/machine/image.jpg

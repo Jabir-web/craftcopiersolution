@@ -31,9 +31,15 @@
                     <h6>About Us</h6>
                     <h1>Who We Are?</h1>
                     <p>
-                        At Craft Copier Solution, we are a team of passionate professionals dedicated to providing top-notch printer sales, repairs, and maintenance services. With extensive experience in the printing industry, we understand the challenges businesses and individuals face when dealing with printing equipment. That’s why we offer reliable, cost-effective, and efficient solutions tailored to your needs.
+                        At Craft Copier Solution, we are a team of passionate professionals dedicated to providing
+                        top-notch printer sales, repairs, and maintenance services. With extensive experience in the
+                        printing industry, we understand the challenges businesses and individuals face when dealing
+                        with printing equipment. That’s why we offer reliable, cost-effective, and efficient solutions
+                        tailored to your needs.
 
-Our mission is to ensure that your printing operations run smoothly with high-quality products, expert repairs, and exceptional customer service. Whether you're looking for a new printer, need urgent repairs, or want long-term maintenance support, we’ve got you covered.
+                        Our mission is to ensure that your printing operations run smoothly with high-quality products,
+                        expert repairs, and exceptional customer service. Whether you're looking for a new printer, need
+                        urgent repairs, or want long-term maintenance support, we’ve got you covered.
                     </p>
                 </div>
             </div>
