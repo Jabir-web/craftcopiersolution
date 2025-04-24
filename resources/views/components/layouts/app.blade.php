@@ -2,40 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{-- #### favicon #### --}}
-    <link rel="shortcut icon" href="{{ asset('front/img/favicon.ico') }}">
-    {{-- #### title seo tag #### --}}
-    <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | CCS')</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{-- #### Favicon #### --}}
+<link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
+
+{{-- #### Title SEO Tag #### --}}
+<title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
+
 
     {{-- ==================== FOR SEO TAGS ===================== --}}
-    <!-- Meta Description -->
-    <meta name="description"
-        content="Get reliable copier rental services in Karachi. We are top Kyocera photocopier dealers & repair experts. Affordable plans & fast support available.">
 
-    <!-- Meta Keywords -->
-    <meta name="keywords"
-        content="copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi">
+<!-- Meta Description -->
+<meta name="description" content="@yield('description', 'Affordable copier rental and repair services in Karachi. We specialize in Kyocera printers. Fast support and expert service available!')">
 
-    <meta name="author" content="Craft Copier Solution">
+<!-- Meta Keywords -->
+<meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
 
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="Craft Copier Solution | Printer Sales & Repair Services in Pakistan">
-    <meta property="og:description"
-        content="We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!">
-    <meta property="og:image" content="https://yourwebsite.com/images/printer-repair.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:type" content="website">
+<!-- Robots Meta Tag (for controlling search engine indexing) -->
+<meta name="robots" content="index, follow">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Craft Copier Solution | Printer Sales & Repair Services">
-    <meta name="twitter:description"
-        content="Looking for expert printer repair or a new printer? Get the best deals and services here!">
-    <meta name="twitter:image" content="https://yourwebsite.com/images/printer-repair.jpg">
+<!-- Author -->
+<meta name="author" content="Craft Copier Solution">
 
-    {{-- ==================== for seo ===================== --}}
+<!-- Open Graph for Social Media -->
+<meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
+<meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
+<meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+<meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Craft Copier Solution">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
+<meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
+<meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+<meta name="twitter:site" content="@yourtwitterhandle">
+<meta name="twitter:creator" content="@yourtwitterhandle">
+
+<!-- Canonical Tag (Prevents duplicate content issues) -->
+<link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+
+{{-- ==================== END SEO TAGS ===================== --}}
+
 
 
     {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}

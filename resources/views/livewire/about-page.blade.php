@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 info-left">
-                    <img class="img-fluid" src="{{ asset('front/img/about-img.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('front/img/about-img.png') }}" alt="about-img">
                 </div>
                 <div class="col-lg-6 info-right">
                     <h6>About Us</h6>

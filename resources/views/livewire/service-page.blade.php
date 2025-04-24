@@ -25,22 +25,23 @@
                 <div class="col-lg-8 posts-list">
                     <div class="row mt-4">
                         @if($machines)
-                            @foreach($machines as $machine)
-                                <div class="col-lg-12 col-md-12 mb-4 bg-white p-4">
-                                    <div class=" row">
-                                        {{-- <img class="col-md-4 " src="{{ asset('storage/' . $machine->image) }}" alt="{{ $machine->name }}"> --}}
-                                        <div class=" col-md-12 d-flex flex-column justify-content-center ">
-                                            {{-- <h1 class="card-title">{{ $machine->name }}</h1> --}}
-                                            <p class="card-text">{!! $machine->description !!}</p>
-                                            <div>
-                                                <a wire:navigate href="{{ route('contactpage') }}" class="btn btn-warning">Contact Us</a>
-                                                <a  href="https://wa.me/+923282499598" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
-                                      
-                                            </div>
-                                        </div>
+                        @foreach($machines as $machine)
+                        <div class="col-lg-12 col-md-12 mb-4 bg-white p-4">
+                            <div class=" row">
+
+                                <img src="{{ asset('storage/' . $machine->img) }}" alt="{{ $machine->decription }}" class="img-fluid fixed-image">
+                                <div class=" col-md-12 d-flex flex-column justify-content-center ">
+                                    {{-- <h1 class="card-title">{{ $machine->name }}</h1> --}}
+                                    <p class="card-text">{!! $machine->description !!}</p>
+                                    <div>
+                                        <a wire:navigate href="{{ route('contactpage') }}" class="btn btn-warning">Contact Us</a>
+                                        <a  href="https://wa.me/+923282499598" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+                              
                                     </div>
                                 </div>
-                            @endforeach
+                            </div>
+                        </div>
+                    @endforeach
                         @else
                             <p>No machines found.</p>
                         @endif
@@ -53,6 +54,8 @@
                             @foreach($products as $service)
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <div>
+                                        
+
                                         {{-- <input type="checkbox" id="product-{{ $product->id }}" name="products[]" value="{{ $product->id }}"> --}}
                                         <a  wire:navigate href="{{ route('services', ['service_id' => $service->id]) }}" >{{ $service->name }}</a>
                                     </div>
