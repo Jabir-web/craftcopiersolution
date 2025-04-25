@@ -71,7 +71,8 @@
                                 <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="price-btn">{{ $product->name }} MACHINES</a>
                                 <h4>{{ $product->name }}</h4>
                             </div>
-                        </div>
+                        </div><img class="img-fluid" src="{{ asset('front/img/web/kyocera-machine.jpg') }}" alt="Kyocera printer machine">
+
                     </div>
                     @endforeach
                  
