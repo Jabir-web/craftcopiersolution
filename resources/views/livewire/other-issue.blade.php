@@ -30,7 +30,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            {{-- <img class="img-fluid" src="img/o2.jpg" alt=""> --}}
+                            <img class="img-fluid border rounded" src="{{ asset('front/img/repair.png') }}" alt="repair">
                         </div>
                         <a href="#">
                             <h4>Copier Repair Service</h4>
