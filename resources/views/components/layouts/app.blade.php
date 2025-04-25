@@ -11,8 +11,7 @@
 {{-- #### Title SEO Tag #### --}}
 <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
 
-
-    {{-- ==================== FOR SEO TAGS ===================== --}}
+{{-- ==================== FOR SEO TAGS ===================== --}}
 
 <!-- Meta Description -->
 <meta name="description" content="@yield('description', 'Affordable copier rental and repair services in Karachi. We specialize in Kyocera printers. Fast support and expert service available!')">
@@ -20,7 +19,7 @@
 <!-- Meta Keywords -->
 <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
 
-<!-- Robots Meta Tag (for controlling search engine indexing) -->
+<!-- Robots Meta Tag -->
 <meta name="robots" content="index, follow">
 
 <!-- Author -->
@@ -45,26 +44,60 @@
 <meta name="twitter:site" content="@yourtwitterhandle">
 <meta name="twitter:creator" content="@yourtwitterhandle">
 
-<!-- Canonical Tag (Prevents duplicate content issues) -->
+<!-- Canonical Tag -->
 <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
 
 {{-- ==================== END SEO TAGS ===================== --}}
 
+{{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://craftcopiersolutions.com",
+  "name": "Craft Copier Solution",
+  "logo": "https://craftcopiersolutions.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/craftcopiersolutions",
+    "https://twitter.com/yourtwitterhandle",
+    "https://www.linkedin.com/company/craftcopiersolutions"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+92-21-1234567",
+    "contactType": "Customer Service",
+    "areaServed": "PK",
+    "availableLanguage": "en"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Copier St",
+    "addressLocality": "Karachi",
+    "addressRegion": "Sindh",
+    "postalCode": "74600",
+    "addressCountry": "Pakistan"
+  },
+  "sameAs": [
+    "https://www.facebook.com/craftcopiersolutions",
+    "https://twitter.com/yourtwitterhandle"
+  ]
+}
+</script>
 
+{{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-    {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    gtag('config', 'G-89Q28SH00Z');
+</script>
 
-        gtag('config', 'G-89Q28SH00Z');
-    </script>
     {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}
 
 
