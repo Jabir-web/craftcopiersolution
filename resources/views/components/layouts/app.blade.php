@@ -185,17 +185,17 @@
     <footer class="footer-area section-gap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4  col-md-6 col-sm-6">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>ABOUT CRAFT COPIER SOLUTION</h6>
                         <p>
-                            Craft Copier Solution specializes in high-quality printing solutions, providing
-                            cost-effective and innovative copier and printing services. Our mission is to bridge the gap
-                            between high OEM prices and low-quality alternatives by delivering premium printing
-                            solutions at competitive rates.
+                            Craft Copier Solution specializes in high-quality printing solutions, providing cost-effective and innovative copier and printing services. Our mission is to bridge the gap between high OEM prices and low-quality alternatives by delivering premium printing solutions at competitive rates.
                         </p>
                     </div>
                 </div>
+    
+                <!-- Navigation Links Section -->
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>Navigation Links</h6>
@@ -204,7 +204,7 @@
                                 <ul>
                                     <li><a href="{{ route('homepage') }}">Home</a></li>
                                     <li><a href="{{ route('aboutpage') }}">About us</a></li>
-                                    <li><a wire:navigate href="/contact">Services</a></li>
+                                    <li><a href="/contact">Services</a></li>
                                     <li><a href="#">Products</a></li>
                                     <li><a href="#">Blogs</a></li>
                                     <li><a href="#">Contact</a></li>
@@ -213,45 +213,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4  col-md-6 col-sm-6">
+    
+                <!-- Social Media Links Section -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>Our Social Media Accounts</h6>
-                        <p>
-                            Stay updated with our latest printing solutions and exclusive offers.
-                        </p>
-                        <div id="mc_embed_signup ">
-                            <div class="row footer-social">
-                                <a class="col-3"
-                                    href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
-                                    target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a class="col-3" href="https://wa.me/+923282499598" target="_blank"><i
-                                        class="fa fa-whatsapp"></i></a>
-                                <a class="col-3" href="https://www.instagram.com/craftcopiersolution/#"
-                                    target="_blank"><i class="fa fa-instagram"></i></a>
-                                <a class="col-3" href="https://www.youtube.com/@craftcopiersolution"
-                                    target="_blank"><i class="fa fa-youtube"></i></a>
-                            </div>
+                        <p>Stay updated with our latest printing solutions and exclusive offers.</p>
+                        <div class="row footer-social">
+                            <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a class="col-3" href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-
+    
+            <!-- Footer Bottom Section -->
             <div class="row footer-bottom d-flex justify-content-between align-items-center">
                 <p class="col-lg-8 col-sm-12 footer-text m-0">
                     Copyright © 2015-2025 Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
-                        target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i
-                            class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i
-                            class="fa fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+    
     <!-- End footer Area -->
 
     <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}"></script>
