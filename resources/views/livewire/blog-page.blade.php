@@ -5,9 +5,9 @@
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="about-content blog-header-content col-lg-12">
-					<h1 class="text-white">
+					<h2 class="text-white">
 						We Help You With Blogs
-					</h1>
+					</h2>
 					<p class="text-white">
 						There is a moment in the life of any aspiring astronomer that it is time to buy that first
 					</p>
