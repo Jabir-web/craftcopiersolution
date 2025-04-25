@@ -43,7 +43,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            {{-- <img class="img-fluid" src="img/o3.jpg" alt=""> --}}
+                            <img class="img-fluid border rounded" src="{{ asset('front/img/rental.png') }}" alt="rental">
                         </div>
                         <a href="#">
                             <h4>Photocopier Rentals</h4>
