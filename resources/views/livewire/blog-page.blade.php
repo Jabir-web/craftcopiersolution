@@ -102,7 +102,7 @@
 										<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid fixed-image">
 									</div>
 									<a class="posts-title" href="blog-single.html"><h3>{{ $blog->title }}</h3></a>
-									<p class="excert">
+									<p class="text-info">
 										{{ $blog->description }}
 									</p>
 									<a href="blog-single.html" class="primary-btn">View More</a>
