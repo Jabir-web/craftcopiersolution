@@ -122,7 +122,7 @@
         <section class="home-about-area">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-end">
-                    <div class="col-lg-6 col-md-12 home-about-left">
+                    <div class="col-lg-12 col-md-12 home-about-left">
                         <h2>
                             Did not find your Package? <br>
                             Feel free to ask us. <br>
