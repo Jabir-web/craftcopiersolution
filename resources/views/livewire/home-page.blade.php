@@ -54,7 +54,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
                         <div class="title text-center">
-                            <h1 class="mb-10">Our Best Machines</h1>
+                            <h2 class="mb-10">Our Best Machines</h2>
                             <p>We import upgraded models of KONICA MINOLTA, RICOH , KYOCERA , and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top class working condition.</p>
                         </div>
                     </div>
