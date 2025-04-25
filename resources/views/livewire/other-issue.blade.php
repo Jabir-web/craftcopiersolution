@@ -15,7 +15,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/o1.jpg" alt="">
+                            {{-- <img class="img-fluid" src="img/o1.jpg" alt=""> --}}
                         </div>
                         <a href="#">
                             <h4>Bulk Printing Service</h4>
@@ -28,7 +28,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/o2.jpg" alt="">
+                            {{-- <img class="img-fluid" src="img/o2.jpg" alt=""> --}}
                         </div>
                         <a href="#">
                             <h4>Copier Repair Service</h4>
@@ -41,7 +41,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/o3.jpg" alt="">
+                            {{-- <img class="img-fluid" src="img/o3.jpg" alt=""> --}}
                         </div>
                         <a href="#">
                             <h4>Photocopier Rentals</h4>
@@ -55,7 +55,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/o4.jpg" alt="">
+                            {{-- <img class="img-fluid" src="img/o4.jpg" alt=""> --}}
                         </div>
                         <a href="#">
                             <h4>Get Copier On Per Copy Cost</h4>
