@@ -158,44 +158,21 @@
 								<div class="single-sidebar-widget popular-post-widget">
 									<h4 class="popular-title">Popular Posts</h4>
 									<div class="popular-post-list">
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp1.jpg" alt="">
+										@foreach($blogs as $blog)
+											<div class="single-post-list d-flex flex-row align-items-center">
+												<div class="thumb">
+													<!-- Assuming the blog has an image, you can use its URL or fallback image -->
+													<img class="img-fluid" src="{{ asset('img/blog/' . $blog->image) }}" alt="">
+												</div>
+												<div class="details">
+													<a href="{{ route('blog.single', $blog->id) }}"><h6>{{ $blog->title }}</h6></a>
+													<p>{{ $blog->created_at->diffForHumans() }}</p> <!-- Displaying time difference -->
+												</div>
 											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp2.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp3.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp4.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>															
+										@endforeach
 									</div>
 								</div>
+								
 								<div class="single-sidebar-widget ads-widget">
 									<a href="#"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
 								</div>
