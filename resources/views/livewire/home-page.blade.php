@@ -71,8 +71,7 @@
                                 <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="price-btn">{{ $product->name }} MACHINES</a>
                                 <h4>{{ $product->name }}</h4>
                             </div>
-                        </div><img class="img-fluid" src="{{ asset('front/img/web/kyocera-machine.jpg') }}" alt="Kyocera printer machine">
-
+                        </div>
                     </div>
                     @endforeach
                  
@@ -128,8 +127,7 @@
                             Did not find your Package? <br>
                             Feel free to ask us. <br>
                             We‘ll make it for you
-                        </h2
-                        >
+                        </h1>
                         <p>
                             inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
                             standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
