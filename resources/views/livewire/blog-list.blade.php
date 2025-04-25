@@ -23,7 +23,7 @@
                                 <div class="tags">
                                     <ul>
                                         <li>
-                                            <a href="#">{{ $blog->category }}</a>
+                                            <a href="pappo">{{ $blog->category }}</a>
                                         </li>
                                     </ul>
                                 </div>
