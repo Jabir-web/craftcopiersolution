@@ -47,6 +47,8 @@
 <!-- Canonical Tag -->
 <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
 
+<meta name="google-site-verification" content="vrrSDZ2Dm_B8N9hCHnEJFoZdpk7EUDHr6PCNfknZObI" />
+
 {{-- ==================== END SEO TAGS ===================== --}}
 
 {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
