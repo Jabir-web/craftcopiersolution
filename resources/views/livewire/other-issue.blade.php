@@ -57,7 +57,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            {{-- <img class="img-fluid" src="img/o4.jpg" alt=""> --}}
+                            <img class="img-fluid border rounded" src="{{ asset('front/img/percopy.png') }}" alt="percopy">
                         </div>
                         <a href="#">
                             <h4>Get Copier On Per Copy Cost</h4>
