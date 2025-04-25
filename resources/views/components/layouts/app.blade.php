@@ -134,15 +134,28 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-6 header-top-right">
                         <div class="header-social">
-                            <a href="https://www.facebook.com/profile.php?id=61556891930367&rdid=4qDlIWTRQW53rlKG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14izAv1Qm5%2F#"
-                                target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/craftcopiersolution/#" target="_blank"><i
-                                    class="fa fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i
-                                    class="fa fa-youtube"></i></a>
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/+923282499598" target="_blank">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                            
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            
+                            <!-- YouTube -->
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
