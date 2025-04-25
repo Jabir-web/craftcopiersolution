@@ -27,7 +27,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="pappo">
+                                <a href="{{ route('blogpage') }}">
                                     <h4 class="title">{{ $blog->title }}</h4>
                                 </a>
                                 <p>{!! $blog->description !!}</p>
