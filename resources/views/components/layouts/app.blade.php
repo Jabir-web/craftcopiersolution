@@ -60,7 +60,8 @@
   "sameAs": [
     "https://www.facebook.com/craftcopiersolutions",
     "https://twitter.com/yourtwitterhandle",
-    "https://www.linkedin.com/company/craftcopiersolutions"
+    "https://www.linkedin.com/company/craftcopiersolutions",
+    "https://www.instagram.com/craftcopiersolutions"  <!-- Add Instagram -->
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -76,11 +77,7 @@
     "addressRegion": "Sindh",
     "postalCode": "74600",
     "addressCountry": "Pakistan"
-  },
-  "sameAs": [
-    "https://www.facebook.com/craftcopiersolutions",
-    "https://twitter.com/yourtwitterhandle"
-  ]
+  }
 }
 </script>
 
@@ -98,7 +95,8 @@
     gtag('config', 'G-89Q28SH00Z');
 </script>
 
-    {{-- ######################### FOR GOOGLE ANAYLTICS ########################## --}}
+{{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+
 
 
 
