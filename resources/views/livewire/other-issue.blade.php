@@ -5,7 +5,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Other issues we can help you with</h1>
+                        <h2 class="mb-10">Other issues we can help you with</h2>
                         <p>Well educated, intellectual people, especially scientists at all times demonstrate
                             considerably.</p>
                     </div>
