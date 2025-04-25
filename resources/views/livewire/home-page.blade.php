@@ -135,22 +135,8 @@
                         </p>
                         <a  href="{{ route('contactpage') }}"  class="primary-btn text-uppercase">request custom price</a>
                     </div>
-                    <div class="col-6 home-about-right no-padding">
-                        <img class="img-fluid" src="{{ asset('public/front/img/aboutus.jpg') }}" alt="about-us" style="width: 50% !important;">
-                    </div>
-<style>
-.home-about-right img {
-    width: 50% !important;
-    height: auto; /* Maintains the aspect ratio */
-}
-
-@media (max-width: 768px) {
-    .home-about-right img {
-        width: 100% !important; /* Full width on smaller screens */
-    }
-}
-
-</style>                    
+                   
+                  
                     
                 </div>
             </div>
