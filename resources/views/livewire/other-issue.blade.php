@@ -15,7 +15,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            <img class="img-fluid" src="{{ asset('front/img/bulkprinitng.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('front/img/bulk.png') }}" alt="bulk">
 
                         </div>
                         <a href="#">
