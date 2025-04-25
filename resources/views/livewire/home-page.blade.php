@@ -123,11 +123,12 @@
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-end">
                     <div class="col-lg-6 col-md-12 home-about-left">
-                        <h1>
+                        <h2>
                             Did not find your Package? <br>
                             Feel free to ask us. <br>
                             We‘ll make it for you
-                        </h1>
+                        </h2
+                        >
                         <p>
                             inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
                             standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
