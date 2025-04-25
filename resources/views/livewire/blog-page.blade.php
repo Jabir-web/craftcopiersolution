@@ -185,13 +185,19 @@
 						<div class="single-sidebar-widget ads-widget">
 							<a href="#"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
 						</div>
-
-						@foreach($blogs as $blog)
-    <div class="single-post-list">
-        <p>Category: {{ $blog->category }}</p>
-    </div>
-@endforeach
-
+						<div class="single-sidebar-widget post-category-widget">
+							<h4 class="category-title">Post Categories</h4>
+							<ul class="cat-list">
+								@foreach($blogs as $blog)
+									<li>
+										<a href="#" class="d-flex justify-content-between">
+											<p>{{ $blog->category }}</p> <!-- Displaying category name -->
+										
+										</a>
+									</li>
+								@endforeach
+							</ul>
+						</div>
 						
 						<div class="single-sidebar-widget newsletter-widget">
 							<h4 class="newsletter-title">Newsletter</h4>
