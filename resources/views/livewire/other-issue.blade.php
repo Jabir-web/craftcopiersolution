@@ -15,7 +15,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-other-issue">
                         <div class="thumb">
-                            {{-- <img class="img-fluid" src="img/o1.jpg" alt=""> --}}
+                            <img class="img-fluid" src="{{ asset('front/img/bulkprinitng.png') }}" alt="">
+
                         </div>
                         <a href="#">
                             <h4>Bulk Printing Service</h4>
