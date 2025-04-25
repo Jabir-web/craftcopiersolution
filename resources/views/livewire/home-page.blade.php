@@ -136,7 +136,8 @@
                         <a  href="{{ route('contactpage') }}"  class="primary-btn text-uppercase">request custom price</a>
                     </div>
                     <div class="col-lg-6 col-md-12 home-about-right no-padding">
-                        <img class="img-fluid" src="img/about-img.jpg" alt="about-us">
+                        <img class="img-fluid" src="{{ asset('public/front/img/aboutus.jpg') }}" alt="about-us">
+
                     </div>
                 </div>
             </div>
