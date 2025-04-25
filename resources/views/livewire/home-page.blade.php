@@ -65,7 +65,7 @@
                         <div class="single-destination relative">
                             <div class="thumb relative">
                                 <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{ asset('front/img/web/kyocera-machine.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('front/img/web/kyocera-machine.jpg') }}" alt="kyocera-machine">
                             </div>
                             <div class="desc">
                                 <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="price-btn">{{ $product->name }} MACHINES</a>
@@ -136,7 +136,7 @@
                         <a  href="{{ route('contactpage') }}"  class="primary-btn text-uppercase">request custom price</a>
                     </div>
                     <div class="col-lg-6 col-md-12 home-about-right no-padding">
-                        <img class="img-fluid" src="img/about-img.jpg" alt="about-craft-copier">
+                        <img class="img-fluid" src="img/about-img.jpg">
                     </div>
                 </div>
             </div>
