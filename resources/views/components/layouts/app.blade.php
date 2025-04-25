@@ -158,9 +158,9 @@
                         <div class="row">
                             <div class="col">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="{{ route('homepage') }}">Home</a></li>
+                                    <li><a href="{{ route('aboutpage') }}">About us</a></li>
+                                    <li><a wire:navigate href="/contact">Services</a></li>
                                     <li><a href="#">Products</a></li>
                                     <li><a href="#">Blogs</a></li>
                                     <li><a href="#">Contact</a></li>
