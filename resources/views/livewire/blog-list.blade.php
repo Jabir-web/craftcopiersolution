@@ -4,7 +4,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-9">
                     <div class="title text-center">
-                        <h1 class="mb-10">Latest from Our Blog</h1>
+                        <h2 class="mb-10">Latest from Our Blog</h2>
                         <p>With the exception of Nietzsche, no other madman has contributed so much to human sanity as has.</p>
                     </div>
                 </div>

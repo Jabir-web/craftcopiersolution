@@ -54,7 +54,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
                         <div class="title text-center">
-                            <h2 class="mb-10 fs-6">Our Best Machines</h2>
+                            <h2 class="mb-10">Our Best Machines</h2>
                             <p>We import upgraded models of KONICA MINOLTA, RICOH , KYOCERA , and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top class working condition.</p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             Did not find your Package? <br>
                             Feel free to ask us. <br>
                             We‘ll make it for you
-                        </h1>
+                        </h2>
                         <p>
                             inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
                             standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
