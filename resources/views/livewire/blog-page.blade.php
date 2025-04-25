@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="about-content blog-header-content col-lg-12">
-					<h2 class="text-white">
+					<h2 class="text-white fs-6">
 						We Help You With Blogs
 					</h2>
 					<p class="text-white">
