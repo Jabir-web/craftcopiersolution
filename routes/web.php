@@ -23,7 +23,9 @@ Route::get('/aboutus',AboutPage::class)->name('aboutpage');
 Route::get('/contact',ContactPage::class)->name('contactpage');
 Route::get('/machines/{product_id?}', MachinePage::class)->name('machines');
 Route::get('/services/{service_id?}', ServicePage::class)->name('services');
-Route::get('/blogs',BlogPage::class)->name('blogpage');
+Route::get('/blogs/{id?}', BlogPage::class)->name('blogpage');
+
+
 Route::post('/accessory-requests', [AccessoryRequestController::class, 'store'])->name('accessory-requests.store');
 Route::post('/client-rentals', [ClientRentalController::class, 'store'])->name('client-rentals.store');
 Route::post('/client-repairs', [ClientRepairController::class, 'store'])->name('client-repairs.store');

@@ -86,37 +86,29 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 posts-list">
-					@foreach($blogs as $blog)
-						<div class="single-post row">
-							<div class="col-lg-3  col-md-3 meta-details">
-								<ul class="tags">
-									<li><a href="#">{{ $blog->category }}</a></li>
-
-								</ul>
-								<div class="user-details row">
-									{{-- <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span
-											class="lnr lnr-user"></span></p> --}}
-									<p class="date col-lg-12 col-md-12 col-6"><a href="#">{{ $blog->created_at }}</a> <span
-											class="lnr lnr-calendar-full"></span></p>
-									<p class="view col-lg-12 col-md-12 col-6"><a href="#">{{ $blog->views }} Views</a> <span
-											class="lnr lnr-eye"></span></p>
-									{{-- <p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span
-											class="lnr lnr-bubble"></span></p> --}}
-								</div>
-							</div>
-							<div class="col-lg-9 col-md-9 ">
-								<div class="feature-img">
-									<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
-										class="img-fluid fixed-image">
-								</div>
-								<a class="posts-title" href="blog-single.html">
-									<h3>{{ $blog->title }}</h3>
-								</a>
-								<p>{!! $blog->description !!}</p>
-								<a href="blog-single.html" class="primary-btn">View More</a>
-							</div>
+					@if ($blog)
+					{{-- Single blog view --}}
+					<div class="single-blog-container">
+						<h1>{{ $blog->title }}</h1>
+				
+						<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid mb-4">
+				
+						<p><strong>Category:</strong> {{ $blog->category }}</p>
+						<p><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
+						<p><strong>Views:</strong> {{ $blog->views }}</p>
+				
+						<div class="blog-description mt-4">
+							{!! $blog->description !!}
 						</div>
-					@endforeach
+				
+						<a href="{{ url()->previous() }}" class="btn btn-primary mt-5">Back</a>
+					</div>
+				@else
+					<div class="alert alert-danger">
+						Blog not found.
+					</div>
+				@endif
+				
 					<nav class="blog-pagination justify-content-center d-flex">
 						<ul class="pagination">
 							<li class="page-item">
