@@ -7,7 +7,7 @@
 				<div class="col-lg-8 col-md-10">
 					<h6 class="text-white d-none d-md-block">Insights, Tips, and Solutions for All Your Printing Needs
 					</h6>
-					<h1 class="text-white">Welcome to Our Printer Solutions Blog</h1>
+					<h1 class="text-white">Welcome to Craft Copier Solutions Blog</h1>
 					<p class="text-white d-none d-md-block">
 						Explore expert articles, maintenance tips, troubleshooting guides, and the latest updates in the
 						world of printers.
@@ -174,9 +174,9 @@
 						</div>
 				
 						<!-- Ads Widget -->
-						<div class="single-sidebar-widget ads-widget mb-4">
+						{{-- <div class="single-sidebar-widget ads-widget mb-4">
 							<a href="#"><img class="img-fluid rounded shadow" src="img/blog/ads-banner.jpg" alt="Ad Banner"></a>
-						</div>
+						</div> --}}
 				
 						<!-- Post Categories Widget -->
 						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
