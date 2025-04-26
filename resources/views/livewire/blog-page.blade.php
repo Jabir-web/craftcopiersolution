@@ -1,6 +1,6 @@
 <div>
 	<!-- start banner Area -->
-	<section class="banner-area relative bg-primary blog-home-banner" id="home">
+	<section class="banner-area relative blog-home-banner" id="home" style="background-image: url('/front/img/web/print-head.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-center">
@@ -16,6 +16,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- End banner Area -->
 
 	<!-- Start top-category-widget Area -->
