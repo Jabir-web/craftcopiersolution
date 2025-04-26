@@ -134,40 +134,24 @@
 				<div class="col-lg-4 sidebar-widgets">
 					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
 				
-						<!-- Search Widget -->
-						<div class="single-sidebar-widget search-widget mb-4 p-4 bg-white shadow rounded">
-							<form class="search-form d-flex" action="#">
-								<input 
-									placeholder="Search Posts" 
-									name="search" 
-									type="text" 
-									onfocus="this.placeholder = ''" 
-									onblur="this.placeholder = 'Search Posts'" 
-									class="form-control rounded-0 rounded-start"
-								>
-								<button type="submit" class="btn btn-primary rounded-0 rounded-end">
-									<i class="fa fa-search"></i>
-								</button>
-							</form>
-						</div>
-				
+						
 						<!-- Author Info Widget -->
 						<div class="single-sidebar-widget user-info-widget text-center mb-4 p-4 bg-white shadow rounded">
-							<img src="img/blog/user-info.png" alt="Author Image" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+							{{-- <img src="img/blog/user-info.png" alt="Author Image" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;"> --}}
 							<h4 class="mb-1" style="font-weight: 700;">CRAFT COPIER SOLUTION Team</h4>
 							<p class="text-muted">Professional Blog Writers</p>
 				
-							<div class="d-flex justify-content-center gap-3 mb-3">
+							<div class="d-flex justify-content-center gap-3 mb-3 ">
 								<a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="text-primary fs-5">
 									<i class="fa fa-facebook"></i>
 								</a>
-								<a href="https://wa.me/+923282499598" target="_blank" class="text-success fs-5">
+								<a href="https://wa.me/+923282499598" target="_blank" class="text-success fs-5 mx-2">
 									<i class="fa fa-whatsapp"></i>
 								</a>
-								<a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="text-danger fs-5">
+								<a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="text-danger fs-5 mx-2">
 									<i class="fa fa-instagram"></i>
 								</a>
-								<a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="text-danger fs-5">
+								<a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="text-danger fs-5 mx-2">
 									<i class="fa fa-youtube"></i>
 								</a>
 							</div>
