@@ -1,40 +1,6 @@
 <div>
 	<!-- start banner Area -->
-	<section class="banner-area relative ">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row fullscreen align-items-center justify-content-between">
-				<div class="col-lg-6 col-md-6 banner-left">
-					<h6 class="text-white d-none d-md-block">Your one-stop shop for printer sales, repairs, and maintenance.</h6>
-					<h1 class="text-white">RELIABLE PRINTER SOLUTIONS</h1>
-					<p class="text-white d-none d-md-block">
-						Craft Copier Solution is your trusted provider of high-quality printers, accessories, and professional repair services. Whether you need a new printer for your office, maintenance for an existing one, or genuine accessories like toner and cartridges
-					</p>
-					<div>
-						<a href="{{ route('contactpage') }}" wire:navigate class="primary-btn text-uppercase d-none d-md-block">Get a Free Consultation.</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 banner-right ">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab"
-								aria-controls="flight" aria-selected="true">Rental</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab"
-								aria-controls="hotel" aria-selected="false">Repair</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="holiday-tab" data-toggle="tab" href="#holiday" role="tab"
-								aria-controls="holiday" aria-selected="false">Accessories</a>
-						</li>
-					   
-					</ul>
-					
-				</div>
-			</div>
-		</div>
-	</section>
+	
 
 
 	<!-- End banner Area -->
