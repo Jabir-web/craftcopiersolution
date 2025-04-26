@@ -181,14 +181,14 @@
 						<div class="single-sidebar-widget post-category-widget">
 							<h4 class="category-title">Post Categories</h4>
 							<ul class="cat-list">
-								@foreach($blogs as $blog)
+								{{-- @foreach($blogs as $blog)
 									<li>
 										<a href="#" class="d-flex justify-content-between">
 											<p>{{ $blog->category }}</p> <!-- Displaying category name -->
 
 										</a>
 									</li>
-								@endforeach
+								@endforeach --}}
 							</ul>
 						</div>
 
