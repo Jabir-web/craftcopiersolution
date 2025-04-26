@@ -166,11 +166,11 @@
 						<div class="single-sidebar-widget popular-post-widget">
 							<h4 class="popular-title">Popular Posts</h4>
 							<div class="popular-post-list">
-								@foreach($blogs as $blog)
+								{{-- @foreach($blogs as $blog)
 									<div class="single-post-list">
 										<h6>{{ $blog->title }}</h6>
 									</div>
-								@endforeach
+								@endforeach --}}
 
 							</div>
 						</div>
