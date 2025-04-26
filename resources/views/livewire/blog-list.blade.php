@@ -30,7 +30,7 @@
                                 <a href="{{ route('blogpage') }}">
                                     <h4 class="title">{{ $blog->title }}</h4>
                                 </a>
-                                <p>{!! $blog->description !!}</p>
+                                {{-- <p>{!! $blog->description !!}</p> --}}
                                 <h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
                             </div>
                         </div>
