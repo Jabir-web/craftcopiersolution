@@ -1,6 +1,7 @@
 <div>
 	<!-- start banner Area -->
-	<section class="banner-area relative blog-home-banner" id="home" style="background-image: url('public/front/img/web/print-head.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+	<section class="banner-area relative blog-home-banner" id="home"
+		style="background-image: url('{{ asset('front/img/web/print-head.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-center">
@@ -16,7 +17,8 @@
 			</div>
 		</div>
 	</section>
-	
+
+
 	<!-- End banner Area -->
 
 	<!-- Start top-category-widget Area -->
@@ -88,29 +90,29 @@
 			<div class="row">
 				<div class="col-lg-8 posts-list">
 					@if ($blog)
-					{{-- Single blog view --}}
-					<div class="single-blog-container">
-						<h1>{{ $blog->title }}</h1>
-				
-						<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid mb-4">
-				
-						<p><strong>Category:</strong> {{ $blog->category }}</p>
-						<p><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
-						<p><strong>Views:</strong> {{ $blog->views }}</p>
-				
-						<div class="blog-description mt-4">
-							{!! $blog->description !!}
+						{{-- Single blog view --}}
+						<div class="single-blog-container">
+							<h1>{{ $blog->title }}</h1>
+
+							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid mb-4">
+
+							<p><strong>Category:</strong> {{ $blog->category }}</p>
+							<p><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
+							<p><strong>Views:</strong> {{ $blog->views }}</p>
+
+							<div class="blog-description mt-4">
+								{!! $blog->description !!}
+							</div>
+
+							<a href="{{ url()->previous() }}" class="btn btn-primary mt-5">Back</a>
 						</div>
-				
-						<a href="{{ url()->previous() }}" class="btn btn-primary mt-5">Back</a>
-					</div>
-				@else
-					<div class="alert alert-danger">
-						Blog not found.
-					</div>
-				@endif
-				
-				
+					@else
+						<div class="alert alert-danger">
+							Blog not found.
+						</div>
+					@endif
+
+
 					<nav class="blog-pagination justify-content-center d-flex">
 						<ul class="pagination">
 							<li class="page-item">
@@ -168,11 +170,11 @@
 							<h4 class="popular-title">Popular Posts</h4>
 							<div class="popular-post-list">
 								@foreach($blogs as $blogItem)
-								<div class="single-post-list">
-									<h6>{{ $blogItem->title }}</h6>
-								</div>
-							@endforeach
-							
+									<div class="single-post-list">
+										<h6>{{ $blogItem->title }}</h6>
+									</div>
+								@endforeach
+
 
 
 							</div>
@@ -192,8 +194,8 @@
 									</li>
 								@endforeach
 							</ul>
-							
-							
+
+
 						</div>
 
 
