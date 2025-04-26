@@ -92,29 +92,32 @@
 				<div class="col-lg-8 posts-list">
 					@if ($blog)
 						{{-- Single blog view --}}
-						<div class="single-blog-container">
-							<h1>{{ $blog->title }}</h1>
-
-							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid mb-4">
-
-							<p><strong>Category:</strong> {{ $blog->category }}</p>
-							<p><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
-							<p><strong>Views:</strong> {{ $blog->views }}</p>
-
-							<div class="blog-description mt-4">
+						<div class="single-blog-container p-4 shadow rounded bg-white" style="border: 1px solid #e2e8f0;">
+							<h1 class="mb-3" style="font-weight: 700; font-size: 2rem; color: #0F172A;">{{ $blog->title }}</h1>
+				
+							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
+				
+							<div class="d-flex flex-wrap justify-content-start mb-3" style="gap: 20px;">
+								<p class="mb-0 text-muted"><strong>Category:</strong> {{ $blog->category }}</p>
+								<p class="mb-0 text-muted"><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
+								<p class="mb-0 text-muted"><strong>Views:</strong> {{ $blog->views }}</p>
+							</div>
+				
+							<div class="blog-description mt-4" style="line-height: 1.8; color: #334155;">
 								{!! $blog->description !!}
 							</div>
-
-							<a href="{{ url()->previous() }}" class="btn btn-primary mt-5">Back</a>
+				
+							<div class="mt-5 text-center">
+								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2">Back</a>
+							</div>
 						</div>
 					@else
-						<div class="alert alert-danger">
+						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow">
 							Blog not found.
 						</div>
 					@endif
-
-
-					<nav class="blog-pagination justify-content-center d-flex">
+				
+					<nav class="blog-pagination justify-content-center d-flex mt-5">
 						<ul class="pagination">
 							<li class="page-item">
 								<a href="#" class="page-link" aria-label="Previous">
@@ -138,6 +141,7 @@
 						</ul>
 					</nav>
 				</div>
+				
 				<div class="col-lg-4 sidebar-widgets">
 					<div class="widget-wrap">
 						<div class="single-sidebar-widget search-widget">
