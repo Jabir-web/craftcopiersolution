@@ -166,11 +166,13 @@
 						<div class="single-sidebar-widget popular-post-widget">
 							<h4 class="popular-title">Popular Posts</h4>
 							<div class="popular-post-list">
-								{{-- @foreach($blogs as $blog)
-									<div class="single-post-list">
-										<h6>{{ $blog->title }}</h6>
-									</div>
-								@endforeach --}}
+								@foreach($blogs as $blogItem)
+								<div class="single-post-list">
+									<h6>{{ $blogItem->title }}</h6>
+								</div>
+							@endforeach
+							
+
 
 							</div>
 						</div>
@@ -181,14 +183,15 @@
 						<div class="single-sidebar-widget post-category-widget">
 							<h4 class="category-title">Post Categories</h4>
 							<ul class="cat-list">
-								@if ($blog)
+								@foreach($blogs as $blogItem)
 									<li>
 										<a href="#" class="d-flex justify-content-between">
-											<p>{{ $blog->category }}</p> <!-- Displaying single blog's category -->
+											<p>{{ $blogItem->category }}</p>
 										</a>
 									</li>
-								@endif
+								@endforeach
 							</ul>
+							
 							
 						</div>
 

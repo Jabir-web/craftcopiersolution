@@ -7,14 +7,15 @@ use Livewire\Component;
 
 class BlogPage extends Component
 {
-    public $blog;
+    public $blogs; // All blogs for category list
+    public $blog;  // Single blog
 
-    public function mount($title = null)
+    public function mount($id = null)
     {
-        if ($title) {
-            $this->blog = Blog::where('title', $title)->first();
-        } else {
-            $this->blog = null;
+        $this->blogs = Blog::all(); // Always load all blogs for categories
+
+        if ($id) {
+            $this->blog = Blog::where('id', $id)->firstOrFail();
         }
     }
 
