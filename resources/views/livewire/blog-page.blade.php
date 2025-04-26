@@ -5,20 +5,24 @@
 		<div class="container">
 			<div class="row fullscreen align-items-center justify-content-center">
 				<div class="col-lg-8 col-md-10">
-					<h6 class="text-white d-none d-md-block">Insights, Tips, and Solutions for All Your Printing Needs</h6>
+					<h6 class="text-white d-none d-md-block">Insights, Tips, and Solutions for All Your Printing Needs
+					</h6>
 					<h1 class="text-white">Welcome to Our Printer Solutions Blog</h1>
 					<p class="text-white d-none d-md-block">
-						Explore expert articles, maintenance tips, troubleshooting guides, and the latest updates in the world of printers. 
-						Stay informed and keep your office running smoothly with advice from the professionals at Craft Copier Solution.
+						Explore expert articles, maintenance tips, troubleshooting guides, and the latest updates in the
+						world of printers.
+						Stay informed and keep your office running smoothly with advice from the professionals at Craft
+						Copier Solution.
 					</p>
 					<div class="mt-4">
-						<a href="{{ route('contactpage') }}" wire:navigate class="primary-btn text-uppercase d-inline-block">Get a Free Consultation.</a>
+						<a href="{{ route('contactpage') }}" wire:navigate
+							class="primary-btn text-uppercase d-inline-block">Get a Free Consultation.</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 
 	<!-- End banner Area -->
 
@@ -92,113 +96,135 @@
 				<div class="col-lg-8 posts-list">
 					@if ($blog)
 						{{-- Single blog view --}}
-						<div class="single-blog-container p-5 shadow rounded bg-white" style="border: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif;">
-							<h1 class="mb-3" style="font-weight: 800; font-size: 2.5rem; color: #1e293b; line-height: 1.2;">{{ $blog->title }}</h1>
-				
-							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
-				
-							<div class="d-flex flex-wrap justify-content-start mb-4" style="gap: 20px; font-size: 0.95rem; color: #64748b;">
-								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong> {{ $blog->category }}</p>
-								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
-								<p class="mb-0"><i class="fas fa-eye"></i> <strong>Views:</strong> {{ $blog->views }}</p>
+						<div class="single-blog-container p-5 shadow rounded bg-white"
+							style="border: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif;">
+							<h1 class="mb-3" style="font-weight: 800; font-size: 2.5rem; color: #1e293b; line-height: 1.2;">
+								{{ $blog->title }}</h1>
+
+							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
+								class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
+
+							<div class="d-flex flex-wrap justify-content-start mb-4"
+								style="gap: 20px; font-size: 0.95rem; color: #64748b;">
+								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong>
+									{{ $blog->category }}</p>
+								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
+									{{ $blog->created_at->format('d M, Y') }}</p>
+
 							</div>
-				
-							<div class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
+
+							<div class="blog-description mt-4"
+								style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
 								{!! $blog->description !!}
 							</div>
-				
+
 							<div class="mt-5 text-center">
-								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2" style="font-weight: 600; letter-spacing: 1px;">Back</a>
+								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2"
+									style="font-weight: 600; letter-spacing: 1px;">Back</a>
 							</div>
 						</div>
 					@else
-						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow" style="font-family: 'Poppins', sans-serif;">
+						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow"
+							style="font-family: 'Poppins', sans-serif;">
 							Blog not found.
 						</div>
 					@endif
 				</div>
-				
+
 				<div class="col-lg-4 sidebar-widgets">
-					<div class="widget-wrap">
-						<div class="single-sidebar-widget search-widget">
-							<form class="search-form" action="#">
-								<input placeholder="Search Posts" name="search" type="text"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'">
-								<button type="submit"><i class="fa fa-search"></i></button>
+					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
+				
+						<!-- Search Widget -->
+						<div class="single-sidebar-widget search-widget mb-4 p-4 bg-white shadow rounded">
+							<form class="search-form d-flex" action="#">
+								<input 
+									placeholder="Search Posts" 
+									name="search" 
+									type="text" 
+									onfocus="this.placeholder = ''" 
+									onblur="this.placeholder = 'Search Posts'" 
+									class="form-control rounded-0 rounded-start"
+								>
+								<button type="submit" class="btn btn-primary rounded-0 rounded-end">
+									<i class="fa fa-search"></i>
+								</button>
 							</form>
 						</div>
-						<div class="single-sidebar-widget user-info-widget">
-							<img src="img/blog/user-info.png" alt="">
-							<a href="#">
-								<h4>Charlie Barber</h4>
-							</a>
-							<p>
-								Senior blog writer
-							</p>
-							<ul class="social-links">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
-							</ul>
-							<p>
-								Boot camps have its supporters andit sdetractors. Some people do not understand why you
-								should have to spend money on boot camp when you can get. Boot camps have itssuppor ters
-								andits detractors.
+				
+						<!-- Author Info Widget -->
+						<div class="single-sidebar-widget user-info-widget text-center mb-4 p-4 bg-white shadow rounded">
+							<img src="img/blog/user-info.png" alt="Author Image" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+							<h4 class="mb-1" style="font-weight: 700;">CRAFT COPIER SOLUTION Team</h4>
+							<p class="text-muted">Professional Blog Writers</p>
+				
+							<div class="d-flex justify-content-center gap-3 mb-3">
+								<a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="text-primary fs-5">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="https://wa.me/+923282499598" target="_blank" class="text-success fs-5">
+									<i class="fa fa-whatsapp"></i>
+								</a>
+								<a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="text-danger fs-5">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="text-danger fs-5">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</div>
+				
+							<p class="text-secondary" style="font-size: 0.95rem;">
+								Sharing expert advice, troubleshooting tips, and maintenance guides to keep your printing solutions smooth and efficient.
 							</p>
 						</div>
-						<div class="single-sidebar-widget popular-post-widget">
-							<h4 class="popular-title">Popular Posts</h4>
+				
+						<!-- Popular Posts Widget -->
+						<div class="single-sidebar-widget popular-post-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Popular Posts</h4>
 							<div class="popular-post-list">
 								@foreach($blogs as $blogItem)
-									<div class="single-post-list">
-										<h6>{{ $blogItem->title }}</h6>
+									<div class="single-post-list mb-3 pb-2 border-bottom">
+										<h6 class="mb-0" style="font-size: 1rem;">{{ $blogItem->title }}</h6>
 									</div>
 								@endforeach
-
-
-
 							</div>
 						</div>
-
-						<div class="single-sidebar-widget ads-widget">
-							<a href="#"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
+				
+						<!-- Ads Widget -->
+						<div class="single-sidebar-widget ads-widget mb-4">
+							<a href="#"><img class="img-fluid rounded shadow" src="img/blog/ads-banner.jpg" alt="Ad Banner"></a>
 						</div>
-						<div class="single-sidebar-widget post-category-widget">
-							<h4 class="category-title">Post Categories</h4>
-							<ul class="cat-list">
+				
+						<!-- Post Categories Widget -->
+						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Post Categories</h4>
+							<ul class="cat-list list-unstyled">
 								@foreach($blogs as $blogItem)
-									<li>
-										<a href="#" class="d-flex justify-content-between">
-											<p>{{ $blogItem->category }}</p>
+									<li class="mb-2">
+										<a href="#" class="d-flex justify-content-between text-decoration-none text-dark">
+											<p class="mb-0">{{ $blogItem->category }}</p>
 										</a>
 									</li>
 								@endforeach
 							</ul>
-
-
 						</div>
-
-
-						<div class="single-sidebar-widget tag-cloud-widget">
-							<h4 class="tagcloud-title">Tag Clouds</h4>
-							<ul>
-								<li><a href="#">Technology</a></li>
-								<li><a href="#">Fashion</a></li>
-								<li><a href="#">Architecture</a></li>
-								<li><a href="#">Fashion</a></li>
-								<li><a href="#">Food</a></li>
-								<li><a href="#">Technology</a></li>
-								<li><a href="#">Lifestyle</a></li>
-								<li><a href="#">Art</a></li>
-								<li><a href="#">Adventure</a></li>
-								<li><a href="#">Food</a></li>
-								<li><a href="#">Lifestyle</a></li>
-								<li><a href="#">Adventure</a></li>
+				
+						<!-- Tag Cloud Widget -->
+						<div class="single-sidebar-widget tag-cloud-widget p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Tag Clouds</h4>
+							<ul class="d-flex flex-wrap gap-2 list-unstyled">
+								<li><a href="#" class="badge bg-primary text-white p-2">Technology</a></li>
+								<li><a href="#" class="badge bg-success text-white p-2">Fashion</a></li>
+								<li><a href="#" class="badge bg-warning text-white p-2">Architecture</a></li>
+								<li><a href="#" class="badge bg-danger text-white p-2">Food</a></li>
+								<li><a href="#" class="badge bg-info text-white p-2">Lifestyle</a></li>
+								<li><a href="#" class="badge bg-secondary text-white p-2">Art</a></li>
+								<li><a href="#" class="badge bg-primary text-white p-2">Adventure</a></li>
 							</ul>
 						</div>
+				
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</section>
