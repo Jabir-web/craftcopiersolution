@@ -92,54 +92,30 @@
 				<div class="col-lg-8 posts-list">
 					@if ($blog)
 						{{-- Single blog view --}}
-						<div class="single-blog-container p-4 shadow rounded bg-white" style="border: 1px solid #e2e8f0;">
-							<h1 class="mb-3" style="font-weight: 700; font-size: 2rem; color: #0F172A;">{{ $blog->title }}</h1>
+						<div class="single-blog-container p-5 shadow rounded bg-white" style="border: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif;">
+							<h1 class="mb-3" style="font-weight: 800; font-size: 2.5rem; color: #1e293b; line-height: 1.2;">{{ $blog->title }}</h1>
 				
 							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
 				
-							<div class="d-flex flex-wrap justify-content-start mb-3" style="gap: 20px;">
-								<p class="mb-0 text-muted"><strong>Category:</strong> {{ $blog->category }}</p>
-								<p class="mb-0 text-muted"><strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
-								<p class="mb-0 text-muted"><strong>Views:</strong> {{ $blog->views }}</p>
+							<div class="d-flex flex-wrap justify-content-start mb-4" style="gap: 20px; font-size: 0.95rem; color: #64748b;">
+								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong> {{ $blog->category }}</p>
+								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong> {{ $blog->created_at->format('d M, Y') }}</p>
+								<p class="mb-0"><i class="fas fa-eye"></i> <strong>Views:</strong> {{ $blog->views }}</p>
 							</div>
 				
-							<div class="blog-description mt-4" style="line-height: 1.8; color: #334155;">
+							<div class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
 								{!! $blog->description !!}
 							</div>
 				
 							<div class="mt-5 text-center">
-								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2">Back</a>
+								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2" style="font-weight: 600; letter-spacing: 1px;">Back</a>
 							</div>
 						</div>
 					@else
-						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow">
+						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow" style="font-family: 'Poppins', sans-serif;">
 							Blog not found.
 						</div>
 					@endif
-				
-					<nav class="blog-pagination justify-content-center d-flex mt-5">
-						<ul class="pagination">
-							<li class="page-item">
-								<a href="#" class="page-link" aria-label="Previous">
-									<span aria-hidden="true">
-										<span class="lnr lnr-chevron-left"></span>
-									</span>
-								</a>
-							</li>
-							<li class="page-item"><a href="#" class="page-link">01</a></li>
-							<li class="page-item active"><a href="#" class="page-link">02</a></li>
-							<li class="page-item"><a href="#" class="page-link">03</a></li>
-							<li class="page-item"><a href="#" class="page-link">04</a></li>
-							<li class="page-item"><a href="#" class="page-link">09</a></li>
-							<li class="page-item">
-								<a href="#" class="page-link" aria-label="Next">
-									<span aria-hidden="true">
-										<span class="lnr lnr-chevron-right"></span>
-									</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
 				
 				<div class="col-lg-4 sidebar-widgets">
