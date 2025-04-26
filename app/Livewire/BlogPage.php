@@ -7,17 +7,14 @@ use Livewire\Component;
 
 class BlogPage extends Component
 {
-    public $blogs;
     public $blog;
 
-    public function mount($id = null)
+    public function mount($title = null)
     {
-        if ($id) {
-            // If blog ID is present, fetch that single blog
-            $this->blog = Blog::findOrFail($id);
+        if ($title) {
+            $this->blog = Blog::where('title', $title)->first();
         } else {
-            // Otherwise, fetch all blogs
-            $this->blogs = Blog::all();
+            $this->blog = null;
         }
     }
 

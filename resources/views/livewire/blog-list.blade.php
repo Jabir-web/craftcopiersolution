@@ -12,29 +12,28 @@
             <div class="row">
                 <div class="active-recent-blog-carusel">
                     @foreach($blogs as $blog)
-                        <div class="single-recent-blog-post item">
-                            <div class="thumb">
-                          
-                                <img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid fixed-image">
-
-                               
-                            </div>
-                            <div class="details">
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <a href="">{{ $blog->category }}</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="{{ route('blogpage') }}">
-                                    <h4 class="title">{{ $blog->title }}</h4>
-                                </a>
-                                {{-- <p>{!! $blog->description !!}</p> --}}
-                                <h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
-                            </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid fixed-image">
                         </div>
-                    @endforeach
+                        <div class="details">
+                            <div class="tags">
+                                <ul>
+                                    <li>
+                                        <a href="">{{ $blog->category }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <a href="{{ route('blogpage', ['title' => $blog->title]) }}">
+                                <h4 class="title">{{ $blog->title }}</h4>
+                            </a>
+                
+                            <h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
+                        </div>
+                    </div>
+                @endforeach
+                
                 </div>
             </div>
         </div>
