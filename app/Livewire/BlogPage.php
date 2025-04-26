@@ -10,12 +10,12 @@ class BlogPage extends Component
     public $blogs; // All blogs for category list
     public $blog;  // Single blog
 
-    public function mount($id = null)
+    public function mount($title = null)
     {
-        $this->blogs = Blog::all(); // Always load all blogs for categories
+        $this->blogs = Blog::all(); // Always load all blogs for sidebar/category/title list
 
-        if ($id) {
-            $this->blog = Blog::where('id', $id)->firstOrFail();
+        if ($title) {
+            $this->blog = Blog::where('title', $title)->firstOrFail();
         }
     }
 
