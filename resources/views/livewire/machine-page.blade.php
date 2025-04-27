@@ -62,7 +62,7 @@
                             <!-- Pagination Links -->
                             <div class="col-12 text-center mt-4">
                                 <!-- Custom Pagination Style -->
-                                <div class="pagination">
+                                <div class="pagination justify-content-center">
                                     @if ($machines->onFirstPage())
                                         <button class="btn btn-outline-secondary btn-lg" disabled>Previous</button>
                                     @else
