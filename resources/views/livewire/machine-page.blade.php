@@ -29,17 +29,17 @@
                                 <div class="col-12 mb-4">
                                     <div class="card shadow-sm border-0 h-100">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa; position: relative; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                                            <div class="col-md-4" style="position: relative; padding: 0; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                                                 <!-- Image -->
                                                 <img src="{{ url('storage/' . $machine->image) }}" 
                                                      alt="{{ $machine->name }}" 
-                                                     class="img-fluid p-3"
-                                                     style="max-height: 250px; object-fit: contain; border-radius: 10px;">
+                                                     class="img-fluid" 
+                                                     style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
                                                 
                                                 <!-- Text overlay (Company Name and Contact Info) -->
                                                 <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
                                                                                  background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
-                                                                                 font-size: 1rem; padding: 10px 15px; border-radius: 0 0 10px 10px;">
+                                                                                 font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
                                                     <!-- Company Name -->
                                                     <p style="font-size: 1.5rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
                                                     
