@@ -38,8 +38,8 @@
                                                 
                                                 <!-- Text overlay (Company Name and Contact Info) -->
                                                 <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
-                                                                                background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
-                                                                                font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
+                                                                                    background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
+                                                                                    font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
                                                     <p style="font-size: 1.2rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
                                                     <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
                                                     <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
@@ -58,12 +58,30 @@
                                     </div>
                                 </div>
                             @endforeach
-                    
+                
                             <!-- Pagination Links -->
                             <div class="col-12 text-center mt-4">
-                                {{ $machines->links() }} <!-- Pagination links -->
+                                <!-- Custom Pagination Style -->
+                                <div class="pagination">
+                                    @if ($machines->onFirstPage())
+                                        <button class="btn btn-outline-secondary btn-lg" disabled>Previous</button>
+                                    @else
+                                        <a href="{{ $machines->previousPageUrl() }}" class="btn btn-outline-secondary btn-lg">Previous</a>
+                                    @endif
+                                    
+                                    <!-- Page Numbers -->
+                                    <span class="mx-3" style="font-size: 1rem; color: #555;">
+                                        Page {{ $machines->currentPage() }} of {{ $machines->lastPage() }}
+                                    </span>
+                                    
+                                    @if ($machines->hasMorePages())
+                                        <a href="{{ $machines->nextPageUrl() }}" class="btn btn-outline-primary btn-lg">Next</a>
+                                    @else
+                                        <button class="btn btn-outline-primary btn-lg" disabled>Next</button>
+                                    @endif
+                                </div>
                             </div>
-                            
+                
                         @else
                             <div class="col-12">
                                 <div class="alert alert-warning text-center" role="alert">
@@ -72,9 +90,8 @@
                             </div>
                         @endif
                     </div>
-                    
-                    
                 </div>
+                
                 <div class="col-lg-4 sidebar-widgets">
                     <div class="widget-wrap p-3">
                         <h4 class="widget-title mb-3">Products</h4>
