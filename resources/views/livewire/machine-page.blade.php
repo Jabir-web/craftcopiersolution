@@ -61,7 +61,7 @@
                     
                             <!-- Pagination Links -->
                             <div class="col-12 text-center mt-4">
-                                {{ $machines->links() }}  <!-- Pagination links, ensure this is inside your Livewire component -->
+                                {{ $machines->links() }} <!-- Pagination links -->
                             </div>
                             
                         @else
