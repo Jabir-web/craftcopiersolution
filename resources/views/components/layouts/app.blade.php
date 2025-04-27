@@ -205,8 +205,6 @@
                                     <li><a href="{{ route('homepage') }}">Home</a></li>
                                     <li><a href="{{ route('aboutpage') }}">About us</a></li>
                                     <li><a href="/contact">Services</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Blogs</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
