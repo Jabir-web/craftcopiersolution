@@ -29,12 +29,21 @@
                                 <div class="col-12 mb-4">
                                     <div class="card shadow-sm border-0 h-100">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa;">
+                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa; position: relative;">
+                                                <!-- Image -->
                                                 <img src="{{ url('storage/' . $machine->image) }}" 
                                                      alt="{{ $machine->name }}" 
                                                      class="img-fluid p-3"
                                                      style="max-height: 250px; object-fit: contain;">
+                                                
+                                                <!-- Overlay Text -->
+                                                <div class="overlay-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; font-weight: bold;">
+                                                    <p style="font-size: 1.2rem;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="font-size: 1rem;">+92 339 0027031</p>
+                                                    <p style="font-size: 1rem;">*92 328 2499598</p>
+                                                </div>
                                             </div>
+                                            
                                             <div class="col-md-8 d-flex flex-column justify-content-center p-4">
                                                 <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
                                                 <p class="card-text" style="color: #555;">{{ \Illuminate\Support\Str::limit($machine->short_description, 500, '...') }}</p>
