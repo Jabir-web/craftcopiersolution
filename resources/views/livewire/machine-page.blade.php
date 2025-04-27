@@ -23,27 +23,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 posts-list">
-                    <div class="row mt-4">
-                        @if($machines)
+                    <div class="row mt-5">
+                        @if($machines && count($machines) > 0)
                             @foreach($machines as $machine)
-                                <div class="col-lg-12 col-md-12 mb-4 bg-white p-3">
-                                    <div class=" row">
-                                        <img class="col-md-4" src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}">
-                                        <div class=" col-md-8 d-flex flex-column justify-content-center ">
-                                            <h3 class="card-title">{{ $machine->name }}</h3>
-                                            <p class="card-text">{{ \Illuminate\Support\Str::limit($machine->short_description, 320, '...') }}</p>
-                                            <div>
-                                                <a href="{{ $machine->brochure_link }}" class="btn btn-primary">Brochure</a>
-                                                <a href="{{ $machine->driver_link }}" class="btn btn-secondary">Driver</a>
+                                <div class="col-12 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}" class="img-fluid rounded-start" style="height: 100%; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+                                                <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
+                                                <p class="card-text" style="color: #555;">{{ \Illuminate\Support\Str::limit($machine->short_description, 300, '...') }}</p>
+                                                <div class="mt-3">
+                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-primary me-2" target="_blank">View Brochure</a>
+                                                    <a href="{{ $machine->driver_link }}" class="btn btn-outline-secondary" target="_blank">Download Driver</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
                         @else
-                            <p>No machines found.</p>
+                            <div class="col-12">
+                                <div class="alert alert-warning text-center" role="alert">
+                                    No machines found.
+                                </div>
+                            </div>
                         @endif
                     </div>
+                    
                 </div>
                 <div class="col-lg-4 sidebar-widgets">
                     <div class="widget-wrap p-3">
