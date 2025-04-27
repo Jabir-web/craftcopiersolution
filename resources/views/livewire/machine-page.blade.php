@@ -36,12 +36,19 @@
                                                      class="img-fluid p-3"
                                                      style="max-height: 250px; object-fit: contain; border-radius: 10px;">
                                                 
-                                                <!-- Text directly on the image -->
-                                                <div class="text-overlay" style="position: absolute; bottom: 10px; left: 10px; color: white; font-weight: bold; 
-                                                                                font-size: 1rem; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                                    <p style="margin: 0;">CRAFT COPIER SOLUTION</p>
-                                                    <p style="margin: 0;">+92 339 0027031</p>
-                                                    <p style="margin: 0;">*92 328 2499598</p>
+                                                <!-- Text overlay with Machine name, Company, and Contact -->
+                                                <div class="text-overlay" style="position: absolute; bottom: 15px; left: 15px; color: white; font-weight: bold; 
+                                                                                font-size: 1rem; background-color: rgba(0, 0, 0, 0.5); padding: 10px 15px; 
+                                                                                border-radius: 10px; width: calc(100% - 30px); box-sizing: border-box;">
+                                                    <!-- Machine Name -->
+                                                    <h3 class="card-title mb-3" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 5px;">
+                                                        {{ $machine->name }}
+                                                    </h3>
+                                                    
+                                                    <!-- Company Name and Contact Numbers -->
+                                                    <p style="margin: 0; font-size: 1rem;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="margin: 0; font-size: 1rem;">+92 339 0027031</p>
+                                                    <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
                                                 </div>
                                             </div>
                                             
