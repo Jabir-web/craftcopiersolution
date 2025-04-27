@@ -29,8 +29,11 @@
                                 <div class="col-12 mb-4">
                                     <div class="card shadow-sm border-0 h-100">
                                         <div class="row g-0">
-                                            <div class="col-md-4">
-                                                <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}" class="img-fluid rounded-start" style="height: 100%; object-fit: cover;">
+                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa;">
+                                                <img src="{{ url('storage/' . $machine->image) }}" 
+                                                     alt="{{ $machine->name }}" 
+                                                     class="img-fluid p-3"
+                                                     style="max-height: 250px; object-fit: contain;">
                                             </div>
                                             <div class="col-md-8 d-flex flex-column justify-content-center p-4">
                                                 <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
