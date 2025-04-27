@@ -41,7 +41,8 @@
                                                                                  background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
                                                                                  font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
                                                     <!-- Company Name -->
-                                                    <p style="font-size: 1.5rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="font-size: 1.2rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
+
                                                     
                                                     <!-- Contact Numbers -->
                                                     <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
