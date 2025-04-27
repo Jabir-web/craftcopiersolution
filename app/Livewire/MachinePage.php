@@ -5,10 +5,12 @@ namespace App\Livewire;
 use App\Models\Machine;
 use App\Models\Product;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class MachinePage extends Component
 {
-    public $machines;
+    use WithPagination; // Use the WithPagination trait for pagination support
+
     public $product_id;
     public $products = [];
     public $productsingle;
@@ -22,21 +24,17 @@ class MachinePage extends Component
         $this->product_id = $product_id;
         $this->loadProducts();
 
-        // Load machines for the specified product_id if it's passed
+        // If product_id is provided, load machines based on product_id, else load all machines
         if ($product_id) {
-            $this->machines = Machine::where('product_id', $product_id)->paginate($this->perPage);
-        } else {
-            // Default to showing all machines if no product_id is set
-            $this->machines = Machine::paginate($this->perPage);
+            $this->productsingle = Product::find($product_id);
         }
-
-        $this->productsingle = Product::find($product_id);
     }
 
     public function updatedSelectedProduct($productId)
     {
         // Update the machines when a new product is selected, using pagination
-        $this->machines = Machine::where('product_id', $productId)->paginate($this->perPage);
+        $this->product_id = $productId;
+        $this->resetPage(); // Reset pagination when the product is changed
     }
 
     public function loadProducts()
@@ -46,6 +44,11 @@ class MachinePage extends Component
 
     public function render()
     {
-        return view('livewire.machine-page');
+        // If a product_id is set, load the machines for that product, else load all machines
+        $machines = $this->product_id
+            ? Machine::where('product_id', $this->product_id)->paginate($this->perPage)
+            : Machine::paginate($this->perPage);
+
+        return view('livewire.machine-page', compact('machines'));
     }
 }
