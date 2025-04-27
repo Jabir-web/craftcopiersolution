@@ -29,18 +29,20 @@
                                 <div class="col-12 mb-4">
                                     <div class="card shadow-sm border-0 h-100">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa; position: relative;">
+                                            <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: #f8f9fa; position: relative; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                                                 <!-- Image -->
                                                 <img src="{{ url('storage/' . $machine->image) }}" 
                                                      alt="{{ $machine->name }}" 
                                                      class="img-fluid p-3"
-                                                     style="max-height: 250px; object-fit: contain;">
+                                                     style="max-height: 250px; object-fit: contain; border-radius: 10px;">
                                                 
-                                                <!-- Overlay Text -->
-                                                <div class="overlay-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; font-weight: bold;">
-                                                    <p style="font-size: 1.2rem;">CRAFT COPIER SOLUTION</p>
-                                                    <p style="font-size: 1rem;">+92 339 0027031</p>
-                                                    <p style="font-size: 1rem;">*92 328 2499598</p>
+                                                <!-- Watermark Overlay -->
+                                                <div class="overlay-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                                                                background: rgba(0, 0, 0, 0.5); color: white; padding: 10px 20px; border-radius: 10px; 
+                                                                                text-align: center; font-weight: bold; opacity: 0.7; width: 100%;">
+                                                    <p style="font-size: 1.2rem; margin: 0;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="font-size: 1rem; margin: 0;">+92 339 0027031</p>
+                                                    <p style="font-size: 1rem; margin: 0;">*92 328 2499598</p>
                                                 </div>
                                             </div>
                                             
