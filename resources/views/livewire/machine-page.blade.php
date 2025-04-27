@@ -36,13 +36,12 @@
                                                      class="img-fluid p-3"
                                                      style="max-height: 250px; object-fit: contain; border-radius: 10px;">
                                                 
-                                                <!-- Watermark Overlay -->
-                                                <div class="overlay-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
-                                                                                background: rgba(0, 0, 0, 0.5); color: white; padding: 10px 20px; border-radius: 10px; 
-                                                                                text-align: center; font-weight: bold; opacity: 0.7; width: 100%;">
-                                                    <p style="font-size: 1.2rem; margin: 0;">CRAFT COPIER SOLUTION</p>
-                                                    <p style="font-size: 1rem; margin: 0;">+92 339 0027031</p>
-                                                    <p style="font-size: 1rem; margin: 0;">*92 328 2499598</p>
+                                                <!-- Text directly on the image -->
+                                                <div class="text-overlay" style="position: absolute; bottom: 10px; left: 10px; color: white; font-weight: bold; 
+                                                                                font-size: 1rem; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                                    <p style="margin: 0;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="margin: 0;">+92 339 0027031</p>
+                                                    <p style="margin: 0;">*92 328 2499598</p>
                                                 </div>
                                             </div>
                                             
