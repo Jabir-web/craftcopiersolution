@@ -50,7 +50,7 @@
                                                 <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
                                                 <p class="card-text" style="color: #555;">{{ \Illuminate\Support\Str::limit($machine->short_description, 500, '...') }}</p>
                                                 <div class="mt-3">
-                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-primary me-2" target="_blank">View Brochure</a>
+                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">View Brochure</a>
                                                     <a href="{{ $machine->driver_link }}" class="btn btn-outline-secondary" target="_blank">Download Driver</a>
                                                 </div>
                                             </div>
