@@ -38,13 +38,9 @@
                                                 
                                                 <!-- Text overlay (Company Name and Contact Info) -->
                                                 <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
-                                                                                 background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
-                                                                                 font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
-                                                    <!-- Company Name -->
+                                                                                background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
+                                                                                font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
                                                     <p style="font-size: 1.2rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
-
-                                                    
-                                                    <!-- Contact Numbers -->
                                                     <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
                                                     <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
                                                 </div>
@@ -62,6 +58,12 @@
                                     </div>
                                 </div>
                             @endforeach
+                    
+                            <!-- Pagination Links -->
+                            <div class="col-12 text-center mt-4">
+                                {{ $machines->links() }}  <!-- Pagination links -->
+                            </div>
+                            
                         @else
                             <div class="col-12">
                                 <div class="alert alert-warning text-center" role="alert">
@@ -70,6 +72,7 @@
                             </div>
                         @endif
                     </div>
+                    
                     
                 </div>
                 <div class="col-lg-4 sidebar-widgets">
