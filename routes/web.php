@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-// for home page route
+// for home page routes
 Route::get('/',HomePage::class)->name('homepage');
 Route::get('/aboutus',AboutPage::class)->name('aboutpage');
 Route::get('/contact',ContactPage::class)->name('contactpage');
