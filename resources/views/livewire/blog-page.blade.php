@@ -1,27 +1,19 @@
 <div>
 	<!-- start banner Area -->
-	<section class="banner-area relative text-center">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row fullscreen align-items-center justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<h6 class="text-white d-none d-md-block">Insights, Tips, and Solutions for All Your Printing Needs
-					</h6>
-					<h1 class="text-white">Welcome to Craft Copier Solutions Blog</h1>
-					<p class="text-white d-none d-md-block">
-						Explore expert articles, maintenance tips, troubleshooting guides, and the latest updates in the
-						world of printers.
-						Stay informed and keep your office running smoothly with advice from the professionals at Craft
-						Copier Solution.
-					</p>
-					<div class="mt-4">
-						<a href="{{ route('contactpage') }}" wire:navigate
-							class="primary-btn text-uppercase d-inline-block">Get a Free Consultation.</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section class="about-banner relative">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        About Us
+                    </h1>
+                    <p class="text-white link-nav"><a href="{{ route('homepage') }}">Home </a> <span
+                            class="lnr lnr-arrow-right"></span> <a href="about.html"> About Us</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 	<!-- End banner Area -->
