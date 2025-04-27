@@ -35,16 +35,18 @@
                                                      alt="{{ $machine->name }}" 
                                                      class="img-fluid p-3"
                                                      style="max-height: 250px; object-fit: contain; border-radius: 10px;">
-                                            </div>
-                                            
-                                            <!-- Company Name and Contact Numbers Below the Image -->
-                                            <div class="company-info" style="padding: 15px; background-color: #0F172A; color: white; border-radius: 10px; text-align: center; margin-top: 10px;">
-                                                <!-- Company Name -->
-                                                <p style="font-size: 1.5rem; font-weight: bold; margin: 0; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
                                                 
-                                                <!-- Contact Numbers -->
-                                                <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
-                                                <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
+                                                <!-- Text overlay (Company Name and Contact Info) -->
+                                                <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
+                                                                                 background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
+                                                                                 font-size: 1rem; padding: 10px 15px; border-radius: 0 0 10px 10px;">
+                                                    <!-- Company Name -->
+                                                    <p style="font-size: 1.5rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
+                                                    
+                                                    <!-- Contact Numbers -->
+                                                    <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
+                                                    <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
+                                                </div>
                                             </div>
                                             
                                             <div class="col-md-8 d-flex flex-column justify-content-center p-4">
