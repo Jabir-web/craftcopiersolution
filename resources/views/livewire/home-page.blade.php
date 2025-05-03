@@ -65,15 +65,26 @@
                         <div class="single-destination relative">
                             <div class="thumb relative">
                                 <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{ asset('front/img/web/imageimage.jpg') }}" alt="kyocera-machine">
+                
+                                @if ($loop->iteration == 1)
+                                    <img class="img-fluid" src="{{ asset('front/img/web/imageimage.jpg') }}" alt="{{ $product->name }}">
+                                @elseif ($loop->iteration == 2)
+                                    <img class="img-fluid" src="{{ asset('front/img/web/kyocera-machine.jpg') }}" alt="{{ $product->name }}">
+                                @elseif ($loop->iteration == 3)
+                                    <img class="img-fluid" src="{{ asset('front/img/web/printer-head.jpg') }}" alt="{{ $product->name }}">
+                                @else
+                                    <img class="img-fluid" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
+                                @endif
                             </div>
+                
                             <div class="desc">
                                 <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="price-btn">{{ $product->name }} MACHINES</a>
                                 <h4>{{ $product->name }}</h4>
                             </div>
                         </div>
                     </div>
-                    @endforeach
+                @endforeach
+                
                  
                     {{-- <div class="col-lg-4">
                         <div class="single-destination relative">
