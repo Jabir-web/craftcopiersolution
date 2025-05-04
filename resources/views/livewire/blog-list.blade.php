@@ -28,7 +28,11 @@
                             <a href="{{ route('blogpage', ['title' => $blog->title]) }}">
                                 <h4 class="title">{{ $blog->title }}</h4>
                             </a>
-                
+                            <div class="blog-description mt-4"
+                            style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
+                        {{  $blog->description }}
+                        </div>
+
                             <h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
                         </div>
                     </div>
