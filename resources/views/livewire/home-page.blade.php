@@ -67,13 +67,13 @@
                                 <div class="overlay overlay-bg"></div>
                 
                                 @if ($loop->iteration == 1)
-                                    <img class="img-fluid" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
+                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
                                 @elseif ($loop->iteration == 2)
-                                    <img class="img-fluid" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}">
+                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}">
                                 @elseif ($loop->iteration == 3)
-                                    <img class="img-fluid" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}">
+                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}">
                                 @else
-                                    <img class="img-fluid" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
+                                    <img  loading="lazy"class="img-fluid" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
                                 @endif
                             </div>
                 
