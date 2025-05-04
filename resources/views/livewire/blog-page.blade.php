@@ -92,7 +92,7 @@
 							<h1 class="mb-3" style="font-weight: 800; font-size: 2.5rem; color: #1e293b; line-height: 1.2;">
 								{{ $blog->title }}</h1>
 
-							<img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
+							<img loading="lazy" src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
 								class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
 
 							<div class="d-flex flex-wrap justify-content-start mb-4"

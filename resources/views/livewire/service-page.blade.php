@@ -29,7 +29,7 @@
                         <div class="col-lg-12 col-md-12 mb-4 bg-white p-4">
                             <div class=" row">
 
-                                <img src="{{ url('storage/' . $machine->img) }}" alt="{{ $machine->decription }}" class="img-fluid fixed-image">
+                                <img loading="lazy" src="{{ url('storage/' . $machine->img) }}" alt="{{ $machine->decription }}" class="img-fluid fixed-image">
 
                                 <div class=" col-md-12 d-flex flex-column justify-content-center ">
                                     {{-- <h1 class="card-title">{{ $machine->name }}</h1> --}}
