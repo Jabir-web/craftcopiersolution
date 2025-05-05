@@ -50,68 +50,109 @@
     
         <!-- Start popular-destination Area -->
         <section class="popular-destination-area section-gap">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="menu-content pb-70 col-lg-8">
-                        <div class="title text-center">
-                            <h2 class="mb-10">Our Best Machines</h2>
-                            <p>We import upgraded models of KONICA MINOLTA, RICOH , KYOCERA , and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top class working condition.</p>
-                        </div>
+        
+            <style>
+                .product-card {
+                    border-radius: 16px;
+                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    background-color: #ffffff;
+                    border: none;
+                }
+            
+                .product-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+                }
+            
+                .product-image {
+                    width: 100%;
+                    height: 230px;
+                    overflow: hidden;
+                }
+            
+                .product-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.4s ease;
+                }
+            
+                .product-card:hover .product-image img {
+                    transform: scale(1.05);
+                }
+            
+                .product-body {
+                    padding: 20px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                }
+            
+                .product-body h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    color: #0F172A;
+                }
+            
+                .product-link {
+                    background: #42A5F5;
+                    color: #ffffff;
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    display: inline-block;
+                    transition: background 0.3s ease;
+                }
+            
+                .product-link:hover {
+                    background: #0F172A;
+                }
+            </style>
+            
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-3">Our Best Machines</h2>
+                        <p class="text-muted">We import upgraded models of KONICA MINOLTA, RICOH, KYOCERA, and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top-class working condition.</p>
                     </div>
                 </div>
-                <div class="row">
+            
+                <div class="row g-4">
                     @foreach ($products as $product)
-                    <div class="col-lg-4">
-                        <div class="single-destination relative">
-                            <div class="thumb relative">
-                                <div class="overlay overlay-bg"></div>
-                
-                                @if ($loop->iteration == 1)
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
-                                @elseif ($loop->iteration == 2)
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}">
-                                @elseif ($loop->iteration == 3)
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}">
-                                @else
-                                    <img  loading="lazy"class="img-fluid" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
-                                @endif
-                            </div>
-                
-                            <div class="desc">
-                                <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="price-btn">{{ $product->name }} MACHINES</a>
-                                <h4>{{ $product->name }}</h4>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-                
-                 
-                    {{-- <div class="col-lg-4">
-                        <div class="single-destination relative">
-                            <div class="thumb relative">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{ asset('front/img/web/ricoh-machine.jpg') }}" alt="">
-                            </div>
-                            <div class="desc">
-                                <a href="#" class="price-btn">RICOH MACHINES</a>
-                                <h4>RICOH</h4>
-                              
+                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+                            <div class="product-card w-100">
+                                <div class="product-image">
+                                    @if ($loop->iteration == 1)
+                                        <img loading="lazy" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
+                                    @elseif ($loop->iteration == 2)
+                                        <img loading="lazy" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}">
+                                    @elseif ($loop->iteration == 3)
+                                        <img loading="lazy" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}">
+                                    @else
+                                        <img loading="lazy" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
+                                    @endif
+                                </div>
+                                <div class="product-body">
+                                    <h4>{{ $product->name }}</h4>
+                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="product-link">
+                                        {{ $product->name }} MACHINES
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-destination relative">
-                            <div class="thumb relative">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{ asset('front/img/web/konica-minolta-machine.jpg') }}" alt="">
-                            </div>
-                            <div class="desc">
-                                <a href="#" class="price-btn">KONICA MINOLTA MACHINE</a>
-                                <h4>KONICA MINOLTA</h4>
-                            </div>
-                        </div>
-                    </div> --}}
+                    @endforeach
                 </div>
+            </div>
+            
             </div>
         </section>
         <!-- End popular-destination Area -->
