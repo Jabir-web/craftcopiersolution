@@ -51,7 +51,6 @@
         <!-- Start popular-destination Area -->
         <section class="popular-destination-area section-gap">
             <style>
-                /* Keyframes for animated gradient border */
                 @keyframes animated-border {
                     0% {
                         background-position: 0% 50%;
@@ -65,78 +64,80 @@
                 }
             
                 .product-card {
-                    position: relative;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                    background-color: #ffffff;
-                    z-index: 1;
+                    position: relative !important;
+                    border-radius: 20px !important;
+                    overflow: hidden !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    height: 100% !important;
+                    background-color: #ffffff !important;
+                    z-index: 1 !important;
                 }
             
                 .product-card::before {
-                    content: "";
-                    position: absolute;
-                    top: -2px;
-                    left: -2px;
-                    right: -2px;
-                    bottom: -2px;
-                    background: linear-gradient(270deg, #42A5F5, #0F172A, #42A5F5);
-                    background-size: 600% 600%;
-                    z-index: -1;
-                    animation: animated-border 10s ease infinite;
-                    border-radius: 22px;
+                    content: "" !important;
+                    position: absolute !important;
+                    top: -2px !important;
+                    left: -2px !important;
+                    right: -2px !important;
+                    bottom: -2px !important;
+                    background: linear-gradient(270deg, #42A5F5, #0F172A, #42A5F5) !important;
+                    background-size: 600% 600% !important;
+                    z-index: -1 !important;
+                    animation: animated-border 10s ease infinite !important;
+                    border-radius: 22px !important;
+                    pointer-events: none !important;
                 }
             
                 .product-image {
-                    width: 100%;
-                    height: 230px;
-                    overflow: hidden;
+                    width: 100% !important;
+                    height: 230px !important;
+                    overflow: hidden !important;
                 }
             
                 .product-image img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: transform 0.4s ease;
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                    transition: transform 0.4s ease !important;
                 }
             
                 .product-card:hover .product-image img {
-                    transform: scale(1.05);
+                    transform: scale(1.05) !important;
                 }
             
                 .product-body {
-                    padding: 25px;
-                    text-align: center;
-                    position: relative;
-                    z-index: 1;
-                    background: white;
-                    border-radius: 0 0 20px 20px;
+                    padding: 25px !important;
+                    text-align: center !important;
+                    position: relative !important;
+                    z-index: 1 !important;
+                    background: white !important;
+                    border-radius: 0 0 20px 20px !important;
                 }
             
                 .product-body h4 {
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin-bottom: 15px;
-                    color: #0F172A;
+                    font-size: 20px !important;
+                    font-weight: 600 !important;
+                    margin-bottom: 15px !important;
+                    color: #0F172A !important;
                 }
             
                 .product-link {
-                    background: #42A5F5;
-                    color: #ffffff;
-                    padding: 10px 20px;
-                    border-radius: 25px;
-                    text-decoration: none;
-                    font-weight: 500;
-                    display: inline-block;
-                    transition: background 0.3s ease;
+                    background: #42A5F5 !important;
+                    color: #ffffff !important;
+                    padding: 10px 20px !important;
+                    border-radius: 25px !important;
+                    text-decoration: none !important;
+                    font-weight: 500 !important;
+                    display: inline-block !important;
+                    transition: background 0.3s ease !important;
                 }
             
                 .product-link:hover {
-                    background: #0F172A;
+                    background: #0F172A !important;
                 }
             </style>
+            
             
             <div class="container py-5">
                 <div class="row justify-content-center mb-5">
