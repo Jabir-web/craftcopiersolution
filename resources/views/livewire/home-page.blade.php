@@ -51,21 +51,42 @@
         <!-- Start popular-destination Area -->
         <section class="popular-destination-area section-gap">
             <style>
+                /* Keyframes for animated gradient border */
+                @keyframes animated-border {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+            
                 .product-card {
-                    border-radius: 16px;
-                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    border-radius: 20px;
                     overflow: hidden;
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
                     display: flex;
                     flex-direction: column;
                     height: 100%;
                     background-color: #ffffff;
-                    position: relative;
+                    z-index: 1;
                 }
             
-                .product-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+                .product-card::before {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    background: linear-gradient(270deg, #42A5F5, #0F172A, #42A5F5);
+                    background-size: 600% 600%;
+                    z-index: -1;
+                    animation: animated-border 10s ease infinite;
+                    border-radius: 22px;
                 }
             
                 .product-image {
@@ -87,32 +108,11 @@
             
                 .product-body {
                     padding: 25px;
-                    flex-grow: 1;
                     text-align: center;
                     position: relative;
-                    overflow: hidden;
-                    background-color: #fff;
-                }
-            
-                .product-body::before {
-                    content: "Craft Copier";
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 60px;
-                    font-weight: 800;
-                    color: #0F172A;
-                    opacity: 0.05;
-                    white-space: nowrap;
-                    pointer-events: none;
-                    z-index: 0;
-                }
-            
-                .product-body h4,
-                .product-body a {
-                    position: relative;
                     z-index: 1;
+                    background: white;
+                    border-radius: 0 0 20px 20px;
                 }
             
                 .product-body h4 {
