@@ -15,7 +15,7 @@
                     @foreach($blogs as $blog)
                         <div class="single-recent-blog-post item">
                             <div class="thumb">
-                                <img width="100%" height="500px" src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
+                                <img  src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
                                     class="img-fluid fixed-image">
                             </div>
                             <div class="details">
