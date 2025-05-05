@@ -2,100 +2,102 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{{-- #### Favicon #### --}}
-<link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
+    {{-- #### Favicon #### --}}
+    <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
 
-{{-- #### Title SEO Tag #### --}}
-<title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
+    {{-- #### Title SEO Tag #### --}}
+    <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
 
-{{-- ==================== FOR SEO TAGS ===================== --}}
+    {{-- ==================== FOR SEO TAGS ===================== --}}
 
-<!-- Meta Description -->
-<meta name="description" content="@yield('description', 'Affordable copier rental and repair services in Karachi. We specialize in Kyocera printers. Fast support and expert service available!')">
+    <!-- Meta Description -->
+    <meta name="description" content="@yield('description', 'Discover how printing technology has evolved from the 1970s to 2025. Learn about key milestones like dot matrix, laser, inkjet, 3D printing, and AI-powered devices. Explore the future of smart, sustainable printing!')">
 
-<!-- Meta Keywords -->
-<meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
 
-<!-- Robots Meta Tag -->
-<meta name="robots" content="index, follow">
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
 
-<!-- Author -->
-<meta name="author" content="Craft Copier Solution">
+    <!-- Author -->
+    <meta name="author" content="Craft Copier Solution">
 
-<!-- Open Graph for Social Media -->
-<meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
-<meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
-<meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-<meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Craft Copier Solution">
-<meta property="og:locale" content="en_US">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
+    <meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
+    <meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+    <meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Craft Copier Solution">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
-<meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
-<meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-<meta name="twitter:site" content="@yourtwitterhandle">
-<meta name="twitter:creator" content="@yourtwitterhandle">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
+    <meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
 
-<!-- Canonical Tag -->
-<link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
 
-{{-- ==================== END SEO TAGS ===================== --}}
+    {{-- ==================== END SEO TAGS ===================== --}}
 
-{{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://craftcopiersolutions.com",
-  "name": "Craft Copier Solution",
-  "logo": "https://craftcopiersolutions.com/logo.png",
-  "sameAs": [
-    "https://www.facebook.com/craftcopiersolutions",
-    "https://twitter.com/yourtwitterhandle",
-    "https://www.linkedin.com/company/craftcopiersolutions",
-    "https://www.instagram.com/craftcopiersolutions"  <!-- Add Instagram -->
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+92-21-1234567",
-    "contactType": "Customer Service",
-    "areaServed": "PK",
-    "availableLanguage": "en"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 Copier St",
-    "addressLocality": "Karachi",
-    "addressRegion": "Sindh",
-    "postalCode": "74600",
-    "addressCountry": "Pakistan"
-  }
-}
-</script>
-
-{{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
+    {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://craftcopiersolutions.com",
+      "name": "Craft Copier Solution",
+      "logo": "https://craftcopiersolutions.com/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/craftcopiersolutions",
+        "https://twitter.com/yourtwitterhandle",
+        "https://www.linkedin.com/company/craftcopiersolutions",
+        "https://www.instagram.com/craftcopiersolutions"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-21-1234567",
+        "contactType": "Customer Service",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Copier St",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "74600",
+        "addressCountry": "Pakistan"
+      }
     }
-    gtag('js', new Date());
+    </script>
 
-    gtag('config', 'G-89Q28SH00Z');
-</script>
+    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-{{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-89Q28SH00Z');
+    </script>
+
+    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+</head>
+
 
 
 
