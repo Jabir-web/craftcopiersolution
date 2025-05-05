@@ -60,7 +60,7 @@
                     flex-direction: column;
                     height: 100%;
                     background-color: #ffffff;
-                    border: none;
+                    position: relative;
                 }
             
                 .product-card:hover {
@@ -86,12 +86,33 @@
                 }
             
                 .product-body {
-                    padding: 20px;
+                    padding: 25px;
                     flex-grow: 1;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
                     text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    background-color: #fff;
+                }
+            
+                .product-body::before {
+                    content: "Craft Copier";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 60px;
+                    font-weight: 800;
+                    color: #0F172A;
+                    opacity: 0.05;
+                    white-space: nowrap;
+                    pointer-events: none;
+                    z-index: 0;
+                }
+            
+                .product-body h4,
+                .product-body a {
+                    position: relative;
+                    z-index: 1;
                 }
             
                 .product-body h4 {
