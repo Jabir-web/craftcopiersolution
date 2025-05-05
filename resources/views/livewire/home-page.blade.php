@@ -52,68 +52,83 @@
         <section class="popular-destination-area section-gap">
             <style>
                 .product-card {
-                    border: 1px solid #e0e0e0;
-                    border-radius: 10px;
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-                    transition: all 0.3s ease;
-                    height: 100%;
+                    border-radius: 16px;
+                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
                     display: flex;
                     flex-direction: column;
-                    overflow: hidden;
+                    height: 100%;
+                    background-color: #ffffff;
+                    border: none;
                 }
             
                 .product-card:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+                    transform: translateY(-8px);
+                    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+                }
+            
+                .product-image {
+                    width: 100%;
+                    height: 230px;
+                    overflow: hidden;
                 }
             
                 .product-image img {
                     width: 100%;
-                    height: 230px;
+                    height: 100%;
                     object-fit: cover;
-                    border-bottom: 1px solid #ddd;
+                    transition: transform 0.4s ease;
                 }
             
-                .product-info {
+                .product-card:hover .product-image img {
+                    transform: scale(1.05);
+                }
+            
+                .product-body {
                     padding: 20px;
                     flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     text-align: center;
                 }
             
-                .product-info h4 {
+                .product-body h4 {
+                    font-size: 20px;
                     font-weight: 600;
-                    font-size: 18px;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                     color: #0F172A;
                 }
             
-                .product-info a {
+                .product-link {
                     background: #42A5F5;
-                    color: white;
-                    padding: 8px 16px;
-                    border-radius: 30px;
-                    font-size: 14px;
+                    color: #ffffff;
+                    padding: 10px 20px;
+                    border-radius: 25px;
                     text-decoration: none;
-                    transition: 0.3s;
+                    font-weight: 500;
+                    display: inline-block;
+                    transition: background 0.3s ease;
                 }
             
-                .product-info a:hover {
+                .product-link:hover {
                     background: #0F172A;
                 }
             </style>
             
             <div class="container py-5">
-                <div class="row justify-content-center mb-4">
+                <div class="row justify-content-center mb-5">
                     <div class="col-lg-8 text-center">
                         <h2 class="mb-3">Our Best Machines</h2>
-                        <p>We import upgraded models of KONICA MINOLTA, RICOH, KYOCERA, and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top-class working condition.</p>
+                        <p class="text-muted">We import upgraded models of KONICA MINOLTA, RICOH, KYOCERA, and XEROX. Each photocopier machine is fully inspected so when you take delivery you can be sure the copier is in top-class working condition.</p>
                     </div>
                 </div>
             
                 <div class="row g-4">
                     @foreach ($products as $product)
-                        <div class="col-md-6 col-lg-4 d-flex">
-                            <div class="product-card">
+                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+                            <div class="product-card w-100">
                                 <div class="product-image">
                                     @if ($loop->iteration == 1)
                                         <img loading="lazy" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
@@ -125,9 +140,9 @@
                                         <img loading="lazy" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
                                     @endif
                                 </div>
-                                <div class="product-info">
+                                <div class="product-body">
                                     <h4>{{ $product->name }}</h4>
-                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}">
+                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="product-link">
                                         {{ $product->name }} MACHINES
                                     </a>
                                 </div>
