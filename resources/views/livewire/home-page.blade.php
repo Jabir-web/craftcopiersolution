@@ -59,6 +59,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="row g-4">
                     @foreach ($products as $product)
                         <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
@@ -125,7 +126,72 @@
             </div>
         </section>
         <!-- End home-about Area -->
-    
+        <style>
+            .product-card {
+                border-radius: 16px;
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                background-color: #ffffff;
+                border: none;
+            }
+        
+            .product-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 25px 35px rgba(0, 0, 0, 0.15);
+            }
+        
+            .product-image {
+                width: 100%;
+                height: 230px;
+                overflow: hidden;
+            }
+        
+            .product-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+        
+            .product-card:hover .product-image img {
+                transform: scale(1.05);
+            }
+        
+            .product-body {
+                padding: 20px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+            }
+        
+            .product-body h4 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                color: #0F172A;
+            }
+        
+            .product-link {
+                background: #42A5F5;
+                color: #ffffff;
+                padding: 10px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: 500;
+                display: inline-block;
+                transition: background 0.3s ease;
+            }
+        
+            .product-link:hover {
+                background: #0F172A;
+            }
+        </style>
     
         <!-- Start blog Area -->
         @livewire('blog-list')
