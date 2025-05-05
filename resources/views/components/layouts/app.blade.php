@@ -243,20 +243,20 @@
     
     <!-- End footer Area -->
 
-    <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}"></script>
-    <script src="{{ asset('front/js/popper.min.js') }}"></script>
-    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}"></script>
-    {{-- <script src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA') }}"></script> --}}
-    <script src="{{ asset('front/js/jquery-ui.js') }}"></script>
-    <script src="{{ asset('front/js/easing.min.js') }}"></script>
-    <script src="{{ asset('front/js/hoverIntent.js') }}"></script>
-    <script src="{{ asset('front/js/superfish.min.js') }}"></script>
-    <script src="{{ asset('front/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('front/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('front/js/mail-script.js') }}"></script>
-    <script src="{{ asset('front/js/main.js') }}"></script>
+    <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/popper.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/jquery-ui.js') }}" defer></script>
+    <script src="{{ asset('front/js/easing.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/hoverIntent.js') }}" defer></script>
+    <script src="{{ asset('front/js/superfish.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/jquery.ajaxchimp.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/jquery.nice-select.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/owl.carousel.min.js') }}" defer></script>
+    <script src="{{ asset('front/js/mail-script.js') }}" defer></script>
+    <script src="{{ asset('front/js/main.js') }}" defer></script>
+    
 
     @livewireScripts
 </body>
