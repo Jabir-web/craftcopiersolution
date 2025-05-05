@@ -232,10 +232,11 @@
                     Copyright © 2015-2025 Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"><i class="fa fa-youtube"></i></a>
+                    
                 </div>
             </div>
         </div>
