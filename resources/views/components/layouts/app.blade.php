@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {{-- #### Favicon #### --}}
-    <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
-
-    {{-- #### Title SEO Tag #### --}}
-    <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
-
-    {{-- ==================== FOR SEO TAGS ===================== --}}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta Description -->
-    <meta name="description" content="@yield('description', 'Explore the evolution of printing technology from 1970s to 2025. Discover key milestones and the future of smart, sustainable printing.')">
+        {{-- #### Favicon #### --}}
+        <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
     
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
+        {{-- #### Title SEO Tag #### --}}
+        <title>@yield('title', 'Copier Rental & Kyocera Photocopier Dealer Karachi | Craft Copier Solutions')</title>
     
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow">
+        {{-- ==================== FOR SEO TAGS ===================== --}}
     
-    <!-- Author -->
-    <meta name="author" content="Craft Copier Solution">
+        <!-- Meta Description -->
+        <meta name="description" content="@yield('description', 'Explore the evolution of printing technology from 1970s to 2025. Discover key milestones and the future of smart, sustainable printing.')">
     
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
-    <meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
-    <meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-    <meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Craft Copier Solution">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+        <!-- Meta Keywords -->
+        <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
-    <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
-    <meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-    <meta name="twitter:site" content="@yourtwitterhandle">
-    <meta name="twitter:creator" content="@yourtwitterhandle">
+        <!-- Robots Meta Tag -->
+        <meta name="robots" content="index, follow">
     
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+        <!-- Author -->
+        <meta name="author" content="Craft Copier Solution">
     
-    {{-- ==================== END SEO TAGS ===================== --}}
+        <!-- Open Graph for Social Media -->
+        <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
+        <meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
+        <meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+        <meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Craft Copier Solution">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
     
-    {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "url": "https://craftcopiersolutions.com",
-        "name": "Craft Copier Solution",
-        "logo": "https://craftcopiersolutions.com/logo.png",
-        "sameAs": [
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
+        <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
+        <meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+        <meta name="twitter:site" content="@yourtwitterhandle">
+        <meta name="twitter:creator" content="@yourtwitterhandle">
+    
+        <!-- Canonical Tag -->
+        <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+    
+        {{-- ==================== END SEO TAGS ===================== --}}
+    
+        {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "url": "https://craftcopiersolutions.com",
+          "name": "Craft Copier Solution",
+          "logo": "https://craftcopiersolutions.com/logo.png",
+          "sameAs": [
             "https://www.facebook.com/craftcopiersolutions",
             "https://twitter.com/yourtwitterhandle",
             "https://www.linkedin.com/company/craftcopiersolutions",
             "https://www.instagram.com/craftcopiersolutions"
-        ],
-        "contactPoint": {
+          ],
+          "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+92-21-1234567",
             "contactType": "Customer Service",
             "areaServed": "PK",
             "availableLanguage": "en"
-        },
-        "address": {
+          },
+          "address": {
             "@type": "PostalAddress",
             "streetAddress": "123 Copier St",
             "addressLocality": "Karachi",
             "addressRegion": "Sindh",
             "postalCode": "74600",
             "addressCountry": "Pakistan"
+          }
         }
-    }
-    </script>
+        </script>
     
-    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-89Q28SH00Z');
-    </script>
+        {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-89Q28SH00Z');
+        </script>
     
-    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+        {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+    </head>
+    
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+        CSS
+        ============================================= -->
+    <link rel="stylesheet" href="{{ asset('front/css/linearicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/mai.css') }}">
+
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZKQ" async></script>
+    @livewireStyles
 </head>
 
 <body>
@@ -132,6 +154,7 @@
                             </a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -220,20 +243,22 @@
     
     <!-- End footer Area -->
 
-    <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}" async></script>
-    <script src="{{ asset('front/js/popper.min.js') }}" async></script>
-    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/jquery-ui.js') }}" defer></script>
-    <script src="{{ asset('front/js/easing.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/hoverIntent.js') }}" defer></script>
-    <script src="{{ asset('front/js/superfish.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/jquery.ajaxchimp.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/jquery.nice-select.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/owl.carousel.min.js') }}" defer></script>
-    <script src="{{ asset('front/js/mail-script.js') }}" defer></script>
-    <script src="{{ asset('front/js/main.js') }}" defer></script>
+    <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}"></script>
+    <script src="{{ asset('front/js/popper.min.js') }}"></script>
+    <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}"></script>
+    {{-- <script src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA') }}"></script> --}}
+    <script src="{{ asset('front/js/jquery-ui.js') }}"></script>
+    <script src="{{ asset('front/js/easing.min.js') }}"></script>
+    <script src="{{ asset('front/js/hoverIntent.js') }}"></script>
+    <script src="{{ asset('front/js/superfish.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('front/js/mail-script.js') }}"></script>
+    <script src="{{ asset('front/js/main.js') }}"></script>
 
     @livewireScripts
 </body>
-</html>
+
+</html> 
