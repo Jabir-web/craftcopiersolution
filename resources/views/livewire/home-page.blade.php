@@ -178,7 +178,7 @@
             }
         
             .product-link {
-                background: #42A5F5;
+                background: #ffc107!important;
                 color: #ffffff;
                 padding: 10px 20px;
                 border-radius: 25px;
