@@ -48,48 +48,50 @@
     
         {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
         <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Organization",
-          "url": "https://craftcopiersolutions.com",
-          "name": "Craft Copier Solution",
-          "logo": "https://craftcopiersolutions.com/logo.png",
-          "sameAs": [
-            "https://www.facebook.com/craftcopiersolutions",
-            "https://twitter.com/yourtwitterhandle",
-            "https://www.linkedin.com/company/craftcopiersolutions",
-            "https://www.instagram.com/craftcopiersolutions"
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+92-21-1234567",
-            "contactType": "Customer Service",
-            "areaServed": "PK",
-            "availableLanguage": "en"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123 Copier St",
-            "addressLocality": "Karachi",
-            "addressRegion": "Sindh",
-            "postalCode": "74600",
-            "addressCountry": "Pakistan"
-          }
-        }
-        </script>
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://craftcopiersolutions.com",
+              "name": "Craft Copier Solution",
+              "logo": "https://craftcopiersolutions.com/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/craftcopiersolutions",
+                "https://twitter.com/yourtwitterhandle",
+                "https://www.linkedin.com/company/craftcopiersolutions",
+                "https://www.instagram.com/craftcopiersolutions"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+92-21-1234567",
+                "contactType": "Customer Service",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Copier St",
+                "addressLocality": "Karachi",
+                "addressRegion": "Sindh",
+                "postalCode": "74600",
+                "addressCountry": "Pakistan"
+              }
+            }
+            </script>
+            
     
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-89Q28SH00Z');
-        </script>
-    
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-89Q28SH00Z');
+</script>
+
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
     </head>
     
