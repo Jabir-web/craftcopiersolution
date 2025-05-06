@@ -201,7 +201,7 @@
 								
 								/* Blog title styling */
 								.title {
-									font-size: 1.2rem;
+									font-size: 10px;
 									font-weight: bold;
 									color: #333;
 									margin-bottom: 10px;
