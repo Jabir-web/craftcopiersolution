@@ -3,49 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    
         {{-- #### Favicon #### --}}
         <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
-    
-        <!-- Title SEO Tag -->
-        <title>@yield('title', 'Craft Copier Solutions | Copier Rental & Kyocera Photocopier Dealer Karachi')</title>
-    
-        <!-- Meta Description -->
-        <meta name="description" content="@yield('description', 'Explore the evolution of printing technology from 1970s to 2025. Discover key milestones and the future of smart, sustainable printing.')">
-    
-        <!-- Meta Keywords -->
-        <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
-    
-        <!-- Robots Meta Tag -->
-        <meta name="robots" content="index, follow">
-    
-        <!-- Author -->
-        <meta name="author" content="Craft Copier Solution">
-    
-        <!-- Open Graph for Social Media -->
-        <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
-        <meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
-        <meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-        <meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Craft Copier Solution">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-    
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
-        <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
-        <meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
-        <meta name="twitter:site" content="@yourtwitterhandle">
-        <meta name="twitter:creator" content="@yourtwitterhandle">
-    
-        <!-- Canonical Tag (Fix Canonicalization Issues) -->
-        <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+  <!-- Title SEO Tag -->
+<title>@yield('title', 'Craft Copier Solutions | Copier Rental & Kyocera Photocopier Dealer Karachi')</title>
+
+<!-- Meta Description -->
+<meta name="description" content="@yield('description', 'Explore the evolution of printing technology from 1970s to 2025. Discover key milestones and the future of smart, sustainable printing.')">
+
+<!-- Meta Keywords -->
+<meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
+
+<!-- Robots Meta Tag -->
+<meta name="robots" content="index, follow">
+
+<!-- Author -->
+<meta name="author" content="Craft Copier Solution">
+
+<!-- Open Graph for Social Media -->
+<meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
+<meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
+<meta property="og:image" content="@yield('og_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+<meta property="og:url" content="@yield('og_url', 'https://craftcopiersolutions.com')">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Craft Copier Solution">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
+<meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
+<meta name="twitter:image" content="@yield('twitter_image', 'https://craftcopiersolutions.com/images/printer-repair.jpg')">
+<meta name="twitter:site" content="@yourtwitterhandle">
+<meta name="twitter:creator" content="@yourtwitterhandle">
+
+<!-- Canonical Tag -->
+<link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
+
     
         {{-- ==================== END SEO TAGS ===================== --}}
-        
+    
         {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
         <script type="application/ld+json">
             {
@@ -76,55 +76,24 @@
                 "addressCountry": "Pakistan"
               }
             }
-        </script>
-        
+            </script>
+            
+    
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-89Q28SH00Z');
-        </script>
-    
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-89Q28SH00Z');
+</script>
+
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
-    
-        {{-- ==================== PERFORMANCE AND SECURITY OPTIMIZATIONS ===================== --}}
-    
-        <!-- Minify JavaScript Files (Ensure minified files are served) -->
-        <script src="{{ asset('js/main.min.js') }}" defer></script> <!-- Minified JS for better loading -->
-    
-        <!-- Inline CSS moved to external stylesheet (performance boost) -->
-        <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}" />
-    
-        <!-- Serve images in modern format (WebP for supported browsers) -->
-        <picture>
-            <source srcset="https://craftcopiersolutions.com/images/printer-repair.webp" type="image/webp">
-            <img src="https://craftcopiersolutions.com/images/printer-repair.jpg" alt="Printer Repair" />
-        </picture>
-    
-        <!-- Add Strict-Transport-Security header (Ensure HTTPS security) -->
-        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    
-        <!-- Security: Add "rel=noreferrer noopener" to links with target="_blank" -->
-        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">External Link</a>
-    
-      
-        {{-- ==================== PERFORMANCE AND SECURITY OPTIMIZATIONS END ===================== --}}
-    
-        {{-- ######################### CACHING HEADERS FOR PAGE SPEED ########################## --}}
-        <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable"> <!-- Caching to improve page load speed -->
-    
-        <!-- Preconnect to external domains for faster resource loading -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://www.googletagmanager.com">
-        <link rel="preconnect" href="https://www.google-analytics.com">
-    
     </head>
-    
     
 
 
