@@ -158,19 +158,79 @@
 							<div class="popular-post-list">
 								@foreach($blogs as $blog)
 								<div class="single-recent-blog-post item">
-									
-									<div class="details">
-										
-		
-										<a href="{{ route('blogpage', ['title' => $blog->title]) }}">
-											<h4 class="title">{{ $blog->title }}</h4>
+									<div class="blog-item-wrapper">
+										<a href="{{ route('blogpage', ['title' => $blog->title]) }}" class="blog-link">
+											<div class="details">
+												<h4 class="title">{{ $blog->title }}</h4>
+												<h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
+											</div>
 										</a>
-								
-										<h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
 									</div>
 								</div>
-							@endforeach
+								@endforeach
 							</div>
+<style>/* Container for the popular posts list */
+	.popular-post-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: space-between;
+	}
+	
+	/* Each single blog post wrapper */
+	.single-recent-blog-post {
+		flex: 1 1 calc(33.33% - 20px); /* Three columns layout with spacing */
+		background-color: #fff;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease-in-out;
+		padding: 20px;
+	}
+	
+	/* Hover effect for blog post items */
+	.single-recent-blog-post:hover {
+		transform: translateY(-5px); /* Lift up on hover */
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+	}
+	
+	/* Details section */
+	.details {
+		text-align: center;
+	}
+	
+	/* Blog title styling */
+	.title {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #333;
+		margin-bottom: 10px;
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+	
+	.title:hover {
+		color: #007BFF; /* Color on hover */
+	}
+	
+	/* Blog date styling */
+	.date {
+		font-size: 0.9rem;
+		color: #888;
+		margin-bottom: 15px;
+	}
+	
+	/* Add media query for responsiveness (single column on smaller screens) */
+	@media (max-width: 768px) {
+		.single-recent-blog-post {
+			flex: 1 1 100%; /* Full width on mobile */
+		}
+	}
+	
+	.blog-link {
+		text-decoration: none; /* Remove underline from link */
+	}
+	</style>							
 						</div>
 				
 						<!-- Ads Widget -->
