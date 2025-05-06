@@ -184,7 +184,7 @@
 									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 									transition: all 0.3s ease-in-out;
 									padding: 20px;
-									text-align: center;
+									text-align: left;
 									margin-bottom: 20px;
 								}
 								
@@ -201,9 +201,9 @@
 								
 								/* Blog title styling */
 								.title {
-									font-size: 10px;
+									font-size: 16px;
 									font-weight: bold;
-									color: #333;
+									color: #000000;
 									margin-bottom: 10px;
 									transition: color 0.3s ease;
 									text-decoration: none;
