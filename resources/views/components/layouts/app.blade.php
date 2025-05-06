@@ -100,11 +100,7 @@
         <!-- Inline CSS moved to external stylesheet (performance boost) -->
         <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}" />
     
-        <!-- Serve images in modern format (WebP for supported browsers) -->
-        <picture>
-            <source srcset="https://craftcopiersolutions.com/images/printer-repair.webp" type="image/webp">
-            <img src="https://craftcopiersolutions.com/images/printer-repair.jpg" alt="Printer Repair" />
-        </picture>
+      
     
         <!-- Add Strict-Transport-Security header (Ensure HTTPS security) -->
         <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
