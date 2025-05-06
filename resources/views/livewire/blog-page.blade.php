@@ -156,11 +156,33 @@
 						<div class="single-sidebar-widget popular-post-widget mb-4 p-4 bg-white shadow rounded">
 							<h4 class="mb-3" style="font-weight: 700;">Popular Posts</h4>
 							<div class="popular-post-list">
-								@foreach($blogs as $blogItem)
-									<div class="single-post-list mb-3 pb-2 border-bottom">
-										<h6 class="mb-0" style="font-size: 1rem;">{{ $blogItem->title }}</h6>
+								@foreach($blogs as $blog)
+								<div class="single-recent-blog-post item">
+									<div class="thumb">
+										<img  src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
+											class="img-fluid fixed-image">
 									</div>
-								@endforeach
+									<div class="details">
+										<div class="tags">
+											<ul>
+												<li>
+													<a href="">{{ $blog->category }}</a>
+												</li>
+											</ul>
+										</div>
+		
+										<a href="{{ route('blogpage', ['title' => $blog->title]) }}">
+											<h4 class="title">{{ $blog->title }}</h4>
+										</a>
+										{{-- <div class="blog-description mt-4"
+											style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
+											{{  $blog->description }}
+										</div> --}}
+		
+										<h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
+									</div>
+								</div>
+							@endforeach
 							</div>
 						</div>
 				
