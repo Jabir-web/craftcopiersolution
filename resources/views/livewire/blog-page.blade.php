@@ -183,7 +183,7 @@
 									border-radius: 8px;
 									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 									transition: all 0.3s ease-in-out;
-									padding: 20px;
+									padding: 20px 15px;
 									text-align: left;
 									margin-bottom: 20px;
 								}
