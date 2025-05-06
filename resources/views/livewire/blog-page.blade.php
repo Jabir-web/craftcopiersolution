@@ -171,8 +171,8 @@
 								.popular-post-list {
 									display: flex;
 									justify-content: space-between; /* Space between each blog title */
-									gap: 20px;
-									flex-wrap: wrap;
+									gap: 10px;
+								
 									padding: 20px 0;
 								}
 								
