@@ -202,9 +202,10 @@
 								/* Blog title styling */
 								.title {
 									font-size: 16px;
-									font-weight: bold;
+								
 									color: #000000;
 									margin-bottom: 10px;
+							font-family: Arial, Helvetica, sans-serif
 									transition: color 0.3s ease;
 									text-decoration: none;
 								}
