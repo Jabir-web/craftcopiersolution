@@ -167,7 +167,76 @@
 								</div>
 								@endforeach
 							</div>
-							
+							<style>/* Container for the popular posts list */
+								.popular-post-list {
+									display: flex;
+									justify-content: space-between; /* Space between each blog title */
+									gap: 20px;
+									flex-wrap: wrap;
+									padding: 20px 0;
+								}
+								
+								/* Each single blog post wrapper */
+								.single-recent-blog-post {
+									flex: 1 1 calc(20% - 20px); /* 5 blog posts per row with space in between */
+									background-color: #fff;
+									border-radius: 8px;
+									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+									transition: all 0.3s ease-in-out;
+									padding: 20px;
+									text-align: center;
+									margin-bottom: 20px;
+								}
+								
+								/* Hover effect for blog post items */
+								.single-recent-blog-post:hover {
+									transform: translateY(-5px); /* Lift effect */
+									box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+								}
+								
+								/* Details section */
+								.details {
+									padding: 10px;
+								}
+								
+								/* Blog title styling */
+								.title {
+									font-size: 1.2rem;
+									font-weight: bold;
+									color: #333;
+									margin-bottom: 10px;
+									transition: color 0.3s ease;
+									text-decoration: none;
+								}
+								
+								.title:hover {
+									color: #007BFF; /* Color on hover */
+								}
+								
+								/* Blog date styling */
+								.date {
+									font-size: 0.9rem;
+									color: #888;
+								}
+								
+								/* Add media query for responsiveness (single column on smaller screens) */
+								@media (max-width: 1024px) {
+									.single-recent-blog-post {
+										flex: 1 1 calc(33.33% - 20px); /* Three columns on medium screens */
+									}
+								}
+								
+								@media (max-width: 768px) {
+									.single-recent-blog-post {
+										flex: 1 1 100%; /* Full width on mobile */
+									}
+								}
+								
+								/* Remove underline from links */
+								.blog-link {
+									text-decoration: none;
+								}
+								</style>
 						</div>
 				
 						<!-- Ads Widget -->
