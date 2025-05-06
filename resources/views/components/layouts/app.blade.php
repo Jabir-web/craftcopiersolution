@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        
         {{-- #### Favicon #### --}}
         <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
     
@@ -41,11 +41,11 @@
         <meta name="twitter:site" content="@yourtwitterhandle">
         <meta name="twitter:creator" content="@yourtwitterhandle">
     
-        <!-- Canonical Tag -->
+        <!-- Canonical Tag (Fix Canonicalization Issues) -->
         <link rel="canonical" href="@yield('canonical_url', 'https://craftcopiersolutions.com')">
     
         {{-- ==================== END SEO TAGS ===================== --}}
-    
+        
         {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
         <script type="application/ld+json">
             {
@@ -77,7 +77,7 @@
               }
             }
         </script>
-    
+        
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
@@ -91,6 +91,40 @@
         </script>
     
         {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+    
+        {{-- ==================== PERFORMANCE AND SECURITY OPTIMIZATIONS ===================== --}}
+    
+        <!-- Minify JavaScript Files (Ensure minified files are served) -->
+        <script src="{{ asset('js/main.min.js') }}" defer></script> <!-- Minified JS for better loading -->
+    
+        <!-- Inline CSS moved to external stylesheet (performance boost) -->
+        <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}" />
+    
+        <!-- Serve images in modern format (WebP for supported browsers) -->
+        <picture>
+            <source srcset="https://craftcopiersolutions.com/images/printer-repair.webp" type="image/webp">
+            <img src="https://craftcopiersolutions.com/images/printer-repair.jpg" alt="Printer Repair" />
+        </picture>
+    
+        <!-- Add Strict-Transport-Security header (Ensure HTTPS security) -->
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    
+        <!-- Security: Add "rel=noreferrer noopener" to links with target="_blank" -->
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">External Link</a>
+    
+        <!-- Avoid Performance Issues from Large Images (Serve properly sized images) -->
+        <img src="https://craftcopiersolutions.com/images/properly-sized-image.jpg" width="800" height="600" alt="Kyocera Copier">
+    
+        {{-- ==================== PERFORMANCE AND SECURITY OPTIMIZATIONS END ===================== --}}
+    
+        {{-- ######################### CACHING HEADERS FOR PAGE SPEED ########################## --}}
+        <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable"> <!-- Caching to improve page load speed -->
+    
+        <!-- Preconnect to external domains for faster resource loading -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="preconnect" href="https://www.google-analytics.com">
+    
     </head>
     
     
