@@ -87,40 +87,50 @@
 				<div class="col-lg-8 posts-list">
 					@if ($blog)
 						{{-- Single blog view --}}
-						<div class="single-blog-container p-5 shadow rounded bg-white"
+						<article class="single-blog-container p-4 shadow-lg rounded bg-white"
 							style="border: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif;">
-							<h1 class="mb-3" style="font-weight: 800; font-size: 2.5rem; color: #1e293b; line-height: 1.2;">
-								{{ $blog->title }}</h1>
-
-							<img loading="lazy" src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}"
-								class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%;">
-
+							
+							<header>
+								<h1 class="mb-3 text-primary" style="font-weight: 800; font-size: 2.75rem; color: #1e293b; line-height: 1.3;">
+									{{ $blog->title }}</h1>
+							</header>
+				
+							<!-- Responsive Image with SEO-friendly alt -->
+							<figure class="mb-4">
+								<img loading="lazy" src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }} - Blog Image"
+									class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%; height: auto;">
+							</figure>
+				
+							<!-- Meta Information with Improved Visual Design -->
 							<div class="d-flex flex-wrap justify-content-start mb-4"
-								style="gap: 20px; font-size: 0.95rem; color: #64748b;">
-								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong>
-									{{ $blog->category }}</p>
+								style="gap: 20px; font-size: 1rem; color: #64748b;">
+								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong> 
+									<span>{{ $blog->category }}</span></p>
 								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
-									{{ $blog->created_at->format('d M, Y') }}</p>
-
+									<span>{{ $blog->created_at->format('d M, Y') }}</span></p>
 							</div>
-
-							<div class="blog-description mt-4"
-								style="line-height: 1.8; color: #475569; font-size: 1.05rem;">
+				
+							<!-- Blog Content Section -->
+							<section class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.1rem;">
 								{!! $blog->description !!}
-							</div>
-
+							</section>
+				
+							<!-- Back Button -->
 							<div class="mt-5 text-center">
 								<a href="{{ url()->previous() }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2"
 									style="font-weight: 600; letter-spacing: 1px;">Back</a>
 							</div>
-						</div>
+						</article>
+				
 					@else
+						<!-- Error Message for Missing Blog -->
 						<div class="alert alert-danger mt-4 p-4 text-center rounded shadow"
 							style="font-family: 'Poppins', sans-serif;">
 							Blog not found.
 						</div>
 					@endif
 				</div>
+				
 
 				<div class="col-lg-4 sidebar-widgets">
 					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
