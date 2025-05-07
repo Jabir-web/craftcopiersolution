@@ -268,19 +268,7 @@
 							</ul>
 						</div>
 				
-						<!-- Tag Cloud Widget -->
-						<div class="single-sidebar-widget tag-cloud-widget p-4 bg-white shadow rounded">
-							<h4 class="mb-3" style="font-weight: 700;">Tag Clouds</h4>
-							<ul class="d-flex flex-wrap gap-2 list-unstyled">
-								<li><a href="#" class="badge bg-primary text-white p-2">Technology</a></li>
-								<li><a href="#" class="badge bg-success text-white p-2">Fashion</a></li>
-								<li><a href="#" class="badge bg-warning text-white p-2">Architecture</a></li>
-								<li><a href="#" class="badge bg-danger text-white p-2">Food</a></li>
-								<li><a href="#" class="badge bg-info text-white p-2">Lifestyle</a></li>
-								<li><a href="#" class="badge bg-secondary text-white p-2">Art</a></li>
-								<li><a href="#" class="badge bg-primary text-white p-2">Adventure</a></li>
-							</ul>
-						</div>
+						
 				
 					</div>
 				</div>
