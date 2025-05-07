@@ -102,13 +102,38 @@
 							</figure>
 				
 							<!-- Meta Information with Improved Visual Design -->
-							<div class="d-flex flex-wrap justify-content-start mb-4"
-								style="gap: 20px; font-size: 1rem; color: #64748b;">
-								<p class="mb-0 btn btn-primary"><i class="fas fa-folder-open"></i> <strong>Category:</strong> 
+							<div class="d-flex flex-wrap justify-content-start mb-4" style="gap: 20px; font-size: 1rem; color: #64748b;">
+								<p class="mb-0 btn-style"><i class="fas fa-folder-open"></i> <strong>Category:</strong> 
 									<span>{{ $blog->category }}</span></p>
-								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
+								<p class="mb-0 btn-style"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
 									<span>{{ $blog->created_at->format('d M, Y') }}</span></p>
 							</div>
+<style>
+	/* Make the paragraphs look like buttons */
+.btn-style {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #007bff;  /* Border color */
+    border-radius: 25px;  /* Rounded edges */
+    background-color: #007bff;  /* Button background color */
+    color: #fff;  /* Text color */
+    font-size: 1rem;  /* Font size */
+    text-decoration: none;  /* Remove text underline */
+    transition: background-color 0.3s ease;  /* Smooth background transition */
+}
+
+/* Hover effect to simulate button hover (not necessary but can be added for styling) */
+.btn-style:hover {
+    background-color: #0056b3;  /* Darker background when hovered */
+    border-color: #0056b3;  /* Darker border on hover */
+}
+
+/* Optionally, you can add spacing between the icons and text */
+.btn-style i {
+    margin-right: 8px;
+}
+</style>							
 				
 							<!-- Blog Content Section -->
 							<section class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.1rem;">
