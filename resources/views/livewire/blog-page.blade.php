@@ -166,88 +166,87 @@
 						<div class="single-sidebar-widget popular-post-widget mb-4 p-4 bg-white shadow rounded">
 							<h4 class="mb-3" style="font-weight: 700;">Popular Posts</h4>
 							<div class="popular-post-list">
-								@foreach($blogs as $blog)
-								<div class="single-recent-blog-post item">
-									<a href="{{ route('blogpage', ['title' => $blog->title]) }}" class="blog-link">
-										<div class="details">
-											<h4 class="title">{{ $blog->title }}</h4>
-											<h6 class="date">{{ $blog->created_at->format('F j, Y') }}</h6>
-										</div>
-									</a>
-								</div>
-								@endforeach
+								
 							</div>
-							<style>/* Container for the popular posts list */
-								.popular-post-list {
-									display: flex;
-									justify-content: space-between; /* Space between each blog title */
-									gap: 20px;
-									flex-wrap: wrap;
-									padding: 20px 0;
-								}
-								
-								/* Each single blog post wrapper */
-								.single-recent-blog-post {
-									flex: 1 1 calc(20% - 20px); /* 5 blog posts per row with space in between */
-									background-color: #fff;
-									border-radius: 8px;
-									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-									transition: all 0.3s ease-in-out;
-									padding: 20px 15px;
-									text-align: left;
-									margin-bottom: 20px;
-								}
-								
-								/* Hover effect for blog post items */
-								.single-recent-blog-post:hover {
-									transform: translateY(-5px); /* Lift effect */
-									box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-								}
-								
-								/* Details section */
-								.details {
-									padding: 10px;
-								}
-								
-								/* Blog title styling */
-								.title {
-									font-size: 16px;
-								
-									color: #000000;
-									margin-bottom: 10px;
-							font-family: Arial, Helvetica, sans-serif
-									transition: color 0.3s ease;
-									text-decoration: none;
-								}
-								
-								.title:hover {
-									color: #007BFF; /* Color on hover */
-								}
-								
-								/* Blog date styling */
-								.date {
-									font-size: 0.9rem;
-									color: #888;
-								}
-								
-								/* Add media query for responsiveness (single column on smaller screens) */
-								@media (max-width: 1024px) {
-									.single-recent-blog-post {
-										flex: 1 1 calc(33.33% - 20px); /* Three columns on medium screens */
-									}
-								}
-								
-								@media (max-width: 768px) {
-									.single-recent-blog-post {
-										flex: 1 1 100%; /* Full width on mobile */
-									}
-								}
-								
-								/* Remove underline from links */
-								.blog-link {
-									text-decoration: none;
-								}
-								</style>
+							@foreach($blogs as $blog)
+    <div class="single-recent-blog-post item">
+        <a href="{{ route('blogpage', ['title' => $blog->title]) }}" class="blog-link">
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <!-- Optional: You can add a thumbnail or image here -->
+                    <img src="{{ asset('path/to/your/image.jpg') }}" alt="{{ $blog->title }}" class="img-fluid">
+                </div>
+                <div class="blog-card-details">
+                    <h4 class="blog-title">{{ $blog->title }}</h4>
+                    <h6 class="blog-date">{{ $blog->created_at->format('F j, Y') }}</h6>
+                    <p class="blog-excerpt">
+                        {{ Str::limit($blog->content, 100) }} <!-- Display a short excerpt -->
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+@endforeach
+<style>/* General blog container styles */
+	.single-recent-blog-post {
+		margin-bottom: 30px;
+		transition: all 0.3s ease;
+	}
+	
+	/* Blog card layout */
+	.blog-card {
+		border: 1px solid #f0f0f0;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	/* Hover effect */
+	.blog-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+	
+	/* Image styles */
+	.blog-card-image img {
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid #f0f0f0;
+	}
+	
+	/* Blog text details */
+	.blog-card-details {
+		padding: 20px;
+	}
+	
+	.blog-title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #333;
+		margin-bottom: 10px;
+	}
+	
+	.blog-date {
+		font-size: 0.875rem;
+		color: #888;
+		margin-bottom: 15px;
+	}
+	
+	.blog-excerpt {
+		font-size: 1rem;
+		color: #666;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	
+	/* Optional: Add a link style for blog page */
+	.blog-link {
+		text-decoration: none;
+		color: inherit;
+	}
+	</style>
 						</div>
 				
 						<!-- Ads Widget -->
