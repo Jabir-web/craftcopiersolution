@@ -174,7 +174,7 @@
             <div class="blog-card">
                 <div class="blog-card-image">
                     <!-- Optional: You can add a thumbnail or image here -->
-                    <img src="{{ asset('path/to/your/image.jpg') }}" alt="{{ $blog->title }}" class="img-fluid">
+                    <img src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }}" class="img-fluid">
                 </div>
                 <div class="blog-card-details">
                     <h4 class="blog-title">{{ $blog->title }}</h4>
