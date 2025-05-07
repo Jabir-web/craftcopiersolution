@@ -228,9 +228,9 @@
     display: inline-flex;
     align-items: center;
     padding: 8px 15px;
-    border: 1px solid #000000;  /* Border color */
+
     border-radius: 25px;  /* Rounded edges */
-    background-color: #1eb300;  /* Button background color */
+    background-color: #02d602;  /* Button background color */
     color: #fff;  /* Text color */
     font-size: 1rem;  /* Font size */
     text-decoration: none;  /* Remove text underline */
@@ -239,8 +239,8 @@
 
 /* Hover effect to simulate button hover (not necessary but can be added for styling) */
 .btn-style:hover {
-    background-color: #1eb300;  /* Darker background when hovered */
-    border-color: #000000;  /* Darker border on hover */
+    background-color: #02d602;  /* Darker background when hovered */
+
 }
 
 /* Optionally, you can add spacing between the icons and text */
