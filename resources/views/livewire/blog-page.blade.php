@@ -112,9 +112,16 @@
 						
 				
 							<!-- Blog Content Section -->
-							<section class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.1rem;">
-								{!! $blog->description !!}
-							</section>
+							<section class="blog-description mt-4" 
+         style="line-height: 1.8; color: #475569; font-size: 1.1rem; 
+                background-color: #f4f8fb; 
+                padding: 20px; 
+                border-radius: 8px; 
+                font-family: 'Arial', sans-serif; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    {!! $blog->description !!}
+</section>
+
 				
 							<!-- Back Button -->
 							<div class="mt-5 text-center">
