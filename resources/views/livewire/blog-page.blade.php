@@ -113,7 +113,7 @@
 				
 							<!-- Blog Content Section -->
 							<section class="blog-description mt-4" 
-         style="line-height: 1.8; color: #2d333b; font-size: 1.1rem; 
+         style="line-height: 1.8; color: #465263; font-size: 1.1rem; 
                 background-color: #f4f8fb; 
                 padding: 20px; 
                 border-radius: 8px; 
