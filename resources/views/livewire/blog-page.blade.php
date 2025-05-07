@@ -91,14 +91,14 @@
 							style="border: 1px solid #e2e8f0; font-family: 'Poppins', sans-serif;">
 							
 							<header>
-								<h1 class="mb-3 text-primary" style="font-weight: 800; font-size: 2.75rem; color: #1e293b; line-height: 1.3;">
+								<h1 class="mb-3 text-primary" style="font-weight: 800; font-size: 1.75rem; color: #02d602; line-height: 1.3;">
 									{{ $blog->title }}</h1>
 							</header>
 				
 							<!-- Responsive Image with SEO-friendly alt -->
 							<figure class="mb-4">
 								<img loading="lazy" src="{{ url('storage/' . $blog->img) }}" alt="{{ $blog->title }} - Blog Image"
-									class="img-fluid rounded mb-4" style="max-height: 450px; object-fit: cover; width: 100%; height: auto;">
+									class="img-fluid rounded mb-4" style="max-height: 100%; object-fit: cover; width: 100%; height: auto;">
 							</figure>
 				
 							<!-- Meta Information with Improved Visual Design -->
