@@ -104,7 +104,7 @@
 							<!-- Meta Information with Improved Visual Design -->
 							<div class="d-flex flex-wrap justify-content-start mb-4"
 								style="gap: 20px; font-size: 1rem; color: #64748b;">
-								<p class="mb-0"><i class="fas fa-folder-open"></i> <strong>Category:</strong> 
+								<p class="mb-0 btn btn-primary"><i class="fas fa-folder-open"></i> <strong>Category:</strong> 
 									<span>{{ $blog->category }}</span></p>
 								<p class="mb-0"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
 									<span>{{ $blog->created_at->format('d M, Y') }}</span></p>
