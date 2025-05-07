@@ -108,32 +108,7 @@
 								<p class="mb-0 btn-style"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
 									<span>{{ $blog->created_at->format('d M, Y') }}</span></p>
 							</div>
-<style>
-	/* Make the paragraphs look like buttons */
-.btn-style {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 15px;
-    border: 1px solid #007bff;  /* Border color */
-    border-radius: 25px;  /* Rounded edges */
-    background-color: #007bff;  /* Button background color */
-    color: #fff;  /* Text color */
-    font-size: 1rem;  /* Font size */
-    text-decoration: none;  /* Remove text underline */
-    transition: background-color 0.3s ease;  /* Smooth background transition */
-}
-
-/* Hover effect to simulate button hover (not necessary but can be added for styling) */
-.btn-style:hover {
-    background-color: #0056b3;  /* Darker background when hovered */
-    border-color: #0056b3;  /* Darker border on hover */
-}
-
-/* Optionally, you can add spacing between the icons and text */
-.btn-style i {
-    margin-right: 8px;
-}
-</style>							
+						
 				
 							<!-- Blog Content Section -->
 							<section class="blog-description mt-4" style="line-height: 1.8; color: #475569; font-size: 1.1rem;">
@@ -212,8 +187,66 @@
         </a>
     </div>
 @endforeach
-<style>/* General blog container styles */
-	.single-recent-blog-post {
+
+						</div>
+				
+						<!-- Ads Widget -->
+						{{-- <div class="single-sidebar-widget ads-widget mb-4">
+							<a href="#"><img class="img-fluid rounded shadow" src="img/blog/ads-banner.jpg" alt="Ad Banner"></a>
+						</div> --}}
+				
+						<!-- Post Categories Widget -->
+						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Post Categories</h4>
+							<ul class="cat-list list-unstyled">
+								@foreach($blogs as $blogItem)
+									<li class="mb-2">
+										<a href="#" class="d-flex justify-content-between text-decoration-none text-dark">
+											<p class="mb-0">{{ $blogItem->category }}</p>
+										</a>
+									</li>
+								@endforeach
+							</ul>
+						</div>
+				
+						
+				
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End post-content Area -->
+
+
+
+	<style>
+			/* Make the paragraphs look like buttons */
+.btn-style {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #000000;  /* Border color */
+    border-radius: 25px;  /* Rounded edges */
+    background-color: #1eb300;  /* Button background color */
+    color: #fff;  /* Text color */
+    font-size: 1rem;  /* Font size */
+    text-decoration: none;  /* Remove text underline */
+    transition: background-color 0.3s ease;  /* Smooth background transition */
+}
+
+/* Hover effect to simulate button hover (not necessary but can be added for styling) */
+.btn-style:hover {
+    background-color: #1eb300;  /* Darker background when hovered */
+    border-color: #000000;  /* Darker border on hover */
+}
+
+/* Optionally, you can add spacing between the icons and text */
+.btn-style i {
+    margin-right: 8px;
+}
+.single-recent-blog-post {
 		margin-bottom: 30px;
 		transition: all 0.3s ease;
 	}
@@ -271,35 +304,6 @@
 		text-decoration: none;
 		color: inherit;
 	}
+
 	</style>
-						</div>
-				
-						<!-- Ads Widget -->
-						{{-- <div class="single-sidebar-widget ads-widget mb-4">
-							<a href="#"><img class="img-fluid rounded shadow" src="img/blog/ads-banner.jpg" alt="Ad Banner"></a>
-						</div> --}}
-				
-						<!-- Post Categories Widget -->
-						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
-							<h4 class="mb-3" style="font-weight: 700;">Post Categories</h4>
-							<ul class="cat-list list-unstyled">
-								@foreach($blogs as $blogItem)
-									<li class="mb-2">
-										<a href="#" class="d-flex justify-content-between text-decoration-none text-dark">
-											<p class="mb-0">{{ $blogItem->category }}</p>
-										</a>
-									</li>
-								@endforeach
-							</ul>
-						</div>
-				
-						
-				
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End post-content Area -->
 </div>
