@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                
+                {{-- boxes  --}}
                 <div class="row g-4">
                     @foreach ($products as $product)
                         <div class="col-sm-12 col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
