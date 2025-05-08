@@ -62,7 +62,7 @@
                 
                 <div class="row g-4">
                     @foreach ($products as $product)
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
                             <div class="product-card w-100"
                                 style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12); transition: 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
                 
@@ -93,6 +93,7 @@
                         </div>
                     @endforeach
                 </div>
+                
                 
             </div>
         </section>
