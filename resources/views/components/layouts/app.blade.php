@@ -21,6 +21,10 @@
 <!-- Author -->
 <meta name="author" content="Craft Copier Solution">
 
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 <!-- Open Graph for Social Media -->
 <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Pakistan')">
 <meta property="og:description" content="@yield('og_description', 'We provide expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
@@ -258,6 +262,14 @@
     <script src="{{ asset('front/js/mail-script.js') }}" defer></script>
     <script src="{{ asset('front/js/main.js') }}" defer></script>
     
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,  // animation duration
+        once: true      // only animate once when scrolling
+    });
+</script>
 
     @livewireScripts
 </body>
