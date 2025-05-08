@@ -126,50 +126,47 @@
         <div class="spinners"></div>
     </div>
     <header id="header">
-        <div class="header-top ">
+        <div class="header-top" data-aos="fade-down" data-aos-duration="700">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-left" data-aos="fade-right" data-aos-delay="100">
                         <ul>
                             <li><a href="#">Best Printers</a></li>
                             <li><a href="#">Printer Solutions</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-right" data-aos="fade-left" data-aos-delay="100">
                         <div class="header-social">
                             <!-- Facebook -->
                             <a href="https://www.facebook.com/craftcopiersolutions" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
-                            
                             <!-- WhatsApp -->
                             <a href="https://wa.me/+923282499598" target="_blank">
                                 <i class="fa fa-whatsapp"></i>
                             </a>
-                            
                             <!-- Instagram -->
                             <a href="https://www.instagram.com/craftcopiersolution/" target="_blank">
                                 <i class="fa fa-instagram"></i>
                             </a>
-                            
                             <!-- YouTube -->
                             <a href="https://www.youtube.com/@craftcopiersolution" target="_blank">
                                 <i class="fa fa-youtube"></i>
                             </a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <div class="container main-menu">
+    
+        <div class="container main-menu" data-aos="zoom-in" data-aos-delay="150">
             <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
+                <div id="logo" data-aos="fade-right" data-aos-delay="200">
                     <a href="{{ route('homepage') }}">
                         <h3 class="text-warning">Craft Copier Solution</h3>
                     </a>
                 </div>
-                <nav id="nav-menu-container">
+                <nav id="nav-menu-container" data-aos="fade-left" data-aos-delay="200">
                     <ul class="nav-menu">
                         <li><a wire:navigate href="{{ route('homepage') }}">Home</a></li>
                         <li><a wire:navigate href="{{ route('aboutpage') }}">About</a></li>
@@ -177,10 +174,11 @@
                         @livewire('product-dropdown')
                         <li><a wire:navigate href="/contact">Contact</a></li>
                     </ul>
-                </nav><!-- #nav-menu-container -->
+                </nav>
             </div>
         </div>
     </header>
+    
 
     {{ $slot }}
 
