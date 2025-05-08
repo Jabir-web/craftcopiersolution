@@ -85,7 +85,7 @@
                                         {{ $product->name }}
                                     </h4>
                                     <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}"
-                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s;">
+                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #ffc107, #ffb300); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s;">
                                         {{ $product->name }} MACHINES
                                     </a>
                                 </div>
