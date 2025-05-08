@@ -63,32 +63,29 @@
                 <div class="row g-4">
                     @foreach ($products as $product)
                         <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
-                            <div class="product-card w-100" 
-                                style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
-                                
-                                <div class="product-image" 
-                                    style="width: 100%; height: 220px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-                                    @if ($loop->iteration == 1)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}" 
-                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                                    @elseif ($loop->iteration == 2)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}" 
-                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                                    @elseif ($loop->iteration == 3)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}" 
-                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                                    @else
-                                        <img loading="lazy" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}" 
-                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                                    @endif
+                            <div class="product-card w-100"
+                                style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12); transition: 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+                
+                                <div class="product-image"
+                                    style="width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; background: #f9f9f9; padding: 10px;">
+                                    @php
+                                        $image = match(true) {
+                                            $loop->iteration == 1 => 'prthree.jpg',
+                                            $loop->iteration == 2 => 'prtwo.jpg',
+                                            $loop->iteration == 3 => 'prone.jpg',
+                                            default => 'default.jpg',
+                                        };
+                                    @endphp
+                                    <img loading="lazy" src="{{ asset('front/img/web/' . $image) }}" alt="{{ $product->name }}"
+                                        style="max-width: 100%; max-height: 100%; object-fit: contain;">
                                 </div>
                 
-                                <div class="product-body" 
-                                    style="padding: 20px; text-align: center;">
-                                    <h4 style="font-size: 1.5rem; color: #333; margin-bottom: 12px;">{{ $product->name }}</h4>
-                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" 
-                                        class="product-link" 
-                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+                                <div class="product-body" style="padding: 20px; text-align: center;">
+                                    <h4 style="font-size: 1.3rem; font-weight: 600; color: #222; margin-bottom: 10px;">
+                                        {{ $product->name }}
+                                    </h4>
+                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}"
+                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s;">
                                         {{ $product->name }} MACHINES
                                     </a>
                                 </div>
@@ -96,20 +93,6 @@
                         </div>
                     @endforeach
                 </div>
-                
-                <script>
-                    // Optional: You can add a little animation on hover via JS too
-                    document.querySelectorAll('.product-card').forEach(card => {
-                        card.addEventListener('mouseover', () => {
-                            card.style.transform = 'translateY(-8px)';
-                            card.style.boxShadow = '0 12px 28px rgba(0,0,0,0.15)';
-                        });
-                        card.addEventListener('mouseout', () => {
-                            card.style.transform = 'translateY(0)';
-                            card.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
-                        });
-                    });
-                </script>
                 
             </div>
         </section>
