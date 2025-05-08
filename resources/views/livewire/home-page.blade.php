@@ -63,21 +63,32 @@
                 <div class="row g-4">
                     @foreach ($products as $product)
                         <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
-                            <div class="product-card w-100">
-                                <div class="product-image">
+                            <div class="product-card w-100" 
+                                style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                
+                                <div class="product-image" 
+                                    style="width: 100%; height: 220px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
                                     @if ($loop->iteration == 1)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}">
+                                        <img loading="lazy" src="{{ asset('front/img/web/prthree.jpg') }}" alt="{{ $product->name }}" 
+                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
                                     @elseif ($loop->iteration == 2)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}">
+                                        <img loading="lazy" src="{{ asset('front/img/web/prtwo.jpg') }}" alt="{{ $product->name }}" 
+                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
                                     @elseif ($loop->iteration == 3)
-                                        <img loading="lazy" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}">
+                                        <img loading="lazy" src="{{ asset('front/img/web/prone.jpg') }}" alt="{{ $product->name }}" 
+                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
                                     @else
-                                        <img loading="lazy" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}">
+                                        <img loading="lazy" src="{{ asset('front/img/web/default.jpg') }}" alt="{{ $product->name }}" 
+                                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
                                     @endif
                                 </div>
-                                <div class="product-body">
-                                    <h4>{{ $product->name }}</h4>
-                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" class="product-link">
+                
+                                <div class="product-body" 
+                                    style="padding: 20px; text-align: center;">
+                                    <h4 style="font-size: 1.5rem; color: #333; margin-bottom: 12px;">{{ $product->name }}</h4>
+                                    <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}" 
+                                        class="product-link" 
+                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
                                         {{ $product->name }} MACHINES
                                     </a>
                                 </div>
@@ -85,6 +96,21 @@
                         </div>
                     @endforeach
                 </div>
+                
+                <script>
+                    // Optional: You can add a little animation on hover via JS too
+                    document.querySelectorAll('.product-card').forEach(card => {
+                        card.addEventListener('mouseover', () => {
+                            card.style.transform = 'translateY(-8px)';
+                            card.style.boxShadow = '0 12px 28px rgba(0,0,0,0.15)';
+                        });
+                        card.addEventListener('mouseout', () => {
+                            card.style.transform = 'translateY(0)';
+                            card.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
+                        });
+                    });
+                </script>
+                
             </div>
         </section>
         <!-- End popular-destination Area -->
