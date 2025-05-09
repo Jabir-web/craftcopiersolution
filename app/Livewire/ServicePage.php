@@ -21,9 +21,9 @@ class ServicePage extends Component
         if ($service_id) {
             $this->productsingle = Service::find($service_id);
 
-            // ✅ Redirect to named homepage route if not found
+            // ✅ Show 404 if service not found
             if (!$this->productsingle) {
-                return redirect()->route('homepage');
+                abort(404); // Laravel will automatically show your 404 page
             }
 
             $this->machines = Service::where('id', $service_id)->get();
