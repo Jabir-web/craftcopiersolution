@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Allow: /
+
+Sitemap: https://craftcopiersolutions.com/sitemap.xml
