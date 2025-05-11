@@ -9,8 +9,9 @@
   <!-- Title SEO Tag -->
 <title>@yield('title', 'Craft Copier Solutions | Copier Rental & Kyocera Photocopier Dealer Karachi')</title>
 
-<!-- Meta Description -->
-<meta name="description" content="@yield('description', 'Explore the evolution of printing technology from 1970s to 2025. Discover key milestones and the future of smart, sustainable printing.')">
+{{-- Meta description --}}
+<meta name="description" content="Top-quality copier rental & Kyocera photocopier dealer in Karachi. Fast repair, sales & office copier services. Contact us now!">
+
 
 <!-- Meta Keywords -->
 <meta name="keywords" content="@yield('keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, Kyocera dealers Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, Kyocera printer service, Karachi copier shop, best copier dealers Karachi')">
