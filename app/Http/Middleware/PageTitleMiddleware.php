@@ -31,4 +31,9 @@ class PageTitleMiddleware
         return $next($request);
         
     }
+  
+
+
+
+      
 }
