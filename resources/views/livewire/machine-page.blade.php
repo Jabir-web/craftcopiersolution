@@ -32,8 +32,9 @@
                             <div class="card shadow-sm border-0 h-100">
                                 <div class="position-relative" style="border: 1px solid #ddd; border-radius: 10px;">
                                     <!-- Image -->
-                                    <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}"
-                                         class="img-fluid" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+                                   <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}"
+     class="img-fluid"
+     style="width: 100%; height: 250px; object-fit: contain; border-radius: 10px; background-color: #f9f9f9;">
 
                                     <!-- Text overlay -->
                                     <div class="text-overlay"
