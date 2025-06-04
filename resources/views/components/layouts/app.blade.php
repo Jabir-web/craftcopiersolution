@@ -167,7 +167,7 @@
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
                     <a href="{{ route('homepage') }}">
-                        <h3 class="text-warning">Craft Copier Solutionsssss</h3>
+                        <h3 class="text-warning">Craft Copier Solution</h3>
                     </a>
                 </div>
                 <nav id="nav-menu-container">
