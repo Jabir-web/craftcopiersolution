@@ -266,9 +266,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- End footer Area -->
-
+{{-- this  --}}
     <script src="{{ asset('front/js/vendor/jquery-2.2.4.min.js') }}" defer></script>
     <script src="{{ asset('front/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('front/js/vendor/bootstrap.min.js') }}" defer></script>
