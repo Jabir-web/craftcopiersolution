@@ -28,33 +28,30 @@
                     <div class="row mt-5">
                         @if($machines && count($machines) > 0)
                             @foreach($machines as $machine)
- <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card shadow-sm border-0 h-100">
-                <div class="position-relative" style="border: 1px solid #ddd; border-radius: 10px;">
-                    <!-- Image -->
-                    <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}"
-                         class="img-fluid"
-                         style="width: 100%; height: 250px; object-fit: contain; border-radius: 10px; background-color: #f9f9f9;">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <div class="position-relative" style="border: 1px solid #ddd; border-radius: 10px;">
+                                            <!-- Image -->
+                                            <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}"
+                                                class="img-fluid"
+                                                style="width: 100%; height: 250px; object-fit: contain; border-radius: 10px; background-color: #f9f9f9;">
 
-                    <!-- Text overlay -->
-                    <div class="text-overlay"
-                         style="position: absolute; bottom: 0; left: 0; width: 100%;
-                                background-color: rgba(0, 0, 0, 0.6);
-                                color: white; font-weight: bold; font-size: 1rem;
-                                padding: 10px 15px; border-radius: 0 0 10px 10px;">
-                        <p class="mb-1" style="font-size: 1.1rem;">{{ $machine->name }}</p>
-                        <p class="mb-0" style="font-size: 0.9rem;">CRAFT COPIER SOLUTION</p>
-                    </div>
-                </div>
-                <div class="card-body text-center">
-                    <button type="button" class="btn btn-sm btn-primary mt-2"
-                            data-bs-toggle="modal" data-bs-target="#machineModal{{ $machine->id }}">
-                        View More
-                    </button>
-                </div>
-            </div>
-        </div>
-
+                                            <!-- Text overlay -->
+                                            <div class="text-overlay"
+                                                style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.6);
+                                                        color: white; font-weight: bold; font-size: 1rem; padding: 10px 15px; border-radius: 0 0 10px 10px;">
+                                                <p class="mb-1" style="font-size: 1.1rem;">{{ $machine->name }}</p>
+                                                <p class="mb-0" style="font-size: 0.9rem;">CRAFT COPIER SOLUTION</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <button type="button" class="btn btn-sm btn-primary mt-2" data-bs-toggle="modal"
+                                                data-bs-target="#machineModal{{ $machine->id }}">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal for full details -->
                                 <div class="modal fade" id="machineModal{{ $machine->id }}" tabindex="-1"
