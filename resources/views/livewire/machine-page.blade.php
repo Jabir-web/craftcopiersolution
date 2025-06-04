@@ -24,85 +24,40 @@
             <div class="row">
                 <div class="col-lg-8 posts-list">
                     <div class="row mt-5">
-                       @php
-    $limit = 30; // Number of words to show before "View More"
-@endphp
-
-@if($machines && count($machines) > 0)
-    @foreach($machines as $machine)
-        <div class="col-12 mb-4">
-            <div class="card shadow-sm border-0 h-100">
-                <div class="row g-0">
-                    <!-- Image Section -->
-                    <div class="col-md-4" style="position: relative; padding: 0; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                        <img src="{{ url('storage/' . $machine->image) }}" 
-                             alt="{{ $machine->name }}" 
-                             class="img-fluid" 
-                             style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
-                        <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
-                                background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
-                                font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
-                            <p style="font-size: 1.2rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
-                            <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
-                            <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
-                        </div>
-                    </div>
-
-                    <!-- Content Section -->
-                    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
-                        <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
-                        
-                        @php
-                            $description = $machine->short_description;
-                            $words = explode(' ', $description);
-                        @endphp
-
-                        <p class="card-text" style="color: #555;">
-                            <span class="short-desc">
-                                {{ implode(' ', array_slice($words, 0, $limit)) }}
-                                @if(count($words) > $limit)
-                                    ...
-                                @endif
-                            </span>
-                            @if(count($words) > $limit)
-                                <span class="full-desc d-none">
-                                    {{ $description }}
-                                </span>
-                                <a href="javascript:void(0);" class="toggle-desc text-primary">View More</a>
-                            @endif
-                        </p>
-
-                        <div class="mt-3">
-                            <a href="{{ $machine->brochure_link }}" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">View Brochure</a>
-                            <a href="{{ $machine->driver_link }}" class="btn btn-outline-secondary" target="_blank">Download Driver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endforeach
-@endif
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.toggle-desc').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                const shortDesc = this.closest('p').querySelector('.short-desc');
-                const fullDesc = this.closest('p').querySelector('.full-desc');
-
-                if (fullDesc.classList.contains('d-none')) {
-                    fullDesc.classList.remove('d-none');
-                    shortDesc.classList.add('d-none');
-                    this.textContent = 'View Less';
-                } else {
-                    fullDesc.classList.add('d-none');
-                    shortDesc.classList.remove('d-none');
-                    this.textContent = 'View More';
-                }
-            });
-        });
-    });
-</script>
-
+                        @if($machines && count($machines) > 0)
+                            @foreach($machines as $machine)
+                                <div class="col-12 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <div class="row g-0">
+                                            <div class="col-md-4" style="position: relative; padding: 0; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                                                <!-- Image -->
+                                                <img src="{{ url('storage/' . $machine->image) }}" 
+                                                     alt="{{ $machine->name }}" 
+                                                     class="img-fluid" 
+                                                     style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+                                                
+                                                <!-- Text overlay (Company Name and Contact Info) -->
+                                                <div class="text-overlay" style="position: absolute; bottom: 0; left: 0; width: 100%; 
+                                                                                    background-color: rgba(0, 0, 0, 0.6); color: white; font-weight: bold; 
+                                                                                    font-size: 1rem; padding: 15px 20px; border-radius: 0 0 10px 10px;">
+                                                    <p style="font-size: 1.2rem; margin: 0; font-weight: bold; letter-spacing: 1px;">CRAFT COPIER SOLUTION</p>
+                                                    <p style="margin: 5px 0; font-size: 1rem;">+92 339 0027031</p>
+                                                    <p style="margin: 0; font-size: 1rem;">*92 328 2499598</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+                                                <h3 class="card-title mb-3" style="font-size: 1.8rem;">{{ $machine->name }}</h3>
+                                                <p class="card-text" style="color: #555;">{{ \Illuminate\Support\Str::limit($machine->short_description, 500, '...') }}</p>
+                                                <div class="mt-3">
+                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">View Brochure</a>
+                                                    <a href="{{ $machine->driver_link }}" class="btn btn-outline-secondary" target="_blank">Download Driver</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                 
                             <!-- Pagination Links -->
                             <div class="col-12 text-center mt-4">
