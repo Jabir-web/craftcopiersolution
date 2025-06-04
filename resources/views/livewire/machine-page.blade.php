@@ -54,18 +54,20 @@
                         </div>
 
                         <!-- Modal for full details -->
-                     <div class="modal fade" id="machineModal{{ $machine->id }}" tabindex="-1"
+                   <div class="modal fade" id="machineModal{{ $machine->id }}" tabindex="-1"
      aria-labelledby="machineModalLabel{{ $machine->id }}" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+         data-aos="zoom-in" data-aos-duration="500">
         <div class="modal-content shadow-lg rounded-4">
-            <div class="modal-header bg-primary text-white rounded-top-4">
+            <div class="modal-header bg-primary text-white rounded-top-4"
+                 data-aos="fade-down" data-aos-delay="200">
                 <h5 class="modal-title fw-bold" id="machineModalLabel{{ $machine->id }}">
                     {{ $machine->name }} - Full Details
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
             </div>
-            <div class="modal-body px-4 py-4">
+            <div class="modal-body px-4 py-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="text-center mb-4">
                     <img src="{{ url('storage/' . $machine->image) }}" alt="{{ $machine->name }}"
                          class="img-fluid rounded-3 border shadow-sm"
@@ -91,7 +93,7 @@
                     </a>
                 </div>
             </div>
-            <div class="modal-footer bg-light border-top">
+            <div class="modal-footer bg-light border-top" data-aos="fade-up" data-aos-delay="400">
                 <div class="text-start text-muted small me-auto">
                     <strong>CRAFT COPIER SOLUTION</strong><br>
                     📞 +92 339 0027031<br>
@@ -102,6 +104,7 @@
         </div>
     </div>
 </div>
+
 
                     @endforeach
 
