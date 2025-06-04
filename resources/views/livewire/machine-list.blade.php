@@ -18,7 +18,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $machine->name }}</h5>
                             <p class="card-text">{{ $machine->short_description }}</p>
-                            <a href="{{ $machine->brochure_link }}" class="btn btn-primary">Brochure</a>
+                            <a href="{{ $machine->brochure_link }}" class="btn btn-primary"> ha yar</a>
                             <a href="{{ $machine->driver_link }}" class="btn btn-secondary">Driver</a>
                         </div>
                     </div>
