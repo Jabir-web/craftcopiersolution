@@ -45,7 +45,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body text-center">
-                                    <button type="button" class="btn btn-sm btn-info mt-2"
+                                    <button type="button" class="btn btn-sm btn-primary mt-2"
                                             data-bs-toggle="modal" data-bs-target="#machineModal{{ $machine->id }}">
                                         View More
                                     </button>
