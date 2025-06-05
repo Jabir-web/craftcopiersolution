@@ -59,7 +59,7 @@
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
                                         data-aos="zoom-in" data-aos-duration="500">
                                         <div class="modal-content shadow-lg rounded-4">
-                                            <div class="modal-header bg-primary text-white rounded-top-4" data-aos="fade-down"
+                                            <div class="modal-header bg-warning text-white rounded-top-4" data-aos="fade-down"
                                                 data-aos-delay="200">
                                                 <h5 class="modal-title fw-bold" id="machineModalLabel{{ $machine->id }}">
                                                     {{ $machine->name }} - Full Details
