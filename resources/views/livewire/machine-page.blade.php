@@ -17,7 +17,7 @@
             </div>
         </div>
     </section>
-    <!-- End banner Area -->
+    {{-- banner ended  --}}
 
     <!-- Start post-content Area -->
     <section class="post-content-area single-post-area">
