@@ -69,33 +69,33 @@
             <!-- Body -->
             <div class="modal-body bg-white px-4 py-4" data-aos="fade-up" data-aos-delay="300">
                 <!-- Image -->
-                <div class="text-center mb-4">
+                <div class="d-flex justify-content-center mb-4">
                     <img src="{{ url('storage/' . $machine->image) }}"
                         alt="{{ $machine->name }}"
                         class="img-fluid rounded-3 border border-warning shadow-sm"
-                        style="max-height: 300px; width: 100%; object-fit: contain; background-color: #fff;">
+                        style="max-height: 280px; max-width: 80%; object-fit: contain; background-color: #fff;">
                 </div>
 
                 <!-- Description -->
                 <div class="mb-4">
                     <h6 class="fw-semibold text-uppercase text-warning">Description</h6>
-                    <p class="text-muted">{{ $machine->short_description }}</p>
+                    <p class="text-muted mb-0">{{ $machine->short_description }}</p>
                 </div>
 
-                <!-- Brochure -->
-                <div class="mb-3">
-                    <h6 class="fw-semibold text-uppercase text-warning">Brochure</h6>
-                    <a href="{{ $machine->brochure_link }}" class="btn btn-warning text-white" target="_blank" rel="noopener noreferrer">
-                        📄 View Brochure
-                    </a>
-                </div>
-
-                <!-- Driver -->
-                <div>
-                    <h6 class="fw-semibold text-uppercase text-warning">Driver</h6>
-                    <a href="{{ $machine->driver_link }}" class="btn btn-outline-warning" target="_blank">
-                        ⬇️ Download Driver
-                    </a>
+                <!-- Buttons (Brochure & Driver) -->
+                <div class="row g-3 mb-3 align-items-center">
+                    <div class="col-md-6">
+                        <a href="{{ $machine->brochure_link }}" class="btn w-100 btn-warning text-white fw-semibold d-flex align-items-center justify-content-center gap-2"
+                            target="_blank" rel="noopener noreferrer">
+                            📄 View Brochure
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{ $machine->driver_link }}" class="btn w-100 btn-outline-warning fw-semibold d-flex align-items-center justify-content-center gap-2"
+                            target="_blank">
+                            ⬇️ Download Driver
+                        </a>
+                    </div>
                 </div>
             </div>
 
