@@ -54,60 +54,64 @@
                                 </div>
 
                                 <!-- Modal for full details -->
-                                <div class="modal fade" id="machineModal{{ $machine->id }}" tabindex="-1"
-                                    aria-labelledby="machineModalLabel{{ $machine->id }}" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
-                                        data-aos="zoom-in" data-aos-duration="500">
-                                        <div class="modal-content shadow-lg rounded-4">
-                                            <div class="modal-header bg-warning text-white rounded-top-4" data-aos="fade-down"
-                                                data-aos-delay="200">
-                                                <h5 class="modal-title fw-bold" id="machineModalLabel{{ $machine->id }}">
-                                                    {{ $machine->name }} - Full Details
-                                                </h5>
-                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body px-4 py-4" data-aos="fade-up" data-aos-delay="300">
-                                                <div class="text-center mb-4">
-                                                    <img src="{{ url('storage/' . $machine->image) }}"
-                                                        alt="{{ $machine->name }}" class="img-fluid rounded-3 border shadow-sm"
-                                                        style="max-height: 300px; width: 100%; object-fit: contain; background-color: #f9f9f9;">
-                                                </div>
+                           <div class="modal fade" id="machineModal{{ $machine->id }}" tabindex="-1"
+    aria-labelledby="machineModalLabel{{ $machine->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" data-aos="zoom-in" data-aos-duration="500">
+        <div class="modal-content shadow rounded-4 border border-warning">
+            <!-- Header -->
+            <div class="modal-header bg-white border-bottom border-warning rounded-top-4" data-aos="fade-down" data-aos-delay="200">
+                <h5 class="modal-title fw-bold text-warning" id="machineModalLabel{{ $machine->id }}">
+                    {{ $machine->name }} - Full Details
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-                                                <div class="mb-4">
-                                                    <h6 class="fw-semibold text-uppercase text-secondary">Description</h6>
-                                                    <p class="text-muted">{{ $machine->short_description }}</p>
-                                                </div>
+            <!-- Body -->
+            <div class="modal-body bg-white px-4 py-4" data-aos="fade-up" data-aos-delay="300">
+                <!-- Image -->
+                <div class="text-center mb-4">
+                    <img src="{{ url('storage/' . $machine->image) }}"
+                        alt="{{ $machine->name }}"
+                        class="img-fluid rounded-3 border border-warning shadow-sm"
+                        style="max-height: 300px; width: 100%; object-fit: contain; background-color: #fff;">
+                </div>
 
-                                                <div class="mb-3">
-                                                    <h6 class="fw-semibold text-uppercase text-secondary">Brochure</h6>
-                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-warning"
-                                                        target="_blank" rel="noopener noreferrer">
-                                                        📄 View Brochure
-                                                    </a>
-                                                </div>
+                <!-- Description -->
+                <div class="mb-4">
+                    <h6 class="fw-semibold text-uppercase text-warning">Description</h6>
+                    <p class="text-muted">{{ $machine->short_description }}</p>
+                </div>
 
-                                                <div>
-                                                    <h6 class="fw-semibold text-uppercase text-secondary">Driver</h6>
-                                                    <a href="{{ $machine->driver_link }}" class="btn btn-outline-secondary"
-                                                        target="_blank">
-                                                        ⬇️ Download Driver
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer bg-light border-top" data-aos="fade-up"
-                                                data-aos-delay="400">
-                                                <div class="text-start text-muted small me-auto">
-                                                    <strong>CRAFT COPIER SOLUTION</strong><br>
-                                                    📞 +92 339 0027031<br>
-                                                    📞 *92 328 2499598
-                                                </div>
-                                                <button type="button" class="btn btn-secondary px-4"
-                                                    data-bs-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <!-- Brochure -->
+                <div class="mb-3">
+                    <h6 class="fw-semibold text-uppercase text-warning">Brochure</h6>
+                    <a href="{{ $machine->brochure_link }}" class="btn btn-warning text-white" target="_blank" rel="noopener noreferrer">
+                        📄 View Brochure
+                    </a>
+                </div>
+
+                <!-- Driver -->
+                <div>
+                    <h6 class="fw-semibold text-uppercase text-warning">Driver</h6>
+                    <a href="{{ $machine->driver_link }}" class="btn btn-outline-warning" target="_blank">
+                        ⬇️ Download Driver
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer bg-white border-top border-warning" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-start text-muted small me-auto">
+                    <strong class="text-warning">CRAFT COPIER SOLUTION</strong><br>
+                    📞 +92 339 0027031<br>
+                    📞 *92 328 2499598
+                </div>
+                <button type="button" class="btn btn-outline-warning px-4" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
                             @endforeach
