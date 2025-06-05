@@ -16,7 +16,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 hover-shadow transition">
                     <div class="thumb mb-3">
-                        <img src="{{ asset('front/img/bulk.png') }}" alt="bulk" class="img-fluid rounded-3" style="max-height: 150px; object-fit: contain;">
+                        <img src="{{ asset('front/img/bulk.png') }}" alt="bulk" class="img-fluid rounded-3" style="max-height: 250px; object-fit: contain;">
                     </div>
                     <h5 class="fw-semibold text-warning">Bulk Printing Service</h5>
                     <p class="text-muted small">The preservation of human life is the ultimate value, a pillar of ethics and the foundation.</p>
