@@ -81,7 +81,7 @@
 
                                                 <div class="mb-3">
                                                     <h6 class="fw-semibold text-uppercase text-secondary">Brochure</h6>
-                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-primary"
+                                                    <a href="{{ $machine->brochure_link }}" class="btn btn-warning"
                                                         target="_blank" rel="noopener noreferrer">
                                                         📄 View Brochure
                                                     </a>
