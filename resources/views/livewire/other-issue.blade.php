@@ -1,3 +1,46 @@
+{{-- SEO meta tags --}}
+@push('head')
+    <title>Other Printing & Copier Services | Craft Copier Solution</title>
+    <meta name="description" content="Explore our bulk printing, copier repair, photocopier rentals, and per-copy cost plans. Professional, affordable, and reliable services for your business needs.">
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Other Printing & Copier Services | Craft Copier Solution">
+    <meta property="og:description" content="Bulk printing, copier repair, rentals, and per-copy cost plans for businesses.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="service">
+    <meta property="og:image" content="{{ asset('front/img/bulk.png') }}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Other Printing & Copier Services | Craft Copier Solution">
+    <meta name="twitter:description" content="Bulk printing, copier repair, rentals, and per-copy cost plans for businesses.">
+    <meta name="twitter:image" content="{{ asset('front/img/bulk.png') }}">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Printing and Copier Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Craft Copier Solution",
+        "url": "{{ url('/') }}"
+      },
+      "areaServed": "Pakistan",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Other Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bulk Printing Service" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Copier Repair Service" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photocopier Rentals" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Get Copier On Per Copy Cost" } }
+        ]
+      }
+    }
+    </script>
+@endpush
+
 <div>
      <!-- Start issue Area -->
      <section class="price-area section-gap" aria-labelledby="other-issues-heading">
