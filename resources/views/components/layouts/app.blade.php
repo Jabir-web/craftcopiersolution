@@ -24,7 +24,8 @@
     <meta name="description"
         content="@yield('meta_description', 'Top-quality copier rental, sales, and repair services in Karachi. Fast, reliable, and affordable office copier solutions. Contact us now!')">
 
-
+<!-- ahref seo analzyer  -->
+ <script src="https://analytics.ahrefs.com/analytics.js" data-key="3N8Wf+jnynveO7E0vGmjYQ" async></script>
     <!-- Meta Keywords -->
     <meta name="keywords"
         content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, printer service Karachi, best copier dealers Karachi')">
