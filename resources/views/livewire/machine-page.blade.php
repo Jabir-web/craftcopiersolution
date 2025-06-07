@@ -1,7 +1,53 @@
+{{-- SEO meta tags --}}
+@push('head')
+    <title>{{ $productsingle->name }} Machines | Craft Copier Solution</title>
+    <meta name="description" content="Explore {{ $productsingle->name }} machines at Craft Copier Solution. View details, brochures, drivers, and more for top-quality office equipment.">
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{{ $productsingle->name }} Machines | Craft Copier Solution">
+    <meta property="og:description" content="Explore {{ $productsingle->name }} machines at Craft Copier Solution. View details, brochures, drivers, and more for top-quality office equipment.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="product.group">
+    <meta property="og:image" content="{{ isset($machines[0]) ? url('storage/' . $machines[0]->image) : asset('front/img/logo.png') }}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $productsingle->name }} Machines | Craft Copier Solution">
+    <meta name="twitter:description" content="Explore {{ $productsingle->name }} machines at Craft Copier Solution. View details, brochures, drivers, and more for top-quality office equipment.">
+    <meta name="twitter:image" content="{{ isset($machines[0]) ? url('storage/' . $machines[0]->image) : asset('front/img/logo.png') }}">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProductGroup",
+      "name": "{{ $productsingle->name }} Machines",
+      "brand": {
+        "@type": "Brand",
+        "name": "Craft Copier Solution"
+      },
+      "description": "Explore {{ $productsingle->name }} machines at Craft Copier Solution. View details, brochures, drivers, and more for top-quality office equipment.",
+      "url": "{{ url()->current() }}",
+      "image": "{{ isset($machines[0]) ? url('storage/' . $machines[0]->image) : asset('front/img/logo.png') }}",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Craft Copier Solution"
+      }
+    }
+    </script>
+@endpush
+
 @section('title')
     {{ $productsingle->name }} Machines - Craft Copier Solution
 @endsection
 <div>
+    <!-- Breadcrumbs for SEO -->
+    <nav aria-label="breadcrumb" class="my-3">
+        <ol class="breadcrumb bg-transparent p-0 m-0">
+            <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/products') }}">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ $productsingle->name }}</li>
+        </ol>
+    </nav>
     <!-- start banner Area -->
     <section class="relative about-banner">
         <div class="overlay overlay-bg"></div>
@@ -19,7 +65,6 @@
     </section>
     {{-- banner ended  --}}
 
-    <h1>page detectdon </h1>
     <!-- Start post-content Area -->
     <section class="post-content-area single-post-area">
         <div class="container">
@@ -149,7 +194,7 @@
                 </div>
 
                 <!-- Sidebar Products List -->
-                <div class="col-lg-4 sidebar-widgets">
+                <aside class="col-lg-4 sidebar-widgets" aria-label="Product Categories">
                     <div class="widget-wrap p-3">
                         <h4 class="widget-title mb-3">Products</h4>
                         <ul class="list-group">
@@ -163,10 +208,9 @@
                             @endforeach
                         </ul>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
-
     </section>
     <!-- End post-content Area -->
 </div>
