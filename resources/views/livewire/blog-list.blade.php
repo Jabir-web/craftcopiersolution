@@ -120,7 +120,7 @@
         }
         .single-recent-blog-post .thumb {
             width: 100%;
-            height: 180px;
+            height: 100% !important;
             display: flex;
             align-items: center;
             justify-content: center;
