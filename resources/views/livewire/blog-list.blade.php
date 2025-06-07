@@ -109,18 +109,40 @@
             background: #fff;
             margin-bottom: 32px;
             transition: box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 420px;
+            max-height: 420px;
         }
         .single-recent-blog-post:hover {
             box-shadow: 0 8px 32px rgba(255,193,7,0.18);
         }
-        .single-recent-blog-post .thumb img {
-            border-radius: 12px 12px 0 0;
+        .single-recent-blog-post .thumb {
             width: 100%;
-            height: 220px;
-            object-fit: cover;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+        }
+        .single-recent-blog-post .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background: #fff;
+            border-radius: 12px 12px 0 0;
+            display: block;
         }
         .single-recent-blog-post .details {
             padding: 22px 18px 18px 18px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
         .single-recent-blog-post .title {
             font-size: 1.25rem;
@@ -132,6 +154,7 @@
             color: #475569;
             font-size: 1.05rem;
             margin-bottom: 12px;
+            flex-grow: 1;
         }
         .single-recent-blog-post .date {
             color: #ffc107;
@@ -148,8 +171,12 @@
             text-decoration: underline;
         }
         @media (max-width: 576px) {
-            .single-recent-blog-post .thumb img {
-                height: 140px;
+            .single-recent-blog-post {
+                min-height: 320px;
+                max-height: 320px;
+            }
+            .single-recent-blog-post .thumb {
+                height: 110px;
             }
             .single-recent-blog-post .details {
                 padding: 14px 8px 12px 8px;
