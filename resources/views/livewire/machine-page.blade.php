@@ -19,6 +19,7 @@
     </section>
     {{-- banner ended  --}}
 
+    <h1>page detectdon </h1>
     <!-- Start post-content Area -->
     <section class="post-content-area single-post-area">
         <div class="container">

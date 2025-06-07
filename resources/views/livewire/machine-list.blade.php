@@ -9,7 +9,7 @@
         </select>
     </div> --}}
 
-    hacker of world 
+  
     <div class="row mt-4">
         @if($machines)
             @foreach($machines as $machine)
