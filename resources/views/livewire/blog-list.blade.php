@@ -129,8 +129,10 @@
             overflow: hidden;
         }
         .single-recent-blog-post .thumb img {
-            width: 100%;
+            width: auto;
             height: 100%;
+            max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
             object-position: center;
             background: #fff;
