@@ -98,7 +98,7 @@
 								{!! $blog->description !!}
 							</section>
 							<div class="mt-5 text-center">
-								<a href="{{ url('/blog') }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2"
+								<a href="{{ url('/homepage') }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2"
 									style="font-weight: 600; letter-spacing: 1px;">Back to Blog List</a>
 							</div>
 							<!-- Blog Schema -->
