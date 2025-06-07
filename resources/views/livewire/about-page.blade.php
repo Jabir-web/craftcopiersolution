@@ -3,7 +3,7 @@
 @endsection
 <div>
 
-    <!-- start banner Area -->
+    <!-- start banner Area new comment  -->
     <section class="about-banner relative">
         <div class="overlay overlay-bg"></div>
         <div class="container">
