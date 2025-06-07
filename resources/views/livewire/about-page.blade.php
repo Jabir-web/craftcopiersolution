@@ -93,6 +93,7 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="faq1">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <span class="faq-icon me-2"><i class="fa fa-question-circle"></i></span>
                             What services does Craft Copier Solution offer?
                         </button>
                     </h3>
@@ -105,6 +106,7 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="faq2">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <span class="faq-icon me-2"><i class="fa fa-wrench"></i></span>
                             Do you offer on-site printer repair in Karachi?
                         </button>
                     </h3>
@@ -117,6 +119,7 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="faq3">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <span class="faq-icon me-2"><i class="fa fa-envelope"></i></span>
                             How can I request a quote or consultation?
                         </button>
                     </h3>
@@ -166,9 +169,13 @@
             .faq-area .accordion-item {
                 border: none;
                 margin-bottom: 18px;
-                border-radius: 10px;
-                box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+                border-radius: 12px;
+                box-shadow: 0 4px 18px rgba(0,0,0,0.08);
                 background: #fff;
+                transition: box-shadow 0.2s;
+            }
+            .faq-area .accordion-item:hover {
+                box-shadow: 0 8px 24px rgba(255,193,7,0.15);
             }
             .faq-area .accordion-header {
                 background: none;
@@ -177,14 +184,25 @@
                 background: #f9fafb;
                 color: #0F172A;
                 font-weight: 600;
-                font-size: 1.1rem;
-                border-radius: 10px 10px 0 0;
+                font-size: 1.13rem;
+                border-radius: 12px 12px 0 0;
                 box-shadow: none;
-                padding: 18px 24px;
-                transition: background 0.2s;
+                padding: 20px 28px;
+                transition: background 0.2s, color 0.2s;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .faq-area .accordion-button .faq-icon {
+                color: #ffc107;
+                font-size: 1.3em;
+                transition: color 0.2s;
             }
             .faq-area .accordion-button:not(.collapsed) {
                 background: linear-gradient(90deg, #ffc107 0%, #ffb300 100%);
+                color: #fff;
+            }
+            .faq-area .accordion-button:not(.collapsed) .faq-icon {
                 color: #fff;
             }
             .faq-area .accordion-button:focus {
@@ -193,12 +211,26 @@
             .faq-area .accordion-body {
                 background: #fffbea;
                 color: #444;
-                font-size: 1rem;
-                border-radius: 0 0 10px 10px;
-                padding: 20px 24px;
+                font-size: 1.05rem;
+                border-radius: 0 0 12px 12px;
+                padding: 22px 28px;
+                border-top: 1px solid #ffe082;
             }
             .faq-area .accordion-item:last-child {
                 margin-bottom: 0;
+            }
+            .faq-area .accordion-button::after {
+                content: "\f078";
+                font-family: "FontAwesome";
+                font-weight: 900;
+                float: right;
+                margin-left: auto;
+                color: #ffc107;
+                transition: transform 0.3s;
+            }
+            .faq-area .accordion-button:not(.collapsed)::after {
+                transform: rotate(-180deg);
+                color: #fff;
             }
             @media (max-width: 576px) {
                 .faq-area .accordion-button,
@@ -208,6 +240,25 @@
                 }
             }
         </style>
+        <script>
+            // Ensure only one FAQ is open at a time and clicking an open one closes it (Bootstrap handles this, but we force close on click if open)
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
+                    btn.addEventListener('click', function(e) {
+                        var target = btn.getAttribute('data-bs-target');
+                        var collapse = document.querySelector(target);
+                        if (collapse && collapse.classList.contains('show')) {
+                            // If already open, close it manually
+                            var bsCollapse = bootstrap.Collapse.getInstance(collapse);
+                            if (bsCollapse) {
+                                bsCollapse.hide();
+                                e.preventDefault();
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
     </section>
 
     <!-- Other Issue Area -->
