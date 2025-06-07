@@ -161,6 +161,53 @@
           ]
         }
         </script>
+        <style>
+            /* FAQ Accordion Design */
+            .faq-area .accordion-item {
+                border: none;
+                margin-bottom: 18px;
+                border-radius: 10px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+                background: #fff;
+            }
+            .faq-area .accordion-header {
+                background: none;
+            }
+            .faq-area .accordion-button {
+                background: #f9fafb;
+                color: #0F172A;
+                font-weight: 600;
+                font-size: 1.1rem;
+                border-radius: 10px 10px 0 0;
+                box-shadow: none;
+                padding: 18px 24px;
+                transition: background 0.2s;
+            }
+            .faq-area .accordion-button:not(.collapsed) {
+                background: linear-gradient(90deg, #ffc107 0%, #ffb300 100%);
+                color: #fff;
+            }
+            .faq-area .accordion-button:focus {
+                box-shadow: 0 0 0 2px #ffc10733;
+            }
+            .faq-area .accordion-body {
+                background: #fffbea;
+                color: #444;
+                font-size: 1rem;
+                border-radius: 0 0 10px 10px;
+                padding: 20px 24px;
+            }
+            .faq-area .accordion-item:last-child {
+                margin-bottom: 0;
+            }
+            @media (max-width: 576px) {
+                .faq-area .accordion-button,
+                .faq-area .accordion-body {
+                    padding: 14px 12px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
     </section>
 
     <!-- Other Issue Area -->
