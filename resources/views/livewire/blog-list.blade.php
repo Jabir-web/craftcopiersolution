@@ -102,85 +102,109 @@
             </div>
         </div>
     </section>
-    <style>
+   <style>
+    .single-recent-blog-post {
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        background: #fff;
+        margin-bottom: 32px;
+        transition: box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .single-recent-blog-post:hover {
+        box-shadow: 0 8px 32px rgba(255, 193, 7, 0.18);
+    }
+
+    .single-recent-blog-post .thumb {
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .single-recent-blog-post .thumb img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        background: #fff;
+        border-radius: 12px 12px 0 0;
+        display: block;
+    }
+
+    .single-recent-blog-post .details {
+        padding: 22px 18px 18px 18px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .single-recent-blog-post .title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #0F172A;
+        margin-bottom: 10px;
+    }
+
+    .single-recent-blog-post .blog-excerpt {
+        color: #475569;
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+        flex-grow: 1;
+    }
+
+    .single-recent-blog-post .date {
+        color: #ffc107;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    .single-recent-blog-post .tags a {
+        color: #ffb300;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none;
+    }
+
+    .single-recent-blog-post .tags a:hover {
+        text-decoration: underline;
+    }
+
+    /* Mobile Responsive Fixes */
+    @media (max-width: 576px) {
         .single-recent-blog-post {
-            border-radius: 12px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-            background: #fff;
-            margin-bottom: 32px;
-            transition: box-shadow 0.2s;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-         height: 800px;
-       
+            min-height: auto;
+            max-height: none;
         }
-        .single-recent-blog-post:hover {
-            box-shadow: 0 8px 32px rgba(255,193,7,0.18);
-        }
-        .single-recent-blog-post .thumb {
-            width: 100%;
-            height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f9f9f9;
-            border-radius: 12px 12px 0 0;
-            overflow: hidden;
-        }
+
         .single-recent-blog-post .thumb img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            background: #fff;
-            border-radius: 12px 12px 0 0;
-            display: block;
+            height: auto;
         }
+
         .single-recent-blog-post .details {
-            padding: 22px 18px 18px 18px;
-            flex: 1 1 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            padding: 14px 8px 12px 8px;
         }
+
         .single-recent-blog-post .title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #0F172A;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
+
         .single-recent-blog-post .blog-excerpt {
-            color: #475569;
-            font-size: 1.05rem;
-            margin-bottom: 12px;
-            flex-grow: 1;
+            font-size: 0.95rem;
         }
+
         .single-recent-blog-post .date {
-            color: #ffc107;
-            font-size: 0.95rem;
-            font-weight: 500;
+            font-size: 0.85rem;
         }
-        .single-recent-blog-post .tags a {
-            color: #ffb300;
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-decoration: none;
-        }
-        .single-recent-blog-post .tags a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 576px) {
-            .single-recent-blog-post {
-                min-height: 320px;
-                max-height: 320px;
-            }
-            .single-recent-blog-post .thumb {
-                height: 110px;
-            }
-            .single-recent-blog-post .details {
-                padding: 14px 8px 12px 8px;
-            }
-        }
-    </style>
+    }
+</style>
+
 </div>
