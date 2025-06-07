@@ -241,17 +241,28 @@
             }
         </style>
         <script>
-            // Ensure only one FAQ is open at a time and clicking an open one closes it (Bootstrap handles this, but we force close on click if open)
+            // Enhanced: Toggle FAQ open/close on click (close if open, open if closed)
             document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
                     btn.addEventListener('click', function(e) {
                         var target = btn.getAttribute('data-bs-target');
                         var collapse = document.querySelector(target);
-                        if (collapse && collapse.classList.contains('show')) {
-                            // If already open, close it manually
-                            var bsCollapse = bootstrap.Collapse.getInstance(collapse);
-                            if (bsCollapse) {
+                        if (collapse) {
+                            var isOpen = collapse.classList.contains('show');
+                            // Close all
+                            document.querySelectorAll('.faq-area .accordion-collapse').forEach(function(el) {
+                                if (el !== collapse && el.classList.contains('show')) {
+                                    var bsCollapse = bootstrap.Collapse.getOrCreateInstance(el);
+                                    bsCollapse.hide();
+                                }
+                            });
+                            // Toggle clicked
+                            var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
+                            if (isOpen) {
                                 bsCollapse.hide();
+                                e.preventDefault();
+                            } else {
+                                bsCollapse.show();
                                 e.preventDefault();
                             }
                         }
@@ -260,7 +271,6 @@
             });
         </script>
     </section>
-
     <!-- Other Issue Area -->
     @livewire('other-issue')
 
