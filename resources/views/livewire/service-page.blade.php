@@ -1,3 +1,22 @@
+{{-- SEO meta tags --}}
+@push('head')
+    <title>{{ $productsingle->name }} | Services | Craft Copier Solution</title>
+    <meta name="description" content="Discover {{ $productsingle->name }} services at Craft Copier Solution. Professional, reliable, and affordable office equipment and support for your business.">
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{{ $productsingle->name }} | Services | Craft Copier Solution">
+    <meta property="og:description" content="Discover {{ $productsingle->name }} services at Craft Copier Solution. Professional, reliable, and affordable office equipment and support for your business.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="service">
+    <meta property="og:image" content="{{ isset($machines[0]) ? url('storage/' . $machines[0]->img) : asset('front/img/logo.png') }}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $productsingle->name }} | Services | Craft Copier Solution">
+    <meta name="twitter:description" content="Discover {{ $productsingle->name }} services at Craft Copier Solution. Professional, reliable, and affordable office equipment and support for your business.">
+    <meta name="twitter:image" content="{{ isset($machines[0]) ? url('storage/' . $machines[0]->img) : asset('front/img/logo.png') }}">
+@endpush
+
 @section('title')
 {{ $productsingle->name }} - Craft Copier Solution
 @endsection
