@@ -1,3 +1,41 @@
+{{-- SEO meta tags --}}
+@push('head')
+    <title>Printer Sales, Repairs & Rentals | Craft Copier Solution</title>
+    <meta name="description" content="Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.">
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Printer Sales, Repairs & Rentals | Craft Copier Solution">
+    <meta property="og:description" content="Reliable printer solutions: sales, rentals, repairs, and accessories for your business.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ asset('front/img/web/prthree.jpg') }}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Printer Sales, Repairs & Rentals | Craft Copier Solution">
+    <meta name="twitter:description" content="Reliable printer solutions: sales, rentals, repairs, and accessories for your business.">
+    <meta name="twitter:image" content="{{ asset('front/img/web/prthree.jpg') }}">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Craft Copier Solution",
+      "url": "{{ url('/') }}",
+      "logo": "{{ asset('front/img/logo.png') }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-XXX-XXXXXXX",
+        "contactType": "customer service",
+        "areaServed": "PK"
+      },
+      "sameAs": [
+        "https://www.facebook.com/yourpage"
+      ]
+    }
+    </script>
+@endpush
+
 <div class="">
         <!-- start banner Area -->
         <section class="banner-area relative ">
@@ -47,7 +85,15 @@
             </div>
         </section>
         <!-- End banner Area -->
-    
+
+        <!-- Breadcrumbs for SEO -->
+        <nav aria-label="breadcrumb" class="my-3">
+            <ol class="breadcrumb bg-transparent p-0 m-0">
+                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Printer Solutions</li>
+            </ol>
+        </nav>
+
         <!-- Start popular-destination Area -->
         <section class="popular-destination-area section-gap">
             <div class="container">
@@ -129,9 +175,6 @@
                         </p>
                         <a  href="{{ route('contactpage') }}"  class="primary-btn text-uppercase">request custom price</a>
                     </div>
-                   
-                  
-                    
                 </div>
             </div>
         </section>
