@@ -97,6 +97,25 @@
 								itemprop="articleBody">
 								{!! $blog->description !!}
 							</section>
+							<!-- Social Share Buttons -->
+							<div class="mt-4 mb-3 text-center">
+								<span class="fw-bold me-2">Share:</span>
+								<a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" target="_blank" rel="noopener" class="btn btn-sm btn-primary mx-1" title="Share on Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}&text={{ urlencode($blog->title) }}" target="_blank" rel="noopener" class="btn btn-sm btn-info mx-1" title="Share on Twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="https://wa.me/?text={{ urlencode($blog->title . ' ' . url()->current()) }}" target="_blank" rel="noopener" class="btn btn-sm btn-success mx-1" title="Share on WhatsApp">
+									<i class="fa fa-whatsapp"></i>
+								</a>
+								<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ urlencode(url()->current()) }}&title={{ urlencode($blog->title) }}" target="_blank" rel="noopener" class="btn btn-sm btn-secondary mx-1" title="Share on LinkedIn">
+									<i class="fa fa-linkedin"></i>
+								</a>
+								<a href="mailto:?subject={{ urlencode($blog->title) }}&body={{ urlencode(url()->current()) }}" class="btn btn-sm btn-dark mx-1" title="Share via Email">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</div>
 							<div class="mt-5 text-center">
 								<a href="{{ url('/blog') }}" class="btn btn-primary btn-lg rounded-pill px-5 py-2"
 									style="font-weight: 600; letter-spacing: 1px;">Back to Blog List</a>
