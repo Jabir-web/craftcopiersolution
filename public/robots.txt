@@ -1,6 +1,22 @@
+# robots.txt for Craft Copier Solution
+
 User-agent: *
 Disallow: /admin/
 Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
 Allow: /
 
+# Prevent indexing of search results and duplicate content
+Disallow: /*?*
+Disallow: /*.php$
+
+# Crawl-delay for aggressive bots (optional, uncomment if needed)
+# Crawl-delay: 10
+
+# Sitemap location
 Sitemap: https://craftcopiersolutions.com/sitemap.xml
