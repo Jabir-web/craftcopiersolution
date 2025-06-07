@@ -1,33 +1,54 @@
-<div>
+<section class="client-rental-section" aria-labelledby="client-rental-heading">
+    <h1 id="client-rental-heading" class="mb-4">Request a Copier Rental Quote</h1>
+    <p class="mb-4 text-muted">Fill out the form below to get a personalized copier rental solution for your business. Our team will contact you promptly.</p>
+    {{-- SEO meta description --}}
+    <meta name="description" content="Request a copier rental quote for your business. Fast, reliable, and affordable copier rental solutions tailored to your needs.">
+
     @if (session()->has('rent'))
-        <div class="alert alert-success">
+        <div class="alert alert-success" role="alert">
             {{ session('rent') }}
         </div>
     @endif
 
-    <form action="{{ route('client-rentals.store') }}" method="POST" class="form-wrap">
+    <form action="{{ route('client-rentals.store') }}" method="POST" class="form-wrap" aria-label="Copier Rental Request Form">
         @csrf
+
         <!-- Client Name -->
-        <input type="text" class="form-control" name="client_name" placeholder="Your Name" value="{{ old('client_name') }}">
-        @error('client_name') <span class="text-danger">{{ $message }}</span> @enderror
+        <div class="form-group mb-3">
+            <label for="client_name" class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" id="client_name" class="form-control" name="client_name" placeholder="Enter your full name" value="{{ old('client_name') }}" required>
+            @error('client_name') <span class="text-danger">{{ $message }}</span> @enderror
+        </div>
 
         <!-- Client Company Name -->
-        <input type="text" class="form-control" name="client_company_name" placeholder="Your Company Name" value="{{ old('client_company_name') }}">
-        @error('client_company_name') <span class="text-danger">{{ $message }}</span> @enderror
+        <div class="form-group mb-3">
+            <label for="client_company_name" class="form-label">Company Name <span class="text-danger">*</span></label>
+            <input type="text" id="client_company_name" class="form-control" name="client_company_name" placeholder="Enter your company name" value="{{ old('client_company_name') }}" required>
+            @error('client_company_name') <span class="text-danger">{{ $message }}</span> @enderror
+        </div>
 
         <!-- City Name -->
-        <input type="text" class="form-control" name="city_name" placeholder="Your City Name" value="{{ old('city_name') }}">
-        @error('city_name') <span class="text-danger">{{ $message }}</span> @enderror
+        <div class="form-group mb-3">
+            <label for="city_name" class="form-label">City <span class="text-danger">*</span></label>
+            <input type="text" id="city_name" class="form-control" name="city_name" placeholder="Enter your city" value="{{ old('city_name') }}" required>
+            @error('city_name') <span class="text-danger">{{ $message }}</span> @enderror
+        </div>
 
         <!-- Contact Number -->
-        <input type="text" class="form-control" name="contact_number" placeholder="Contact Number" value="{{ old('contact_number') }}">
-        @error('contact_number') <span class="text-danger">{{ $message }}</span> @enderror
+        <div class="form-group mb-3">
+            <label for="contact_number" class="form-label">Contact Number <span class="text-danger">*</span></label>
+            <input type="tel" id="contact_number" class="form-control" name="contact_number" placeholder="e.g. +1 234 567 8900" value="{{ old('contact_number') }}" required pattern="[\d\s\+\-()]{7,}">
+            @error('contact_number') <span class="text-danger">{{ $message }}</span> @enderror
+        </div>
 
         <!-- Requirements -->
-        <textarea class="form-control" name="requirements" placeholder="Your Requirements .." cols="30" rows="5">{{ old('requirements') }}</textarea>
-        @error('requirements') <span class="text-danger">{{ $message }}</span> @enderror
+        <div class="form-group mb-4">
+            <label for="requirements" class="form-label">Your Requirements <span class="text-danger">*</span></label>
+            <textarea id="requirements" class="form-control" name="requirements" placeholder="Describe your copier rental needs..." cols="30" rows="5" required>{{ old('requirements') }}</textarea>
+            @error('requirements') <span class="text-danger">{{ $message }}</span> @enderror
+        </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="primary-btn bg-dark text-uppercase">Submit Request</button>
+        <button type="submit" class="primary-btn bg-dark text-uppercase w-100 py-2">Request Quote</button>
     </form>
-</div>
+</section>
