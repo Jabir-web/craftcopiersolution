@@ -241,30 +241,27 @@
             }
         </style>
         <script>
-            // Enhanced: Toggle FAQ open/close on click (close if open, open if closed)
+            // FAQ: Toggle open/close on click (close if open, open if closed)
             document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
                     btn.addEventListener('click', function(e) {
                         var target = btn.getAttribute('data-bs-target');
                         var collapse = document.querySelector(target);
                         if (collapse) {
-                            var isOpen = collapse.classList.contains('show');
-                            // Close all
-                            document.querySelectorAll('.faq-area .accordion-collapse').forEach(function(el) {
-                                if (el !== collapse && el.classList.contains('show')) {
-                                    var bsCollapse = bootstrap.Collapse.getOrCreateInstance(el);
-                                    bsCollapse.hide();
+                            // Bootstrap handles open, so only force close if already open
+                            setTimeout(function() {
+                                if (collapse.classList.contains('show')) {
+                                    // Do nothing, let Bootstrap open it
+                                } else {
+                                    // If not open, close all others
+                                    document.querySelectorAll('.faq-area .accordion-collapse.show').forEach(function(el) {
+                                        if (el !== collapse) {
+                                            var bsCollapse = bootstrap.Collapse.getOrCreateInstance(el);
+                                            bsCollapse.hide();
+                                        }
+                                    });
                                 }
-                            });
-                            // Toggle clicked
-                            var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
-                            if (isOpen) {
-                                bsCollapse.hide();
-                                e.preventDefault();
-                            } else {
-                                bsCollapse.show();
-                                e.preventDefault();
-                            }
+                            }, 10);
                         }
                     });
                 });
