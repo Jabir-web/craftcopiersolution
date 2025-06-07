@@ -86,13 +86,7 @@
         </section>
         <!-- End banner Area -->
 
-        <!-- Breadcrumbs for SEO -->
-        <nav aria-label="breadcrumb" class="my-3">
-            <ol class="breadcrumb bg-transparent p-0 m-0">
-                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Printer Solutions</li>
-            </ol>
-        </nav>
+       
 
         <!-- Start popular-destination Area -->
         <section class="popular-destination-area section-gap">
