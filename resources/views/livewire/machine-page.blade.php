@@ -40,14 +40,7 @@
     {{ $productsingle->name }} Machines - Craft Copier Solution
 @endsection
 <div>
-    <!-- Breadcrumbs for SEO -->
-    <nav aria-label="breadcrumb" class="my-3">
-        <ol class="breadcrumb bg-transparent p-0 m-0">
-            <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('/products') }}">Products</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ $productsingle->name }}</li>
-        </ol>
-    </nav>
+
     <!-- start banner Area -->
     <section class="relative about-banner">
         <div class="overlay overlay-bg"></div>
