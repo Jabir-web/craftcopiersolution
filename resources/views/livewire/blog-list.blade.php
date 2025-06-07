@@ -120,7 +120,7 @@
         }
         .single-recent-blog-post .thumb {
             width: 100%;
-            height: 100% !important;
+            height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -129,11 +129,9 @@
             overflow: hidden;
         }
         .single-recent-blog-post .thumb img {
-            width: auto;
+            width: 100%;
             height: 100%;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             object-position: center;
             background: #fff;
             border-radius: 12px 12px 0 0;
