@@ -26,6 +26,10 @@
 
 <!-- ahref seo analzyer  -->
  <script src="https://analytics.ahrefs.com/analytics.js" data-key="3N8Wf+jnynveO7E0vGmjYQ" async></script>
+
+ <!-- meta tag for ahref  -->
+  <meta name="ahrefs-site-verification" content="fc2799ead94c1a7882ef291bd8aa9b3f9cb05df11a4d44bdc0ee388220bc16c0">
+
     <!-- Meta Keywords -->
     <meta name="keywords"
         content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, printer service Karachi, best copier dealers Karachi')">
