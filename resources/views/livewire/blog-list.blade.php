@@ -112,8 +112,8 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            min-height: 420px;
-            max-height: 720px;
+         height: 800px;
+       
         }
         .single-recent-blog-post:hover {
             box-shadow: 0 8px 32px rgba(255,193,7,0.18);
