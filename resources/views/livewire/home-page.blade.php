@@ -143,14 +143,16 @@
         
     
     <!-- Start other-issue Area -->
-    @livewire('other-issue')
+    <section id="other-issue-area">
+        @livewire('other-issue')
+    </section>
     <!-- End other-issue Area -->
       
-    
-    
-        <!-- Start testimonial Area -->
+    <!-- Start testimonial Area -->
+    <section id="testimonials-area">
         @livewire('testimonials')
-        <!-- End testimonial Area -->
+    </section>
+    <!-- End testimonial Area -->
     
         <!-- Start home-about Area -->
         <section class="home-about-area">

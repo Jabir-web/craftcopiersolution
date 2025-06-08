@@ -184,13 +184,25 @@
 										<span class="quick-link-text">Machines</span>
 									</a>
 								</li>
-								<li>
+								<li class="mb-3">
 									<a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
 										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
 										<span class="quick-link-text blogs-link-text">
 											<span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
 											<span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
 										</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-secondary text-white me-3"><i class="fa fa-star"></i></span>
+										<span class="quick-link-text">Testimonials</span>
+									</a>
+								</li>
+								<li>
+									<a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-dark text-white me-3"><i class="fa fa-question-circle"></i></span>
+										<span class="quick-link-text">Other Issue</span>
 									</a>
 								</li>
 							</ul>
