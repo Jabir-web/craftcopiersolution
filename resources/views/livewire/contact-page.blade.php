@@ -21,7 +21,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-page-area section-gap py-5" style="background: #f8fafc;">
+    <section class="contact-page-area section-gap py-5" style="background: #fffbe7;">
         <div class="container">
             <div class="row g-5 align-items-start">
                 <!-- Left: Map + Info -->
@@ -32,9 +32,9 @@
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="bg-white p-4 rounded shadow-sm mb-3">
+                    <div class="bg-white p-4 rounded shadow-sm mb-3 border border-warning">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="icon bg-primary text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-home fs-5"></i>
                             </div>
                             <div>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-3">
-                            <div class="icon bg-success text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-phone-handset fs-5"></i>
                             </div>
                             <div>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <div class="icon bg-danger text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-envelope fs-5"></i>
                             </div>
                             <div>
@@ -61,18 +61,18 @@
                             </div>
                         </div>
                         <div class="d-flex gap-2 mt-3">
-                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="btn btn-sm btn-primary rounded-circle"><i class="fa fa-facebook"></i></a>
-                            <a href="https://wa.me/+923282499598" target="_blank" class="btn btn-sm btn-success rounded-circle"><i class="fa fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="btn btn-sm btn-danger rounded-circle"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="btn btn-sm btn-danger rounded-circle"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="btn btn-sm btn-warning rounded-circle"><i class="fa fa-facebook"></i></a>
+                            <a href="https://wa.me/+923282499598" target="_blank" class="btn btn-sm btn-warning rounded-circle"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="btn btn-sm btn-warning rounded-circle"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="btn btn-sm btn-warning rounded-circle"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right: Contact Form + Quick Links -->
                 <div class="col-lg-7">
-                    <div class="p-4 bg-white shadow rounded mb-4">
-                        <h3 class="fw-bold mb-4 text-primary text-center">Send Us a Message</h3>
+                    <div class="p-4 bg-white shadow rounded mb-4 border border-warning">
+                        <h3 class="fw-bold mb-4 text-warning text-center">Send Us a Message</h3>
                         @if (session()->has('message'))
                             <div class="alert alert-success">{{ session('message') }}</div>
                         @endif
@@ -81,19 +81,19 @@
                             @csrf
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" wire:model="name" class="form-control form-control-lg" placeholder="Your Name">
+                                    <input type="text" wire:model="name" class="form-control form-control-lg border-warning" placeholder="Your Name">
                                     @error('name') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" wire:model="email" class="form-control form-control-lg" placeholder="Your Email">
+                                    <input type="email" wire:model="email" class="form-control form-control-lg border-warning" placeholder="Your Email">
                                     @error('email') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" wire:model="subject" class="form-control form-control-lg" placeholder="Subject">
+                                    <input type="text" wire:model="subject" class="form-control form-control-lg border-warning" placeholder="Subject">
                                     @error('subject') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-12">
-                                    <textarea wire:model="message" class="form-control form-control-lg" rows="5" placeholder="Message"></textarea>
+                                    <textarea wire:model="message" class="form-control form-control-lg border-warning" rows="5" placeholder="Message"></textarea>
                                     @error('message') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-12 text-end">
@@ -102,16 +102,16 @@
                             </div>
                         </form>
                     </div>
-                    <div class="p-4 bg-white shadow rounded">
-                        <h4 class="fw-bold mb-3 text-primary">Quick Links</h4>
+                    <div class="p-4 bg-white shadow rounded border border-warning">
+                        <h4 class="fw-bold mb-3 text-warning">Quick Links</h4>
                         <ul class="list-unstyled small">
-                            <li class="mb-2"><a href="{{ route('homepage') }}"><i class="fa fa-home me-2 text-primary"></i>Home</a></li>
-                            <li class="mb-2"><a href="{{ route('aboutpage') }}"><i class="fa fa-info-circle me-2 text-success"></i>About Us</a></li>
-                            <li class="mb-2"><a href="{{ route('contactpage') }}"><i class="fa fa-envelope me-2 text-danger"></i>Contact</a></li>
+                            <li class="mb-2"><a href="{{ route('homepage') }}"><i class="fa fa-home me-2 text-warning"></i>Home</a></li>
+                            <li class="mb-2"><a href="{{ route('aboutpage') }}"><i class="fa fa-info-circle me-2 text-warning"></i>About Us</a></li>
+                            <li class="mb-2"><a href="{{ route('contactpage') }}"><i class="fa fa-envelope me-2 text-warning"></i>Contact</a></li>
                             <li class="mb-2"><a href="{{ route('homepage') }}#our-best-machines"><i class="fa fa-print me-2 text-warning"></i>Machines</a></li>
-                            <li class="mb-2"><a href="{{ route('homepage') }}#blog-list-area"><i class="fa fa-list me-2 text-info"></i>Blogs</a></li>
-                            <li class="mb-2"><a href="{{ route('homepage') }}#testimonials-area"><i class="fa fa-star me-2 text-secondary"></i>Testimonials</a></li>
-                            <li><a href="{{ route('homepage') }}#other-issue-area"><i class="fa fa-question-circle me-2 text-dark"></i>Other Issues</a></li>
+                            <li class="mb-2"><a href="{{ route('homepage') }}#blog-list-area"><i class="fa fa-list me-2 text-warning"></i>Blogs</a></li>
+                            <li class="mb-2"><a href="{{ route('homepage') }}#testimonials-area"><i class="fa fa-star me-2 text-warning"></i>Testimonials</a></li>
+                            <li><a href="{{ route('homepage') }}#other-issue-area"><i class="fa fa-question-circle me-2 text-warning"></i>Other Issues</a></li>
                         </ul>
                     </div>
                 </div>
@@ -158,8 +158,14 @@
                 transition: color 0.2s;
             }
             .contact-page-area ul.list-unstyled li a:hover {
-                color: #02d602;
+                color: #ffc107;
                 text-decoration: underline;
+            }
+            .contact-page-area .bg-white {
+                background: #fff !important;
+            }
+            .contact-page-area .border-warning {
+                border-color: #ffc107 !important;
             }
         </style>
     </section>
