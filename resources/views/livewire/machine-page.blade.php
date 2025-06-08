@@ -92,6 +92,25 @@
                                                 data-bs-target="#machineModal{{ $machine->id }}">
                                                 <i class="fa fa-eye"></i> View More
                                             </button>
+                                            <!-- Share Buttons -->
+                                            <div class="mt-3">
+                                                <span class="fw-bold me-2" style="font-size:0.97em;">Share:</span>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url('storage/' . $machine->image)) }}" target="_blank" rel="noopener" class="btn btn-sm btn-primary mx-1" title="Share on Facebook">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                                <a href="https://twitter.com/intent/tweet?url={{ urlencode(url('storage/' . $machine->image)) }}&text={{ urlencode($machine->name) }}" target="_blank" rel="noopener" class="btn btn-sm btn-info mx-1" title="Share on Twitter">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="https://wa.me/?text={{ urlencode($machine->name . ' ' . url('storage/' . $machine->image)) }}" target="_blank" rel="noopener" class="btn btn-sm btn-success mx-1" title="Share on WhatsApp">
+                                                    <i class="fa fa-whatsapp"></i>
+                                                </a>
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ urlencode(url('storage/' . $machine->image)) }}&title={{ urlencode($machine->name) }}" target="_blank" rel="noopener" class="btn btn-sm btn-secondary mx-1" title="Share on LinkedIn">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                                <a href="mailto:?subject={{ urlencode($machine->name) }}&body={{ urlencode(url('storage/' . $machine->image)) }}" class="btn btn-sm btn-dark mx-1" title="Share via Email">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
