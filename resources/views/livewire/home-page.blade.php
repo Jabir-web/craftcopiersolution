@@ -1,12 +1,12 @@
 @section('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
-@section('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')
-@section('meta_keywords', 'printer sales, printer rentals, printer repairs, copier solutions, Karachi, Pakistan, office printers, copier maintenance, printer accessories, Craft Copier Solution')
+@section('meta_description', 'Craft Copier Solution: Printer sales, rentals, repairs & accessories in Karachi, Pakistan & worldwide. High-quality printers, expert maintenance, genuine parts.')
+@section('meta_keywords', 'printer sales Karachi, printer rentals Pakistan, printer repairs, copier solutions, office printers, copier maintenance, printer accessories, Craft Copier Solution, photocopier dealer Pakistan, international printer sales, global copier services, office equipment export, Karachi, Pakistan, UAE, Saudi Arabia, Middle East, Africa, Europe, Asia')
 @section('og_title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
-@section('og_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business.')
+@section('og_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business in Pakistan and worldwide.')
 @section('og_image', asset('front/img/web/prthree.jpg'))
 @section('og_url', url()->current())
 @section('twitter_title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
-@section('twitter_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business.')
+@section('twitter_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business in Pakistan and worldwide.')
 @section('twitter_image', asset('front/img/web/prthree.jpg'))
 @section('canonical_url', url()->current())
 
@@ -78,7 +78,6 @@
                                 <a class="nav-link" id="holiday-tab" data-toggle="tab" href="#holiday" role="tab"
                                     aria-controls="holiday" aria-selected="false">Accessories</a>
                             </li>
-                           
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="flight" role="tabpanel"
@@ -97,8 +96,6 @@
             </div>
         </section>
         <!-- End banner Area -->
-
-       
 
         <!-- Start popular-destination Area -->
         <section id="our-best-machines" class="popular-destination-area section-gap">
@@ -133,9 +130,9 @@
                                 </div>
                 
                                 <div class="product-body" style="padding: 20px; text-align: center;">
-                                    <h4 style="font-size: 1.3rem; font-weight: 600; color: #222; margin-bottom: 10px;">
+                                    <h3 style="font-size: 1.3rem; font-weight: 600; color: #222; margin-bottom: 10px;">
                                         {{ $product->name }}
-                                    </h4>
+                                    </h3>
                                     <a wire:navigate href="{{ route('machines', ['product_id' => $product->id]) }}"
                                         style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #ffc107, #ffb300); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s;">
                                         {{ $product->name }} MACHINES
@@ -145,8 +142,6 @@
                         </div>
                     @endforeach
                 </div>
-                
-                
             </div>
         </section>
         <!-- End popular-destination Area -->
