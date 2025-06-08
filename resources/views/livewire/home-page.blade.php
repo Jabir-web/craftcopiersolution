@@ -10,23 +10,9 @@
 @section('twitter_image', asset('front/img/web/prthree.jpg'))
 @section('canonical_url', url()->current())
 
-{{-- SEO meta tags --}}
+{{-- Remove duplicate <title> and meta tags from @push('head') --}}
 @push('head')
-    <title>Printer Sales, Repairs & Rentals | Craft Copier Solution</title>
-    <meta name="description" content="Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.">
-    <link rel="canonical" href="{{ url()->current() }}" />
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Printer Sales, Repairs & Rentals | Craft Copier Solution">
-    <meta property="og:description" content="Reliable printer solutions: sales, rentals, repairs, and accessories for your business.">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ asset('front/img/web/prthree.jpg') }}">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Printer Sales, Repairs & Rentals | Craft Copier Solution">
-    <meta name="twitter:description" content="Reliable printer solutions: sales, rentals, repairs, and accessories for your business.">
-    <meta name="twitter:image" content="{{ asset('front/img/web/prthree.jpg') }}">
+    <!-- Only include structured data and any additional scripts/styles here, NOT <title> or meta description/keywords -->
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
