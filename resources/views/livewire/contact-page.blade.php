@@ -23,10 +23,10 @@
     <!-- Contact Section -->
     <section class="contact-page-area section-gap py-5" style="background: #f8fafc;">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-start">
                 <!-- Left: Map + Info -->
                 <div class="col-lg-5">
-                    <div class="mb-4 shadow rounded overflow-hidden" style="height: 340px;">
+                    <div class="mb-4 shadow rounded overflow-hidden" style="height: 320px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -34,7 +34,7 @@
                     </div>
                     <div class="bg-white p-4 rounded shadow-sm mb-3">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="icon bg-primary text-white rounded-circle me-3 p-3">
+                            <div class="icon bg-primary text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-home fs-5"></i>
                             </div>
                             <div>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-3">
-                            <div class="icon bg-success text-white rounded-circle me-3 p-3">
+                            <div class="icon bg-success text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-phone-handset fs-5"></i>
                             </div>
                             <div>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <div class="icon bg-danger text-white rounded-circle me-3 p-3">
+                            <div class="icon bg-danger text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-envelope fs-5"></i>
                             </div>
                             <div>
@@ -72,7 +72,7 @@
                 <!-- Right: Contact Form + Quick Links -->
                 <div class="col-lg-7">
                     <div class="p-4 bg-white shadow rounded mb-4">
-                        <h3 class="fw-bold mb-4 text-primary">Send Us a Message</h3>
+                        <h3 class="fw-bold mb-4 text-primary text-center">Send Us a Message</h3>
                         @if (session()->has('message'))
                             <div class="alert alert-success">{{ session('message') }}</div>
                         @endif
@@ -103,7 +103,7 @@
                         </form>
                     </div>
                     <div class="p-4 bg-white shadow rounded">
-                        <h4 class="fw-bold mb-3">Quick Links</h4>
+                        <h4 class="fw-bold mb-3 text-primary">Quick Links</h4>
                         <ul class="list-unstyled small">
                             <li class="mb-2"><a href="{{ route('homepage') }}"><i class="fa fa-home me-2 text-primary"></i>Home</a></li>
                             <li class="mb-2"><a href="{{ route('aboutpage') }}"><i class="fa fa-info-circle me-2 text-success"></i>About Us</a></li>
@@ -144,6 +144,22 @@
             }
             .contact-page-area .rounded {
                 border-radius: 14px!important;
+            }
+            .contact-page-area h3, .contact-page-area h4 {
+                letter-spacing: 0.5px;
+            }
+            .contact-page-area ul.list-unstyled li a {
+                font-size: 1.08rem;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: #22223b;
+                transition: color 0.2s;
+            }
+            .contact-page-area ul.list-unstyled li a:hover {
+                color: #02d602;
+                text-decoration: underline;
             }
         </style>
     </section>
