@@ -178,10 +178,16 @@
 										<span class="quick-link-text">Contact</span>
 									</a>
 								</li>
-								<li>
+								<li class="mb-3">
 									<a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center quick-link">
 										<span class="quick-link-icon bg-warning text-white me-3"><i class="fa fa-print"></i></span>
 										<span class="quick-link-text">Machines</span>
+									</a>
+								</li>
+								<li>
+									<a href="{{ url('/blogs') }}#blog-list-area" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
+										<span class="quick-link-text">Blogs</span>
 									</a>
 								</li>
 							</ul>

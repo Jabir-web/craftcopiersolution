@@ -28,7 +28,7 @@
 @endsection
 
 <div>
-    <section class="recent-blog-area section-gap" aria-label="Latest Blog Posts">
+    <section id="blog-list-area" class="recent-blog-area section-gap" aria-label="Latest Blog Posts">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-9">
