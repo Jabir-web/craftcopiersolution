@@ -189,7 +189,7 @@
 										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
 										<span class="quick-link-text blogs-link-text">
 											<span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
-											<span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;">(Our Blog)</span>
+											<span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
 										</span>
 									</a>
 								</li>
