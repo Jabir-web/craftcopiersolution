@@ -248,9 +248,12 @@
                             <div class="col">
                                 <ul>
                                     <li><a href="{{ route('homepage') }}">Home</a></li>
-                                    <li><a href="{{ route('aboutpage') }}">About us</a></li>
-                                    <li><a href="/contact">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="{{ route('aboutpage') }}">About Us</a></li>
+                                    <li><a href="{{ route('homepage') }}#our-best-machines">Services</a></li>
+                                    <li><a href="{{ route('homepage') }}#blog-list-area">Blog</a></li>
+                                    <li><a href="{{ route('contactpage') }}">Contact</a></li>
+                                    <li><a href="{{ route('homepage') }}#other-issue-area">Other Issue</a></li>
+                                    <li><a href="{{ route('homepage') }}#testimonials-area">Testimonials</a></li>
                                 </ul>
                             </div>
                         </div>
