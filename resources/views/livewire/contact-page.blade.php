@@ -24,22 +24,37 @@
     <section class="contact-page-area section-gap">
         <div class="container">
             <div class="row">
-                <div class="map-wrap" style="width:50%; height: 445px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Map and Quick Links Section -->
+                <div class="col-lg-8 d-flex">
+                    <!-- Map Container -->
+                    <div class="map-wrap" style="flex: 2; margin-right: 20px; height: 445px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Quick Links Placeholder -->
+                    <div class="quick-links-area" style="flex: 1;">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Link One</a></li>
+                            <li><a href="#">Link Two</a></li>
+                            <li><a href="#">Link Three</a></li>
+                        </ul>
+                        <!-- You can customize this later -->
+                    </div>
                 </div>
-                <div class="col-lg-4 d-flex flex-column address-wrap">
+
+                <!-- Contact Info Section -->
+                <div class="col-lg-4 d-flex flex-column address-wrap mt-5 mt-lg-0">
                     <div class="single-contact-address d-flex flex-row">
                         <div class="icon">
                             <span class="lnr lnr-home"></span>
                         </div>
                         <div class="contact-details">
                             <h5>Karachi, Pakistan</h5>
-                            <p>
-                                We deal all over pakistan customers.
-                            </p>
+                            <p>We deal all over pakistan customers.</p>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">
@@ -47,10 +62,7 @@
                             <span class="lnr lnr-phone-handset"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>+92 339 0027031
-                                <br>
-                                *92 328 2499598
-                            </h5>
+                            <h5>+92 339 0027031<br>*92 328 2499598</h5>
                             <p>Mon to Fri 9am to 6 pm</p>
                         </div>
                     </div>
@@ -64,7 +76,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+
+                <!-- Contact Form Section -->
+                <div class="col-lg-12 mt-5">
                     @if (session()->has('message'))
                         <div class="alert alert-success">
                             {{ session('message') }}
