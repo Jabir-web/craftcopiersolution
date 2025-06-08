@@ -21,99 +21,122 @@
     <!-- End banner Area -->
 
     <!-- Start contact-page Area -->
-    <section class="contact-page-area section-gap">
+    <section class="contact-page-area section-gap py-5" style="background: #f8fafc;">
         <div class="container">
             <div class="row">
-                <div class="map-wrap" style="width:100%; height: 445px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Contact Info & Quick Links Sidebar -->
+                <div class="col-lg-4 mb-4">
+                    <div class="widget-wrap p-4 bg-white shadow rounded" style="margin-bottom: 32px;">
+                        <!-- Quick Links Widget -->
+                        <div class="single-sidebar-widget mb-4">
+                            <h4 class="mb-3" style="font-weight: 700;">Quick Links</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3">
+                                    <a href="{{ route('homepage') }}" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-primary text-white me-3"><i class="fa fa-home"></i></span>
+                                        <span class="quick-link-text">Home</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="{{ route('aboutpage') }}" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-success text-white me-3"><i class="fa fa-info-circle"></i></span>
+                                        <span class="quick-link-text">About Us</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="{{ route('contactpage') }}" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-danger text-white me-3"><i class="fa fa-envelope"></i></span>
+                                        <span class="quick-link-text">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-warning text-white me-3"><i class="fa fa-print"></i></span>
+                                        <span class="quick-link-text">Machines</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
+                                        <span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
+                                        <span class="quick-link-text blogs-link-text">
+                                            <span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
+                                            <span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-secondary text-white me-3"><i class="fa fa-star"></i></span>
+                                        <span class="quick-link-text">Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center quick-link">
+                                        <span class="quick-link-icon bg-dark text-white me-3"><i class="fa fa-question-circle"></i></span>
+                                        <span class="quick-link-text">Other Issue</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Quick Links Widget -->
+                        <!-- Contact Info -->
+                        <div class="contact-info-widget">
+                            <h4 class="mb-3" style="font-weight: 700;">Contact Information</h4>
+                            <div class="single-contact-address d-flex flex-row mb-3">
+                                <div class="icon">
+                                    <span class="lnr lnr-home"></span>
+                                </div>
+                                <div class="contact-details ms-2">
+                                    <h5>Karachi, Pakistan</h5>
+                                    <p>We deal all over Pakistan customers.</p>
+                                </div>
+                            </div>
+                            <div class="single-contact-address d-flex flex-row mb-3">
+                                <div class="icon">
+                                    <span class="lnr lnr-phone-handset"></span>
+                                </div>
+                                <div class="contact-details ms-2">
+                                    <h5>+92 339 0027031<br>*92 328 2499598</h5>
+                                    <p>Mon to Fri 9am to 6 pm</p>
+                                </div>
+                            </div>
+                            <div class="single-contact-address d-flex flex-row mb-3">
+                                <div class="icon">
+                                    <span class="lnr lnr-envelope"></span>
+                                </div>
+                                <div class="contact-details ms-2">
+                                    <h5>info@craftcopiersolution.com</h5>
+                                    <p>Send us your query anytime!</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="btn btn-sm btn-primary rounded-circle"><i class="fa fa-facebook"></i></a>
+                                <a href="https://wa.me/+923282499598" target="_blank" class="btn btn-sm btn-success rounded-circle"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" class="btn btn-sm btn-danger rounded-circle"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" class="btn btn-sm btn-danger rounded-circle"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 d-flex flex-column address-wrap">
-                    <div class="single-contact-address d-flex flex-row">
-                        <div class="icon">
-                            <span class="lnr lnr-home"></span>
-                        </div>
-                        <div class="contact-details">
-                            <h5>Karachi, Pakistan</h5>
-                            <p>
-                                We deal all over pakistan customers.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="single-contact-address d-flex flex-row">
-                        <div class="icon">
-                            <span class="lnr lnr-phone-handset"></span>
-                        </div>
-                        <div class="contact-details">
-                            <h5>+92 339 0027031
-                                <br>
-                                *92 328 2499598
-                            </h5>
-                            <p>Mon to Fri 9am to 6 pm</p>
-                        </div>
-                    </div>
-                    <div class="single-contact-address d-flex flex-row">
-                        <div class="icon">
-                            <span class="lnr lnr-envelope"></span>
-                        </div>
-                        <div class="contact-details">
-                            <h5>info@craftcopiersolution.com</h5>
-                            <p>Send us your query anytime!</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Contact Form & Map -->
                 <div class="col-lg-8">
-                    @if (session()->has('message'))
-                        <div class="alert alert-success">
-                            {{ session('message') }}
-                        </div>
-                    @endif
-
-                    <form wire:submit.prevent="submit" class="form-area contact-form text-right" id="contactForm">
-                        @csrf
-                        <div class="row">
-                            <div class="col-lg-6 form-group">
-                                <input wire:model="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter your name'"
-                                    class="common-input mb-20 form-control" type="text">
-                                @error('name')
-                                    <span class="error">{{ $message }}</span>
-                                @enderror
-
-                                <input wire:model="email" placeholder="Enter email address"
-                                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
-                                    class="common-input mb-20 form-control" type="email">
-                                @error('email')
-                                    <span class="error">{{ $message }}</span>
-                                @enderror
-
-                                <input wire:model="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
-                                    type="text">
-                                @error('subject')
-                                    <span class="error">{{ $message }}</span>
-                                @enderror
+                    <div class="bg-white shadow rounded p-4">
+                        <h2 class="mb-4 text-primary" style="font-weight: 700;">Get in Touch</h2>
+                        @if (session()->has('message'))
+                            <div class="alert alert-success">
+                                {{ session('message') }}
                             </div>
-                            <div class="col-lg-6 form-group">
-                                <textarea wire:model="message" class="common-textarea form-control" placeholder="Enter Message"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"></textarea>
-                                @error('message')
-                                    <span class="error">{{ $message }}</span>
-                                @enderror
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="alert-msg" style="text-align: left;"></div>
-                                <button type="submit" class="genric-btn primary" style="float: right;">Send
-                                    Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End contact-page Area -->
-</div>
+                        @endif
+
+                        <form wire:submit.prevent="submit" class="form-area contact-form" id="contactForm" style="font-family: 'Poppins', sans-serif;">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-3">
+                                    <input wire:model="name" placeholder="Enter your name" class="form-control form-control-lg" type="text">
+                                    @error('name')
+                                        <span class="error text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6 form-group mb-3">
+                                    <input wire:model="email" placeholder="Enter email address"
+                                        pattern="[A-Za-z0-9._%+-]+@[A-Za
