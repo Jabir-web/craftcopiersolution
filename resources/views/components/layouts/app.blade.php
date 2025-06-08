@@ -36,12 +36,12 @@
     <!-- Alternate Language / Local Targeting -->
     <link rel="alternate" hreflang="en-PK" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
-
+    {{-- Add more hreflang tags for other languages/regions as needed --}}
+    
     <!-- Author -->
     <meta name="author" content="Craft Copier Solution">
-
-    <!-- Ahrefs Site Verification -->
-    <meta name="ahrefs-site-verification" content="fc2799ead94c1a7882ef291bd8aa9b3f9cb05df11a4d44bdc0ee388220bc16c0">
+    <meta name="copyright" content="Craft Copier Solution">
+    <meta name="publisher" content="Craft Copier Solution">
 
     <!-- Open Graph (Facebook etc.) -->
     <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Copier Services in Pakistan')">
@@ -53,6 +53,7 @@
     <meta property="og:locale" content="en_PK">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:updated_time" content="@yield('og_updated_time', now()->toIso8601String())">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -61,6 +62,9 @@
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
+
+    <!-- Article Published Time (for blog/article pages) -->
+    <meta property="article:published_time" content="@yield('article_published_time', now()->toIso8601String())">
 
     {{-- ==================== STRUCTURED DATA / SCHEMA ===================== --}}
     <script type="application/ld+json">
@@ -112,6 +116,17 @@
         "target": "https://craftcopiersolutions.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "@yield('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')",
+      "description": "@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')",
+      "url": "@yield('canonical_url', url()->current())",
+      "inLanguage": "en-PK"
     }
     </script>
 
@@ -185,19 +200,19 @@
                     <div class="col-lg-6 col-sm-6 col-6 header-top-right">
                         <div class="header-social">
                             <!-- Facebook -->
-                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" rel="noopener noreferrer me">
                                 <i class="fa fa-facebook"></i>
                             </a>
                             <!-- WhatsApp -->
-                            <a href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me">
                                 <i class="fa fa-whatsapp"></i>
                             </a>
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me">
                                 <i class="fa fa-instagram"></i>
                             </a>
                             <!-- YouTube -->
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me">
                                 <i class="fa fa-youtube"></i>
                             </a>
                         </div>
@@ -215,11 +230,17 @@
                 </div>
                 <nav id="nav-menu-container" aria-label="Main Navigation">
                     <ul class="nav-menu">
-                        <li><a wire:navigate href="{{ route('homepage') }}">Home</a></li>
-                        <li><a wire:navigate href="{{ route('aboutpage') }}">About</a></li>
+                        <li>
+                            <a wire:navigate href="{{ route('homepage') }}" @if(request()->routeIs('homepage')) aria-current="page" @endif>Home</a>
+                        </li>
+                        <li>
+                            <a wire:navigate href="{{ route('aboutpage') }}" @if(request()->routeIs('aboutpage')) aria-current="page" @endif>About</a>
+                        </li>
                         @livewire('service-dropdown')
                         @livewire('product-dropdown')
-                        <li><a wire:navigate href="/contact">Contact</a></li>
+                        <li>
+                            <a wire:navigate href="/contact" @if(request()->is('contact')) aria-current="page" @endif>Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -271,10 +292,10 @@
                         <h6>Our Social Media Accounts</h6>
                         <p>Stay updated with our latest printing solutions and exclusive offers.</p>
                         <div class="row footer-social">
-                            <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                            <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
-                            <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
-                            <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a>
+                            <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
+                            <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
+                            <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
+                            <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -285,10 +306,10 @@
                     Copyright © 2015-@php echo date('Y'); @endphp Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
-                    <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
-                    <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a>
+                    <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
+                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
+                    <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
+                    <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -314,6 +335,14 @@
         AOS.init({
             duration: 800,
             once: true
+        });
+    </script>
+    <script>
+        // Add loading="lazy" to all images after DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('img').forEach(function(img) {
+                img.setAttribute('loading', 'lazy');
+            });
         });
     </script>
     @livewireScripts
