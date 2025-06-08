@@ -191,36 +191,38 @@
                 <aside class="col-lg-4 sidebar-widgets" aria-label="Product Categories">
                     <div class="widget-wrap p-3">
                         <!-- Quick Links Widget -->
-                        <div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded">
-                            <h4 class="mb-3" style="font-weight: 700;">Quick Links</h4>
+                        <div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded quick-links-widget">
+                            <h4 class="mb-3" style="font-weight: 700; color: #02d602; letter-spacing: 1px;">
+                                <i class="fa fa-link me-2 text-primary"></i>Quick Links
+                            </h4>
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-3">
                                     <a href="{{ route('homepage') }}" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-primary text-white me-3"><i class="fa fa-home"></i></span>
+                                        <span class="quick-link-icon bg-primary text-white"><i class="fa fa-home"></i></span>
                                         <span class="quick-link-text">Home</span>
                                     </a>
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route('aboutpage') }}" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-success text-white me-3"><i class="fa fa-info-circle"></i></span>
+                                        <span class="quick-link-icon bg-success text-white"><i class="fa fa-info-circle"></i></span>
                                         <span class="quick-link-text">About Us</span>
                                     </a>
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route('contactpage') }}" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-danger text-white me-3"><i class="fa fa-envelope"></i></span>
+                                        <span class="quick-link-icon bg-danger text-white"><i class="fa fa-envelope"></i></span>
                                         <span class="quick-link-text">Contact</span>
                                     </a>
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-warning text-white me-3"><i class="fa fa-print"></i></span>
+                                        <span class="quick-link-icon bg-warning text-white"><i class="fa fa-print"></i></span>
                                         <span class="quick-link-text">Machines</span>
                                     </a>
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
-                                        <span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
+                                        <span class="quick-link-icon bg-info text-white"><i class="fa fa-list"></i></span>
                                         <span class="quick-link-text blogs-link-text">
                                             <span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
                                             <span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
@@ -229,13 +231,13 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-secondary text-white me-3"><i class="fa fa-star"></i></span>
+                                        <span class="quick-link-icon bg-secondary text-white"><i class="fa fa-star"></i></span>
                                         <span class="quick-link-text">Testimonials</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center quick-link">
-                                        <span class="quick-link-icon bg-dark text-white me-3"><i class="fa fa-question-circle"></i></span>
+                                        <span class="quick-link-icon bg-dark text-white"><i class="fa fa-question-circle"></i></span>
                                         <span class="quick-link-text">Other Issue</span>
                                     </a>
                                 </li>
@@ -255,31 +257,45 @@
                         </ul>
                     </div>
                     <style>
+                        .quick-links-widget {
+                            background: linear-gradient(120deg, #f4f8fb 80%, #e9ffe6 100%);
+                            border: 1px solid #e2e8f0;
+                            box-shadow: 0 6px 24px rgba(2, 214, 2, 0.07);
+                        }
                         .quick-link {
                             text-decoration: none;
-                            transition: background 0.2s, color 0.2s;
-                            padding: 8px 10px;
-                            border-radius: 8px;
+                            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+                            padding: 10px 14px;
+                            border-radius: 10px;
+                            margin-bottom: 2px;
+                            font-size: 1.07rem;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
                         }
                         .quick-link:hover, .quick-link:focus {
-                            background: #f1f5f9;
+                            background: #e9ffe6;
                             color: #02d602;
+                            box-shadow: 0 2px 12px rgba(2, 214, 2, 0.08);
                             text-decoration: none;
                         }
                         .quick-link-icon {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 36px;
-                            height: 36px;
+                            width: 38px;
+                            height: 38px;
                             border-radius: 50%;
-                            font-size: 1.2rem;
-                            margin-right: 18px;
+                            font-size: 1.25rem;
+                            margin-right: 16px;
+                            box-shadow: 0 2px 8px rgba(2, 214, 2, 0.07);
                         }
                         .quick-link-text {
-                            font-size: 1.08rem;
+                            font-size: 1.09rem;
                             font-weight: 600;
                             color: #22223b;
+                            letter-spacing: 0.5px;
                         }
                         .quick-link:hover .quick-link-text {
                             color: #02d602;
