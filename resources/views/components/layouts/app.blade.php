@@ -18,21 +18,14 @@
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
     <!-- Title SEO Tag -->
-    <title>@yield('title', 'Craft Copier Solution | Copier Rental, Sales & Repair in Karachi')</title>
+    <title>@yield('title', 'Craft Copier Solution | Copier Rental, Sales & Repair in Karachi, Pakistan')</title>
 
-    {{-- Meta description --}}
-    <meta name="description"
-        content="@yield('meta_description', 'Top-quality copier rental, sales, and repair services in Karachi. Fast, reliable, and affordable office copier solutions. Contact us now!')">
+    {{-- Meta Description --}}
+    <meta name="description" content="@yield('meta_description', 'Copier rental, repair, and sales services in Karachi, Lahore, Islamabad, and all over Pakistan. Reliable, affordable, and fast support for all brands!')">
 
-<!-- ahref seo analzyer  -->
- <script src="https://analytics.ahrefs.com/analytics.js" data-key="3N8Wf+jnynveO7E0vGmjYQ" async></script>
-
- <!-- meta tag for ahref  -->
-  <meta name="ahrefs-site-verification" content="fc2799ead94c1a7882ef291bd8aa9b3f9cb05df11a4d44bdc0ee388220bc16c0">
-
-    <!-- Meta Keywords -->
+    <!-- Meta Keywords (Expanded for Local SEO) -->
     <meta name="keywords"
-        content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office copier rental, buy photocopier in Karachi, copier maintenance services, printer service Karachi, best copier dealers Karachi')">
+        content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office printer repair Pakistan, buy photocopier Lahore, Canon service Islamabad, Ricoh copier dealers Pakistan, Karachi printer maintenance, Pakistan copier services')">
 
     <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow">
@@ -40,40 +33,36 @@
     <!-- Canonical Tag -->
     <link rel="canonical" href="@yield('canonical_url', url()->current())">
 
-    <!-- Alternate Language -->
-    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
+    <!-- Alternate Language / Local Targeting -->
+    <link rel="alternate" hreflang="en-PK" href="{{ url()->current() }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
 
     <!-- Author -->
     <meta name="author" content="Craft Copier Solution">
 
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title"
-        content="@yield('og_title', 'Craft Copier Solution | Printer Sales & Repair Services in Karachi')">
-    <meta property="og:description"
-        content="@yield('og_description', 'Expert printer repair, maintenance, and sales solutions. Contact us today for top-quality service!')">
-    <meta property="og:image"
-        content="@yield('og_image', asset('front/img/og-image.jpg'))">
+    <!-- Ahrefs Site Verification -->
+    <meta name="ahrefs-site-verification" content="fc2799ead94c1a7882ef291bd8aa9b3f9cb05df11a4d44bdc0ee388220bc16c0">
+
+    <!-- Open Graph (Facebook etc.) -->
+    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Copier Services in Pakistan')">
+    <meta property="og:description" content="@yield('og_description', 'Professional copier and printer services available in Karachi, Lahore, Islamabad and across Pakistan. Contact now!')">
+    <meta property="og:image" content="@yield('og_image', asset('front/img/og-image.jpg'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Craft Copier Solution">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="en_PK">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="@yield('twitter_title', 'Craft Copier Solution | Printer Sales & Repair Services')">
-    <meta name="twitter:description"
-        content="@yield('twitter_description', 'Looking for expert printer repair or a new printer? Get the best deals and services here!')">
-    <meta name="twitter:image"
-        content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer & Copier Services Pakistan')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert copier and printer services in Karachi or anywhere in Pakistan? Call us now!')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
 
-    {{-- ==================== END SEO TAGS ===================== --}}
-
-    {{-- ==================== SCHEMA.ORG MARKUP (Structured Data) ===================== --}}
+    {{-- ==================== STRUCTURED DATA / SCHEMA ===================== --}}
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -92,7 +81,7 @@
         "telephone": "+92-339-0027031",
         "contactType": "Customer Service",
         "areaServed": "PK",
-        "availableLanguage": "en"
+        "availableLanguage": ["en", "ur"]
       },
       "address": {
         "@type": "PostalAddress",
@@ -100,10 +89,19 @@
         "addressLocality": "Karachi",
         "addressRegion": "Sindh",
         "postalCode": "74600",
-        "addressCountry": "Pakistan"
+        "addressCountry": {
+          "@type": "Country",
+          "name": "Pakistan"
+        }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "24.8607",
+        "longitude": "67.0011"
       }
     }
     </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -116,7 +114,7 @@
       }
     }
     </script>
-    {{-- BreadcrumbList example --}}
+
     @hasSection('breadcrumbs')
     <script type="application/ld+json">
     {
@@ -129,7 +127,7 @@
     </script>
     @endif
 
-    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
+    {{-- ==================== ANALYTICS ===================== --}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -140,14 +138,15 @@
     <noscript>
         <img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt="Google Tag Manager" style="display:none;visibility:hidden"/>
     </noscript>
-    {{-- ######################### FOR GOOGLE ANALYTICS ########################## --}}
 
-    <!-- Preconnect for Google Fonts -->
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZKQ" async></script>
+
+    {{-- ==================== FONTS + STYLES ===================== --}}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('front/css/linearicons.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
@@ -159,7 +158,6 @@
     <link rel="stylesheet" href="{{ asset('front/css/mai.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZKQ" async></script>
     @livewireStyles
 </head>
 
