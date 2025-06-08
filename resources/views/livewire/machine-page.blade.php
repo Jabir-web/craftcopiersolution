@@ -250,7 +250,9 @@
                                 <li class="list-group-item d-flex justify-content-between align-items-center product-list-item">
                                     <div class="d-flex align-items-center">
                                         <span class="product-dot me-2"></span>
-                                        <span class="product-name">{{ $product->name }}</span>
+                                        <a href="{{ route('machines', ['product_id' => $product->id]) }}" class="product-name" style="text-decoration:none;">
+                                            {{ $product->name }}
+                                        </a>
                                     </div>
                                     <span class="badge bg-warning text-dark rounded-pill px-3 py-1" style="font-size: 0.98em;">
                                         {{ $product->machines_count }}
@@ -344,6 +346,11 @@
                         .product-name {
                             font-weight: 500;
                             color: #0F172A;
+                            transition: color 0.2s;
+                        }
+                        .product-name:hover {
+                            color: #02d602;
+                            text-decoration: underline;
                         }
                     </style>
                 </aside>
