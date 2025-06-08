@@ -24,62 +24,13 @@
     <section class="contact-page-area section-gap">
         <div class="container">
             <div class="row">
-                <!-- Quick Links Sidebar -->
+                <div class="map-wrap" style="width:100%; height: 445px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <div class="col-lg-4 d-flex flex-column address-wrap">
-                    <!-- Quick Links Widget -->
-                    <div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded">
-                        <h4 class="mb-3" style="font-weight: 700;">Quick Links</h4>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-3">
-                                <a href="{{ route('homepage') }}" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-primary text-white me-3"><i class="fa fa-home"></i></span>
-                                    <span class="quick-link-text">Home</span>
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="{{ route('aboutpage') }}" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-success text-white me-3"><i class="fa fa-info-circle"></i></span>
-                                    <span class="quick-link-text">About Us</span>
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="{{ route('contactpage') }}" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-danger text-white me-3"><i class="fa fa-envelope"></i></span>
-                                    <span class="quick-link-text">Contact</span>
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-warning text-white me-3"><i class="fa fa-print"></i></span>
-                                    <span class="quick-link-text">Machines</span>
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
-                                    <span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
-                                    <span class="quick-link-text blogs-link-text">
-                                        <span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
-                                        <span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-secondary text-white me-3"><i class="fa fa-star"></i></span>
-                                    <span class="quick-link-text">Testimonials</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center quick-link">
-                                    <span class="quick-link-icon bg-dark text-white me-3"><i class="fa fa-question-circle"></i></span>
-                                    <span class="quick-link-text">Other Issue</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Quick Links Widget -->
-
-                    <!-- Contact Information -->
                     <div class="single-contact-address d-flex flex-row">
                         <div class="icon">
                             <span class="lnr lnr-home"></span>
