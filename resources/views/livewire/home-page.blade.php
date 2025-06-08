@@ -153,24 +153,24 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-10 mx-auto">
                         <div class="card shadow-lg border-0 rounded-4 p-4" style="background: linear-gradient(120deg, #fffbe7 70%, #fff 100%);">
-                            <div class="row align-items-center">
-                                <div class="col-md-3 text-center mb-3 mb-md-0">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Custom Package" style="max-width: 90px; border-radius: 16px; box-shadow: 0 4px 18px rgba(255,193,7,0.13); background: #fff;">
+                            <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
+                                <div class="col-md-2 text-center mb-3 mb-md-0 d-flex justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Custom Package" style="max-width: 70px; border-radius: 16px; box-shadow: 0 4px 18px rgba(255,193,7,0.13); background: #fff;">
                                 </div>
-                                <div class="col-md-6 text-center text-md-start">
+                                <div class="col-md-7 mb-3 mb-md-0">
                                     <h2 class="fw-bold mb-2" style="color: #0F172A; font-size: 2rem;">
                                         Didn't find your package?
                                     </h2>
                                     <p class="mb-0" style="color: #555; font-size: 1.13rem;">
                                         <span style="display:inline-block;vertical-align:middle;margin-right:8px;">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Question" style="width:28px;height:28px;">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Question" style="width:22px;height:22px;">
                                         </span>
                                         No worries! We specialize in <span class="text-warning fw-bold">custom solutions</span> for all your printing and copier needs. Let us know your requirements and our team will create a tailored package just for you.
                                     </p>
                                 </div>
-                                <div class="col-md-3 text-center mt-3 mt-md-0">
-                                    <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow d-flex align-items-center justify-content-center" style="font-size: 1.15rem; letter-spacing: 1px;">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" style="width:28px;height:28px;margin-right:10px;">Request Custom Price
+                                <div class="col-md-3 text-center mt-3 mt-md-0 d-flex justify-content-center align-items-center">
+                                    <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow d-flex align-items-center justify-content-center w-100" style="font-size: 1.08rem; letter-spacing: 1px; min-width: 220px; white-space: nowrap;">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" style="width:22px;height:22px;margin-right:10px;">Request Custom Price
                                     </a>
                                 </div>
                             </div>
@@ -178,6 +178,32 @@
                     </div>
                 </div>
             </div>
+            <style>
+                @media (max-width: 991.98px) {
+                    .home-about-area .card .row.align-items-center {
+                        flex-direction: column !important;
+                        text-align: center !important;
+                    }
+                    .home-about-area .card .col-md-3,
+                    .home-about-area .card .col-md-2,
+                    .home-about-area .card .col-md-7 {
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        margin-bottom: 16px;
+                    }
+                    .home-about-area .card .col-md-3:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .home-about-area .btn-warning {
+                    font-size: 1.08rem;
+                    font-weight: 600;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    min-width: 200px;
+                    white-space: nowrap;
+                }
+            </style>
         </section>
         <!-- End home-about Area -->
         <style>
