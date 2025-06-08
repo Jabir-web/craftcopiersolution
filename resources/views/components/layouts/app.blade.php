@@ -18,10 +18,10 @@
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
     <!-- Title SEO Tag -->
-    <title>@yield('title', 'Craft Copier Solution | Copier Rental, Sales & Repair in Karachi, Pakistan')</title>
+    <title>@yield('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')</title>
 
     {{-- Meta Description --}}
-    <meta name="description" content="@yield('meta_description', 'Copier rental, repair, and sales services in Karachi, Lahore, Islamabad, and all over Pakistan. Reliable, affordable, and fast support for all brands!')">
+    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')">
 
     <!-- Meta Keywords (Expanded for Local SEO) -->
     <meta name="keywords"
