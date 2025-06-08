@@ -244,14 +244,17 @@
                             </ul>
                         </div>
                         <!-- End Quick Links Widget -->
-                        <h4 class="widget-title mb-3">Products</h4>
-                        <ul class="list-group">
+                        <h4 class="widget-title mb-3" style="font-weight: 700; color: #0F172A;">Products</h4>
+                        <ul class="list-group product-list-widget">
                             @foreach($products as $product)
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <label for="product-{{ $product->id }}">{{ $product->name }}</label>
+                                <li class="list-group-item d-flex justify-content-between align-items-center product-list-item">
+                                    <div class="d-flex align-items-center">
+                                        <span class="product-dot me-2"></span>
+                                        <span class="product-name">{{ $product->name }}</span>
                                     </div>
-                                    <span class="badge badge-primary badge-pill">{{ $product->machines_count }}</span>
+                                    <span class="badge bg-warning text-dark rounded-pill px-3 py-1" style="font-size: 0.98em;">
+                                        {{ $product->machines_count }}
+                                    </span>
                                 </li>
                             @endforeach
                         </ul>
@@ -308,6 +311,39 @@
                         .blogs-link:hover .blogs-link-text span:first-child {
                             color: #02d602;
                             text-decoration: underline;
+                        }
+                        .product-list-widget {
+                            background: #f8fafc;
+                            border-radius: 10px;
+                            box-shadow: 0 2px 8px rgba(2,214,2,0.04);
+                            padding: 0;
+                        }
+                        .product-list-item {
+                            border: none;
+                            border-bottom: 1px solid #e2e8f0;
+                            background: transparent;
+                            font-size: 1.05rem;
+                            font-weight: 500;
+                            color: #22223b;
+                            transition: background 0.15s;
+                        }
+                        .product-list-item:last-child {
+                            border-bottom: none;
+                        }
+                        .product-list-item:hover {
+                            background: #e9ffe6;
+                        }
+                        .product-dot {
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background: #02d602;
+                            margin-right: 6px;
+                        }
+                        .product-name {
+                            font-weight: 500;
+                            color: #0F172A;
                         }
                     </style>
                 </aside>
