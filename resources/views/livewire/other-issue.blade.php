@@ -64,7 +64,7 @@
                         <div class="thumb">
                             <img class="img-fluid border rounded" src="{{ asset('front/img/bulk.png') }}" alt="Bulk Printing Service Karachi">
                         </div>
-                        <a href="#">
+                        <a href="{{ route('contactpage') }}">
                             <h4>Bulk Printing Service</h4>
                         </a>
                         <p>
@@ -78,7 +78,7 @@
                         <div class="thumb">
                             <img class="img-fluid border rounded" src="{{ asset('front/img/repair.png') }}" alt="Copier Repair Service Karachi">
                         </div>
-                        <a href="#">
+                        <a href="{{ route('contactpage') }}">
                             <h4>Copier Repair Service</h4>
                         </a>
                         <p>
@@ -92,7 +92,7 @@
                         <div class="thumb">
                             <img class="img-fluid border rounded" src="{{ asset('front/img/rental.png') }}" alt="Photocopier Rentals Karachi">
                         </div>
-                        <a href="#">
+                        <a href="{{ route('contactpage') }}">
                             <h4>Photocopier Rentals</h4>
                         </a>
                         <p>
@@ -106,7 +106,7 @@
                         <div class="thumb">
                             <img class="img-fluid border rounded" src="{{ asset('front/img/percopy.png') }}" alt="Get Copier On Per Copy Cost Karachi">
                         </div>
-                        <a href="#">
+                        <a href="{{ route('contactpage') }}">
                             <h4>Get Copier On Per Copy Cost</h4>
                         </a>
                         <p>
@@ -148,6 +148,11 @@
                 font-weight: 700;
                 color: #0F172A;
                 margin-bottom: 10px;
+                transition: color 0.2s;
+            }
+            .single-other-issue a:hover h4 {
+                color: #02d602;
+                text-decoration: underline;
             }
             .single-other-issue p {
                 font-size: 1rem;
