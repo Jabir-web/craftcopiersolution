@@ -1,3 +1,15 @@
+@section('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
+@section('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')
+@section('meta_keywords', 'printer sales, printer rentals, printer repairs, copier solutions, Karachi, Pakistan, office printers, copier maintenance, printer accessories, Craft Copier Solution')
+@section('og_title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
+@section('og_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business.')
+@section('og_image', asset('front/img/web/prthree.jpg'))
+@section('og_url', url()->current())
+@section('twitter_title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
+@section('twitter_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business.')
+@section('twitter_image', asset('front/img/web/prthree.jpg'))
+@section('canonical_url', url()->current())
+
 {{-- SEO meta tags --}}
 @push('head')
     <title>Printer Sales, Repairs & Rentals | Craft Copier Solution</title>
