@@ -185,9 +185,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="{{ url('/blogs') }}#blog-list-area" class="d-flex align-items-center quick-link">
+									<a href="{{ route('blogpage', ['title' => null]) }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
 										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
-										<span class="quick-link-text">Blogs</span>
+										<span class="quick-link-text blogs-link-text">
+											<span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
+											<span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;">(Our Blog)</span>
+										</span>
 									</a>
 								</li>
 							</ul>
@@ -314,6 +317,15 @@
 		}
 		.quick-link:hover .quick-link-text {
 			color: #02d602;
+		}
+		.blogs-link-text {
+			display: flex;
+			align-items: baseline;
+			gap: 4px;
+		}
+		.blogs-link:hover .blogs-link-text span:first-child {
+			color: #02d602;
+			text-decoration: underline;
 		}
 	</style>
 </div>
