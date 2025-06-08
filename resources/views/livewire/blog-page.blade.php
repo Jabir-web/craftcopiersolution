@@ -156,6 +156,37 @@
 				<!-- Sidebar -->
 				<div class="col-lg-4 sidebar-widgets">
 					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
+						<!-- Internal Professional Links Widget -->
+						<div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Quick Links</h4>
+							<ul class="list-unstyled">
+								<li class="mb-2">
+									<a href="{{ route('homepage') }}" class="text-dark text-decoration-none d-flex align-items-center">
+										<i class="fa fa-home me-2 text-primary"></i> Home
+									</a>
+								</li>
+								<li class="mb-2">
+									<a href="{{ route('aboutpage') }}" class="text-dark text-decoration-none d-flex align-items-center">
+										<i class="fa fa-info-circle me-2 text-success"></i> About Us
+									</a>
+								</li>
+								<li class="mb-2">
+									<a href="{{ route('contactpage') }}" class="text-dark text-decoration-none d-flex align-items-center">
+										<i class="fa fa-envelope me-2 text-danger"></i> Contact
+									</a>
+								</li>
+								<li class="mb-2">
+									<a href="{{ route('machines') }}" class="text-dark text-decoration-none d-flex align-items-center">
+										<i class="fa fa-print me-2 text-warning"></i> Machines
+									</a>
+								</li>
+								<li class="mb-2">
+									<a href="{{ route('services') }}" class="text-dark text-decoration-none d-flex align-items-center">
+										<i class="fa fa-cogs me-2 text-info"></i> Services
+									</a>
+								</li>
+							</ul>
+						</div>
 						<!-- Author Info Widget -->
 						<div class="single-sidebar-widget user-info-widget text-center mb-4 p-4 bg-white shadow rounded">
 							<h4 class="mb-1" style="font-weight: 700;">CRAFT COPIER SOLUTION Team</h4>
