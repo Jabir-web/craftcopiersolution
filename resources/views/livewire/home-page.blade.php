@@ -153,11 +153,11 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-10 mx-auto">
                         <div class="card shadow-lg border-0 rounded-4 p-4" style="background: linear-gradient(120deg, #fffbe7 70%, #fff 100%);">
-                            <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
-                                <div class="col-md-2 text-center mb-3 mb-md-0 d-flex justify-content-center">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+                                <div class="flex-shrink-0 text-center">
                                     <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Custom Package" style="max-width: 70px; border-radius: 16px; box-shadow: 0 4px 18px rgba(255,193,7,0.13); background: #fff;">
                                 </div>
-                                <div class="col-md-7 mb-3 mb-md-0">
+                                <div class="flex-grow-1 text-center text-md-start">
                                     <h2 class="fw-bold mb-2" style="color: #0F172A; font-size: 2rem;">
                                         Didn't find your package?
                                     </h2>
@@ -168,8 +168,8 @@
                                         No worries! We specialize in <span class="text-warning fw-bold">custom solutions</span> for all your printing and copier needs. Let us know your requirements and our team will create a tailored package just for you.
                                     </p>
                                 </div>
-                                <div class="col-md-3 text-center mt-3 mt-md-0 d-flex justify-content-center align-items-center">
-                                    <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow d-flex align-items-center justify-content-center w-100" style="font-size: 1.08rem; letter-spacing: 1px; min-width: 220px; white-space: nowrap;">
+                                <div class="flex-shrink-0 mt-3 mt-md-0 d-flex justify-content-center align-items-center w-100" style="max-width: 260px;">
+                                    <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow d-flex align-items-center justify-content-center w-100" style="font-size: 1.08rem; letter-spacing: 1px; min-width: 200px; white-space: nowrap;">
                                         <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" style="width:22px;height:22px;margin-right:10px;">Request Custom Price
                                     </a>
                                 </div>
@@ -179,20 +179,19 @@
                 </div>
             </div>
             <style>
+                .home-about-area .card .d-flex {
+                    gap: 32px;
+                }
                 @media (max-width: 991.98px) {
-                    .home-about-area .card .row.align-items-center {
+                    .home-about-area .card .d-flex {
                         flex-direction: column !important;
                         text-align: center !important;
+                        gap: 18px;
                     }
-                    .home-about-area .card .col-md-3,
-                    .home-about-area .card .col-md-2,
-                    .home-about-area .card .col-md-7 {
+                    .home-about-area .card .flex-shrink-0,
+                    .home-about-area .card .flex-grow-1 {
                         width: 100% !important;
                         max-width: 100% !important;
-                        margin-bottom: 16px;
-                    }
-                    .home-about-area .card .col-md-3:last-child {
-                        margin-bottom: 0;
                     }
                 }
                 .home-about-area .btn-warning {
