@@ -148,21 +148,30 @@
     <!-- End testimonial Area -->
     
         <!-- Start home-about Area -->
-        <section class="home-about-area">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-end">
-                    <div class="col-lg-12 col-md-12 home-about-left">
-                        <h2>
-                            Did not find your Package? <br>
-                            Feel free to ask us. <br>
-                            We‘ll make it for you
-                        </h2>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                            standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
-                            the job is beyond reproach. inappropriate behavior is often laughed.
-                        </p>
-                        <a  href="{{ route('contactpage') }}"  class="primary-btn text-uppercase">request custom price</a>
+        <section class="home-about-area py-5" style="background: #fffbe7;">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="card shadow-lg border-0 rounded-4 p-4" style="background: linear-gradient(120deg, #fffbe7 70%, #fff 100%);">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <img src="{{ asset('front/img/custom-offer.png') }}" alt="Custom Package" style="max-width: 100px; border-radius: 16px; box-shadow: 0 4px 18px rgba(255,193,7,0.13); background: #fff;">
+                                </div>
+                                <div class="col-md-6 text-center text-md-start">
+                                    <h2 class="fw-bold mb-2" style="color: #0F172A; font-size: 2rem;">
+                                        Didn't find your package?
+                                    </h2>
+                                    <p class="mb-0" style="color: #555; font-size: 1.13rem;">
+                                        No worries! We specialize in custom solutions for all your printing and copier needs. Let us know your requirements and our team will create a tailored package just for you.
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center mt-3 mt-md-0">
+                                    <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow" style="font-size: 1.15rem; letter-spacing: 1px;">
+                                        <i class="fa fa-envelope me-2"></i>Request Custom Price
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
