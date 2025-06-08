@@ -293,6 +293,7 @@
 			height: 36px;
 			border-radius: 50%;
 			font-size: 1.2rem;
+			margin-right: 18px; /* Increased space between icon and text */
 		}
 		.quick-link-text {
 			font-size: 1.08rem;
