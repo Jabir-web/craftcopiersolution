@@ -185,7 +185,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="{{ route('blogpage', ['title' => null]) }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
+									<a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
 										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
 										<span class="quick-link-text blogs-link-text">
 											<span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>

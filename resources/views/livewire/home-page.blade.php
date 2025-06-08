@@ -241,6 +241,8 @@
         </style>
     
         <!-- Start blog Area -->
-        @livewire('blog-list')
+        <section id="blog-list-area">
+            @livewire('blog-list')
+        </section>
         <!-- End recent-blog Area -->
 </div>
