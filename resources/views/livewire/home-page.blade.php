@@ -168,7 +168,7 @@
                                         No worries! We specialize in <span class="text-warning fw-bold">custom solutions</span> for all your printing and copier needs. Let us know your requirements and our team will create a tailored package just for you.
                                     </p>
                                 </div>
-                                <div class="flex-shrink-0 mt-3 mt-md-0 d-flex justify-content-center align-items-center w-100" style="max-width: 260px;">
+                                <div class="flex-shrink-0 mt-3 mt-md-0 d-flex justify-content-center align-items-center w-100" style="max-width: 300px;">
                                     <a href="{{ route('contactpage') }}" class="btn btn-lg btn-warning px-4 py-2 rounded-pill fw-bold shadow d-flex align-items-center justify-content-center w-100" style="font-size: 1.08rem; letter-spacing: 1px; min-width: 200px; white-space: nowrap;">
                                         <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" style="width:22px;height:22px;margin-right:10px;">Request Custom Price
                                     </a>
