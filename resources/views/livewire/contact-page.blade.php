@@ -36,13 +36,112 @@
 
                     <!-- Quick Links Placeholder -->
                     <div class="quick-links-area" style="flex: 1;">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#">Link One</a></li>
-                            <li><a href="#">Link Two</a></li>
-                            <li><a href="#">Link Three</a></li>
-                        </ul>
-                        <!-- You can customize this later -->
+                       		<div class="col-lg-4 sidebar-widgets">
+					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
+						<!-- Internal Professional Links Widget -->
+						<div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Quick Links</h4>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-3">
+									<a href="{{ route('homepage') }}" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-primary text-white me-3"><i class="fa fa-home"></i></span>
+										<span class="quick-link-text">Home</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('aboutpage') }}" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-success text-white me-3"><i class="fa fa-info-circle"></i></span>
+										<span class="quick-link-text">About Us</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('contactpage') }}" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-danger text-white me-3"><i class="fa fa-envelope"></i></span>
+										<span class="quick-link-text">Contact</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-warning text-white me-3"><i class="fa fa-print"></i></span>
+										<span class="quick-link-text">Machines</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center quick-link blogs-link">
+										<span class="quick-link-icon bg-info text-white me-3"><i class="fa fa-list"></i></span>
+										<span class="quick-link-text blogs-link-text">
+											<span style="font-weight:700; color:#0F172A; letter-spacing:1px;">Blogs</span>
+											<span style="font-size:0.92em; color:#02d602; font-weight:500; margin-left:6px;"></span>
+										</span>
+									</a>
+								</li>
+								<li class="mb-3">
+									<a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-secondary text-white me-3"><i class="fa fa-star"></i></span>
+										<span class="quick-link-text">Testimonials</span>
+									</a>
+								</li>
+								<li>
+									<a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center quick-link">
+										<span class="quick-link-icon bg-dark text-white me-3"><i class="fa fa-question-circle"></i></span>
+										<span class="quick-link-text">Other Issue</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Author Info Widget -->
+						<div class="single-sidebar-widget user-info-widget text-center mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-1" style="font-weight: 700;">CRAFT COPIER SOLUTION Team</h4>
+							<p class="text-muted">Professional Blog Writers</p>
+							<div class="d-flex justify-content-center gap-3 mb-3 ">
+								<a href="https://www.facebook.com/craftcopiersolutions" target="_blank" rel="noopener noreferrer" class="text-primary fs-5">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer" class="text-success fs-5 mx-2">
+									<i class="fa fa-whatsapp"></i>
+								</a>
+								<a href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer" class="text-danger fs-5 mx-2">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer" class="text-danger fs-5 mx-2">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</div>
+							<p class="text-secondary" style="font-size: 0.95rem;">
+								Sharing expert advice, troubleshooting tips, and maintenance guides to keep your
+								printing solutions smooth and efficient.
+							</p>
+						</div>
+						<!-- Popular Posts Widget -->
+						<div class="single-sidebar-widget popular-post-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Popular Posts</h4>
+							<div class="popular-post-list">
+								@foreach($blogs->take(5) as $popular)
+									<a href="{{ route('blogpage', ['title' => $popular->title]) }}" class="blog-link d-flex align-items-center mb-3" style="text-decoration: none;">
+										<img src="{{ url('storage/' . $popular->img) }}" alt="{{ $popular->title }}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px; margin-right: 12px;">
+										<div>
+											<h5 class="mb-1" style="font-size: 1rem; color: #0F172A;">{{ $popular->title }}</h5>
+											<small class="text-muted">{{ $popular->created_at->format('M d, Y') }}</small>
+										</div>
+									</a>
+								@endforeach
+							</div>
+						</div>
+						<!-- Post Categories Widget -->
+						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
+							<h4 class="mb-3" style="font-weight: 700;">Post Categories</h4>
+							<ul class="cat-list list-unstyled">
+								@foreach($blogs->unique('category') as $blogItem)
+									<li class="mb-2">
+										<span class="d-flex justify-content-between text-decoration-none text-dark">
+											<p class="mb-0">{{ $blogItem->category }}</p>
+										</span>
+									</li>
+								@endforeach
+							</ul>
+						</div>
+					</div>
+				</div>
                     </div>
                 </div>
 
