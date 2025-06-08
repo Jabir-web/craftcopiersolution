@@ -160,6 +160,12 @@
 
     @livewireStyles
 </head>
+<style>
+     html, body {
+        max-width: 100vw !important;
+        overflow-x: hidden  !important;
+    }
+</style>
 
 <body>
     <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>

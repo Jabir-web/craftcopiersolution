@@ -9,6 +9,7 @@
             font-family: 'Segoe UI', sans-serif;
             text-align: center;
             padding: 50px;
+       
         }
         .container {
             background: white;
