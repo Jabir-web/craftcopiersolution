@@ -37,7 +37,7 @@
                             <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-home fs-5"></i>
                             </div>
-                            <div>
+                            <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">Karachi, Pakistan</h6>
                                 <small class="text-muted">We deal all over Pakistan</small>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-phone-handset fs-5"></i>
                             </div>
-                            <div>
+                            <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">+92 339 0027031 | +92 328 2499598</h6>
                                 <small class="text-muted">Mon to Fri 9am - 6pm</small>
                             </div>
@@ -55,7 +55,7 @@
                             <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                                 <i class="lnr lnr-envelope fs-5"></i>
                             </div>
-                            <div>
+                            <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">info@craftcopiersolution.com</h6>
                                 <small class="text-muted">Send us your queries anytime</small>
                             </div>
