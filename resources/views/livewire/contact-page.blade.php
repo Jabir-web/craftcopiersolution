@@ -77,8 +77,27 @@
                         <form wire:submit.prevent="submit">
                             @csrf
                             <div class="row g-3">
-                                <!-- Name, Email, Subject, Message fields -->
-                                <!-- ... your form inputs with aria-labels ... -->
+                              <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" wire:model="name" class="form-control form-control-lg border-warning" placeholder="Your Name">
+                                    @error('name') <small class="text-danger">{{ $message }}</small> @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" wire:model="email" class="form-control form-control-lg border-warning" placeholder="Your Email">
+                                    @error('email') <small class="text-danger">{{ $message }}</small> @enderror
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" wire:model="subject" class="form-control form-control-lg border-warning" placeholder="Subject">
+                                    @error('subject') <small class="text-danger">{{ $message }}</small> @enderror
+                                </div>
+                                <div class="col-12">
+                                    <textarea wire:model="message" class="form-control form-control-lg border-warning" rows="5" placeholder="Message"></textarea>
+                                    @error('message') <small class="text-danger">{{ $message }}</small> @enderror
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-lg btn-warning px-5 py-2 rounded-pill" style="font-weight: 600; letter-spacing: 1px;">Send Message</button>
+                                </div>
+                            </div>
                                 <div class="col-12 text-end">
                                     <button type="submit" class="btn btn-lg btn-warning px-5 py-2 rounded-pill">Send Message</button>
                                 </div>
