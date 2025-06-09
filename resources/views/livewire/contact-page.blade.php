@@ -171,3 +171,7 @@
     </section>
 </div>
 
+{{-- Make sure these are in your main layout (e.g., layouts/app.blade.php) --}}
+{{-- @livewireStyles --}}
+{{-- @livewireScripts --}}
+
