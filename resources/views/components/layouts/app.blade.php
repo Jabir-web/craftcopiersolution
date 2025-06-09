@@ -18,12 +18,12 @@
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
     <!-- Title SEO Tag -->
-    <title>@yield('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')</title>
+    <title>@yield('title', 'Printer Sales & Repairs in Karachi | Craft Copier Solution')</title>
 
     {{-- Meta Description --}}
-    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')">
+    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories in Karachi and across Pakistan. Get expert maintenance and genuine parts for your business.')">
 
-    <!-- Meta Keywords (Expanded for Local SEO) -->
+    <!-- Meta Keywords (Optional) -->
     <meta name="keywords"
         content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office printer repair Pakistan, buy photocopier Lahore, Canon service Islamabad, Ricoh copier dealers Pakistan, Karachi printer maintenance, Pakistan copier services')">
 
@@ -44,8 +44,8 @@
     <meta name="publisher" content="Craft Copier Solution">
 
     <!-- Open Graph (Facebook etc.) -->
-    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Copier Services in Pakistan')">
-    <meta property="og:description" content="@yield('og_description', 'Professional copier and printer services available in Karachi, Lahore, Islamabad and across Pakistan. Contact now!')">
+    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Copier Services in Karachi & Pakistan')">
+    <meta property="og:description" content="@yield('og_description', 'Professional copier and printer services available in Karachi, Lahore, Islamabad, and across Pakistan. Contact us today!')">
     <meta property="og:image" content="@yield('og_image', asset('front/img/og-image.jpg'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:type" content="website">
@@ -57,7 +57,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer & Copier Services Pakistan')">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer & Copier Services Karachi & Pakistan')">
     <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert copier and printer services in Karachi or anywhere in Pakistan? Call us now!')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
@@ -70,39 +70,50 @@
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "https://craftcopiersolutions.com",
+      "@type": "LocalBusiness",
       "name": "Craft Copier Solution",
-      "logo": "https://craftcopiersolutions.com/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/craftcopiersolutions",
-        "https://twitter.com/craftcopiersolution",
-        "https://www.linkedin.com/company/craftcopiersolutions",
-        "https://www.instagram.com/craftcopiersolution/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+92-339-0027031",
-        "contactType": "Customer Service",
-        "areaServed": "PK",
-        "availableLanguage": ["en", "ur"]
-      },
+      "image": "https://craftcopiersolutions.com/logo.png",
+      "url": "https://craftcopiersolutions.com",
+      "telephone": "+92-339-0027031",
+      "email": "info@craftcopiersolutions.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Copier St",
         "addressLocality": "Karachi",
         "addressRegion": "Sindh",
         "postalCode": "74600",
-        "addressCountry": {
-          "@type": "Country",
-          "name": "Pakistan"
-        }
+        "addressCountry": "PK"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "24.8607",
-        "longitude": "67.0011"
-      }
+        "latitude": 24.8607,
+        "longitude": 67.0011
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/craftcopiersolutions",
+        "https://twitter.com/craftcopiersolution",
+        "https://www.linkedin.com/company/craftcopiersolutions",
+        "https://www.instagram.com/craftcopiersolution/"
+      ],
+      "paymentAccepted": [
+        "Cash",
+        "Credit Card",
+        "Bank Transfer"
+      ],
+      "priceRange": "$$"
     }
     </script>
 
@@ -123,8 +134,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "@yield('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')",
-      "description": "@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories. Get high-quality printers, expert maintenance, and genuine parts for your business.')",
+      "name": "@yield('title', 'Printer Sales & Repairs in Karachi | Craft Copier Solution')",
+      "description": "@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories in Karachi and across Pakistan. Get expert maintenance and genuine parts for your business.')",
       "url": "@yield('canonical_url', url()->current())",
       "inLanguage": "en-PK"
     }
@@ -175,6 +186,7 @@
 
     @livewireStyles
 </head>
+
 <style>
      html, body {
         max-width: 100vw !important;
