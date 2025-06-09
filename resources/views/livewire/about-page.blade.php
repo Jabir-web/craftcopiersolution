@@ -12,20 +12,34 @@
 @section('twitter_description', 'Discover why Craft Copier Solution is Karachi’s top choice for printer sales, repairs, and maintenance.')
 @section('twitter_image', asset('front/img/about-img.png'))
 @section('canonical_url', url()->current())
+
 @section('breadcrumbs')
-{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "{{ url('/') }}"
-},
-{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "About Us",
-    "item": "{{ url()->current() }}"
-}
+[
+    {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ url('/') }}"
+    },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "{{ url()->current() }}"
+    }
+]
 @endsection
+
+@push('head')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": @yield('breadcrumbs')
+}
+</script>
+@endpush
+
 
 <main>
     <!-- Banner Area -->
