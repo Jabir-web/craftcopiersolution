@@ -12,20 +12,33 @@
 @section('twitter_description', 'Expert printer and copier tips, news, and guides from Craft Copier Solution.')
 @section('twitter_image', asset('front/img/og-image.jpg'))
 @section('canonical_url', url()->current())
+
 @section('breadcrumbs')
-{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "{{ url('/') }}"
-},
-{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Blog",
-    "item": "{{ url()->current() }}"
-}
+[
+    {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ url('/') }}"
+    },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "{{ url()->current() }}"
+    }
+]
 @endsection
+
+@push('head')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": @yield('breadcrumbs')
+}
+</script>
+@endpush
 
 <div>
     <section id="blog-list-area" class="recent-blog-area section-gap" aria-label="Latest Blog Posts">
