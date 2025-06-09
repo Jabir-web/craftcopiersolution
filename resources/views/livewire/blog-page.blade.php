@@ -12,28 +12,43 @@
 @section('twitter_description', $blog ? Str::limit(strip_tags($blog->description), 150) : 'Read expert printer and copier tips, news, and guides from Craft Copier Solution.')
 @section('twitter_image', $blog ? url('storage/' . $blog->img) : asset('front/img/og-image.jpg'))
 @section('canonical_url', url()->current())
-@section('breadcrumbs')
+
+@php
+    $breadcrumbs = [
+        [
+            "@type" => "ListItem",
+            "position" => 1,
+            "name" => "Home",
+            "item" => url('/')
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 2,
+            "name" => "Blog",
+            "item" => url('/blog')
+        ],
+    ];
+
+    if ($blog) {
+        $breadcrumbs[] = [
+            "@type" => "ListItem",
+            "position" => 3,
+            "name" => $blog->title,
+            "item" => url()->current()
+        ];
+    }
+@endphp
+
+@push('head')
+<script type="application/ld+json">
 {
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "{{ url('/') }}"
-},
-{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Blog",
-    "item": "{{ url('/blog') }}"
-},
-@if($blog)
-{
-    "@type": "ListItem",
-    "position": 3,
-    "name": "{{ $blog->title }}",
-    "item": "{{ url()->current() }}"
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": {!! json_encode($breadcrumbs, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
 }
-@endif
-@endsection
+</script>
+@endpush
+
 
 <div>
 	<!-- start banner Area -->
