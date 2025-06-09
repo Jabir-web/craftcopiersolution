@@ -10,26 +10,37 @@
 @section('twitter_image', asset('front/img/web/prthree.jpg'))
 @section('canonical_url', url()->current())
 
-{{-- Remove duplicate <title> and meta tags from @push('head') --}}
 @push('head')
-    <!-- Only include structured data and any additional scripts/styles here, NOT <title> or meta description/keywords -->
-    <!-- Structured Data -->
+    <!-- LocalBusiness Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "Craft Copier Solution",
+      "image": "{{ asset('front/img/logo.png') }}",
       "url": "{{ url('/') }}",
-      "logo": "{{ asset('front/img/logo.png') }}",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+92-XXX-XXXXXXX",
-        "contactType": "customer service",
-        "areaServed": "PK"
+      "telephone": "+92-339-0027031",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Copier St",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "74600",
+        "addressCountry": "PK"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.8607,
+        "longitude": 67.0011
+      },
+      "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
       "sameAs": [
-        "https://www.facebook.com/yourpage"
-      ]
+        "https://www.facebook.com/craftcopiersolutions",
+        "https://twitter.com/craftcopiersolution",
+        "https://www.linkedin.com/company/craftcopiersolutions",
+        "https://www.instagram.com/craftcopiersolution/"
+      ],
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer"
     }
     </script>
 @endpush
