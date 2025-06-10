@@ -1,16 +1,21 @@
 @section('title')
-    About Us - Craft Copier Solution
+    About Us - Craft Copier Solution | Printer Sales, Repairs & Bulk Printing in Karachi, Pakistan
 @endsection
 
-@section('meta_description', 'Learn about Craft Copier Solution, your trusted partner for printer sales, repairs, and maintenance in Karachi. Discover our mission, values, and why businesses choose us for reliable printing solutions.')
-@section('meta_keywords', 'about Craft Copier Solution, printer repair Karachi, copier sales Karachi, printer maintenance, office printer solutions, best printer service Karachi')
-@section('og_title', 'About Craft Copier Solution | Printer Sales & Repair Experts in Karachi')
-@section('og_description', 'Meet the team behind Craft Copier Solution. We provide expert printer sales, repairs, and maintenance services in Karachi and beyond.')
+@section('meta_description', 'Craft Copier Solution is a leading printer repair, sales, and maintenance company based in Karachi, Pakistan. Learn about our professional services, mission, and why clients across Pakistan trust us for expert copier and printing solutions.')
+
+@section('meta_keywords', 'Craft Copier Solution Karachi, about printer repair Pakistan, copier sales Karachi, printing company Pakistan, printer maintenance Karachi, photocopier experts Pakistan, best printer repair Karachi, Canon Kyocera Ricoh repair Karachi')
+
+@section('og_title', 'About Craft Copier Solution | Karachi’s Trusted Printer & Copier Experts')
+@section('og_description', 'Meet the experts at Craft Copier Solution. We offer top-rated printer and copier repair, sales, and bulk printing services in Karachi and across Pakistan.')
+
 @section('og_image', asset('front/img/about-img.png'))
 @section('og_url', url()->current())
-@section('twitter_title', 'About Us - Craft Copier Solution')
-@section('twitter_description', 'Discover why Craft Copier Solution is Karachi’s top choice for printer sales, repairs, and maintenance.')
+
+@section('twitter_title', 'About Craft Copier Solution - Printer & Copier Services in Karachi')
+@section('twitter_description', 'Discover Craft Copier Solution’s journey and expertise in printer and copier services across Karachi and Pakistan.')
 @section('twitter_image', asset('front/img/about-img.png'))
+
 @section('canonical_url', url()->current())
 
 @section('breadcrumbs')
@@ -31,11 +36,58 @@
 @endsection
 
 @push('head')
+<!-- JSON-LD Breadcrumb -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": @yield('breadcrumbs')
+}
+</script>
+
+<!-- JSON-LD Organization Info -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Craft Copier Solution",
+  "url": "https://craftcopiersolutions.com",
+  "logo": "https://craftcopiersolutions.com/front/img/logo.png",
+  "description": "Craft Copier Solution provides professional printer and copier repair, maintenance, and sales services based in Karachi, Pakistan.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Copier Street",
+    "addressLocality": "Karachi",
+    "addressRegion": "Sindh",
+    "postalCode": "74600",
+    "addressCountry": "PK"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+92-339-0027031",
+    "contactType": "Customer Service"
+  },
+  "sameAs": [
+    "https://www.facebook.com/craftcopiersolutions",
+    "https://www.instagram.com/craftcopiersolution",
+    "https://www.linkedin.com/company/craftcopiersolutions",
+    "https://twitter.com/craftcopiersolution"
+  ]
+}
+</script>
+
+<!-- JSON-LD About Page Info -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Us - Craft Copier Solution",
+  "url": "{{ url()->current() }}",
+  "description": "Craft Copier Solution is Karachi’s most trusted provider of expert printer and copier repair, bulk printing, and equipment sales. Learn more about our team, vision, and services across Pakistan.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ url()->current() }}"
+  }
 }
 </script>
 @endpush
