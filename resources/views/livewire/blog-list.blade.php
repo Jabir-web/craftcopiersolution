@@ -46,7 +46,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-9">
                     <div class="title text-center">
-                        <h2 class="mb-3">Latest from Our Blog</h2>
+                        <h1 class="mb-3">Latest from Our Blog</h1>
                         <p>Discover expert tips, industry news, and printer solutions from Craft Copier Solution. Stay informed and boost your office productivity.</p>
                     </div>
                 </div>
