@@ -10,42 +10,27 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
 
-    {{-- #### Favicon #### --}}
+    <!-- Favicon -->
     <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('front/img/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('front/img/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('front/img/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
-    <!-- Title SEO Tag -->
-    <title>@yield('title', 'Printer Sales & Repairs in Karachi | Craft Copier Solution')</title>
-
-    {{-- Meta Description --}}
-    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories in Karachi and across Pakistan. Get expert maintenance and genuine parts for your business.')">
-
-    <!-- Meta Keywords (Optional) -->
-    <meta name="keywords"
-        content="@yield('meta_keywords', 'copier rental Karachi, photocopier dealer Karachi, Kyocera copier repair Karachi, office printer repair Pakistan, buy photocopier Lahore, Canon service Islamabad, Ricoh copier dealers Pakistan, Karachi printer maintenance, Pakistan copier services')">
-
-    <!-- Robots Meta Tag -->
+    <title>@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')</title>
+    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan. Trusted service for Canon, Kyocera, Ricoh & more.')">
+    <meta name="keywords" content="printer repair Karachi, printer sales Karachi, photocopier rental Pakistan, Canon Kyocera Ricoh repair Karachi, bulk printing service Karachi, office printer service Pakistan, laser printer repair Karachi, A3 printer sales, toner cartridge refill, best copier dealer in Pakistan">
     <meta name="robots" content="index, follow">
-
-    <!-- Canonical Tag -->
     <link rel="canonical" href="@yield('canonical_url', url()->current())">
-
-    <!-- Alternate Language / Local Targeting -->
     <link rel="alternate" hreflang="en-PK" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
-    {{-- Add more hreflang tags for other languages/regions as needed --}}
-    
-    <!-- Author -->
     <meta name="author" content="Craft Copier Solution">
     <meta name="copyright" content="Craft Copier Solution">
     <meta name="publisher" content="Craft Copier Solution">
 
-    <!-- Open Graph (Facebook etc.) -->
-    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Copier Services in Karachi & Pakistan')">
-    <meta property="og:description" content="@yield('og_description', 'Professional copier and printer services available in Karachi, Lahore, Islamabad, and across Pakistan. Contact us today!')">
+    <!-- Open Graph -->
+    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer & Copier Services Karachi, Pakistan')">
+    <meta property="og:description" content="@yield('og_description', 'Looking for reliable printer repair or copier rentals in Karachi or Pakistan? Craft Copier Solution is your trusted source.')">
     <meta property="og:image" content="@yield('og_image', asset('front/img/og-image.jpg'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:type" content="website">
@@ -57,122 +42,101 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer & Copier Services Karachi & Pakistan')">
-    <meta name="twitter:description" content="@yield('twitter_description', 'Looking for expert copier and printer services in Karachi or anywhere in Pakistan? Call us now!')">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Services Karachi')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'We provide expert printer repair, copier rental, and bulk printing in Karachi and Pakistan.')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
 
-    <!-- Article Published Time (for blog/article pages) -->
     <meta property="article:published_time" content="@yield('article_published_time', now()->toIso8601String())">
 
-    {{-- ==================== STRUCTURED DATA / SCHEMA ===================== --}}
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Craft Copier Solution",
-      "image": "https://craftcopiersolutions.com/logo.png",
-      "url": "https://craftcopiersolutions.com",
-      "telephone": "+92-339-0027031",
-      "email": "info@craftcopiersolutions.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Copier St",
-        "addressLocality": "Karachi",
-        "addressRegion": "Sindh",
-        "postalCode": "74600",
-        "addressCountry": "PK"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 24.8607,
-        "longitude": 67.0011
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/craftcopiersolutions",
-        "https://twitter.com/craftcopiersolution",
-        "https://www.linkedin.com/company/craftcopiersolutions",
-        "https://www.instagram.com/craftcopiersolution/"
-      ],
-      "paymentAccepted": [
-        "Cash",
-        "Credit Card",
-        "Bank Transfer"
-      ],
-      "priceRange": "$$"
+      "@context":"http://schema.org",
+      "@type":"LocalBusiness",
+      "name":"Craft Copier Solution",
+      "image":"https://craftcopiersolutions.com/logo.png",
+      "url":"https://craftcopiersolutions.com",
+      "telephone":"+92-339-0027031",
+      "email":"info@craftcopiersolutions.com",
+      "address":{"@type":"PostalAddress","streetAddress":"123 Copier St","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"74600","addressCountry":"PK"},
+      "geo":{"@type":"GeoCoordinates","latitude":24.8607,"longitude":67.0011},
+      "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},
+      "sameAs":["https://www.facebook.com/craftcopiersolutions","https://twitter.com/craftcopiersolution","https://www.linkedin.com/company/craftcopiersolutions","https://www.instagram.com/craftcopiersolution/"],
+      "paymentAccepted":["Cash","Credit Card","Bank Transfer"],
+      "priceRange":"$$"
     }
     </script>
 
+    <!-- Services Schema -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://craftcopiersolutions.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://craftcopiersolutions.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+      "@context": "http://schema.org",
+      "@type": "Service",
+      "serviceType": "Printer Repair & Bulk Printing",
+      "provider": {
+        "@type": "Organization",
+        "name": "Craft Copier Solution",
+        "url": "https://craftcopiersolutions.com"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Karachi, Pakistan"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://craftcopiersolutions.com",
+        "availableLanguage": "en"
       }
     }
     </script>
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "@yield('title', 'Printer Sales & Repairs in Karachi | Craft Copier Solution')",
-      "description": "@yield('meta_description', 'Craft Copier Solution offers reliable printer sales, rentals, repairs, and accessories in Karachi and across Pakistan. Get expert maintenance and genuine parts for your business.')",
-      "url": "@yield('canonical_url', url()->current())",
-      "inLanguage": "en-PK"
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "url":"https://craftcopiersolutions.com",
+      "potentialAction":{"@type":"SearchAction","target":"https://craftcopiersolutions.com/search?q={search_term_string}","query-input":"required name=search_term_string"}
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebPage",
+      "name":"@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')",
+      "description":"@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan.')",
+      "url":"@yield('canonical_url', url()->current())",
+      "inLanguage":"en-PK"
     }
     </script>
 
     @hasSection('breadcrumbs')
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        @yield('breadcrumbs')
-      ]
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[@yield('breadcrumbs')]
     }
     </script>
     @endif
 
-    {{-- ==================== ANALYTICS ===================== --}}
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-89Q28SH00Z');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-89Q28SH00Z');
     </script>
-    <noscript>
-        <img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt="Google Tag Manager" style="display:none;visibility:hidden"/>
-    </noscript>
+    <noscript><img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt="" style="display:none;" /></noscript>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZQ" async></script>
 
-    <!-- Ahrefs Analytics -->
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZKQ" async></script>
-
-    {{-- ==================== FONTS + STYLES ===================== --}}
+    <!-- Styles & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front/css/linearicons.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
@@ -186,6 +150,7 @@
 
     @livewireStyles
 </head>
+
 
 <style>
      html, body {
