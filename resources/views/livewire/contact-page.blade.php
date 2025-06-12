@@ -166,9 +166,9 @@
                             <i class="fa fa-list"></i>
                         </span>
                         <span class="d-flex flex-column">
-                            <span class="fw-bold" style="color: #0F172A; letter-spacing: 1px;">Blogs</span>
+                            <span class="fw-bold mx-4" style="color: #0F172A; letter-spacing: 1px;">Blogs</span>
                             <span class="small text-success fw-medium" style="margin-top: -2px;">&nbsp;</span>
-                        </span class="mx-4">
+                        </span>
                     </a>
                 </li>
                 <li class="mb-3">
