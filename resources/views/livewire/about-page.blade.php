@@ -317,35 +317,36 @@
         </style>
         <script>
           document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.faq-area .accordion-button').forEach(function (btn) {
-                btn.addEventListener('click', function (e) {
-                    e.preventDefault();
+    document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
+        btn.addEventListener('click', function (e) {
+            var targetSelector = btn.getAttribute('data-bs-target');
+            var target = document.querySelector(targetSelector);
 
-                    var targetSelector = btn.getAttribute('data-target');
-                    var target = document.querySelector(targetSelector);
+            if (target) {
+                var isOpen = target.classList.contains('show');
+                var bsInstance = bootstrap.Collapse.getOrCreateInstance(target);
 
-                    if (!target) return;
-
-                    var isOpen = target.classList.contains('show');
-                    var bsInstance = bootstrap.Collapse.getOrCreateInstance(target);
-
-                    // Close all others
-                    document.querySelectorAll('.faq-area .accordion-collapse.show').forEach(function (el) {
-                        if (el !== target) {
-                            var otherInstance = bootstrap.Collapse.getOrCreateInstance(el);
-                            otherInstance.hide();
-                        }
-                    });
-
-                    // Toggle current one
-                    if (isOpen) {
-                        bsInstance.hide();
-                    } else {
-                        bsInstance.show();
+                // Close all others
+                document.querySelectorAll('.faq-area .accordion-collapse.show').forEach(function (el) {
+                    if (el !== target) {
+                        var otherInstance = bootstrap.Collapse.getOrCreateInstance(el);
+                        otherInstance.hide();
                     }
                 });
-            });
+
+                // Toggle current one
+                if (isOpen) {
+                    bsInstance.hide(); // Close if open
+                } else {
+                    bsInstance.show(); // Open if not
+                }
+
+                e.preventDefault();
+            }
         });
+    });
+});
+
         </script>
     </section>
     <!-- Other Issue Area -->
