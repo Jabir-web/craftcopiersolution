@@ -7,19 +7,17 @@
     <section class="relative about-banner">
         <div class="overlay overlay-bg"></div>
         <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h1 class="text-white display-4 fw-bold">Contact Us</h1>
-                    <nav class="text-white mt-3 small">
-                        <a wire:navigate href="{{ route('homepage') }}" class="text-white">Home</a> <span> > </span>
-                        <a wire:navigate href="{{ route('aboutpage') }}" class="text-white">About Us</a> <span> > </span>
-                        <a wire:navigate href="{{ route('contactpage') }}" class="text-white">Contact Us</a>
-                    </nav>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        {{ $productsingle->name }}
+                    </h1>
+                    <p class="text-white link-nav">Home <span class="lnr lnr-arrow-right"></span>Products <span
+                            class="lnr lnr-arrow-right"></span> {{ $productsingle->name }} </p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="contact-page-area section-gap py-5" style="background: #fffbe7;">
         <div class="container">
