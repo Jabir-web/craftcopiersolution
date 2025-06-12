@@ -30,22 +30,22 @@
                     </div>
 
                     <div class="bg-white p-4 rounded shadow border border-warning">
-                        <div class="d-flex mb-4">
+                        <div class="d-flex ">
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 48px; height: 48px;">
                                 <i class="lnr lnr-home fs-5"></i>
                             </div>
-                            <div class="mx-5">
+                            <div class="mx-4">
                                 <h6 class="fw-bold mb-1">Karachi, Pakistan</h6>
                                 <small class="text-muted">We deal all over Pakistan</small>
                             </div>
                         </div>
-                        <div class="d-flex mb-4">
+                        <div class="d-flex ">
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 48px; height: 48px;">
                                 <i class="lnr lnr-phone-handset fs-5"></i>
                             </div>
-                            <div>
+                            <div class="mx-4">
                                 <h6 class="fw-bold mb-1">+92 339 0027031 | +92 328 2499598</h6>
                                 <small class="text-muted">Mon to Fri 9am - 6pm</small>
                             </div>
