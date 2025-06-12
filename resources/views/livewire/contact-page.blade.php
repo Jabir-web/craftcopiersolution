@@ -30,7 +30,8 @@
                     </div>
 
                     <div class="bg-white p-4 rounded shadow border border-warning">
-                        <div class="d-flex ">
+                    <div class="d-flex align-items-center">
+
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 48px; height: 48px;">
                                 <i class="lnr lnr-home fs-5"></i>
