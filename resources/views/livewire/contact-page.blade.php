@@ -16,20 +16,18 @@
         </div>
     </section>
     <!-- Contact Section -->
-  <section class="contact-page-area section-gap py-5" style="background: #fffbe7;">
+ <section class="contact-page-area section-gap py-5" style="background: #fffbe7;">
     <div class="container">
         <div class="row g-5 align-items-start">
-            <!-- Left Column: Map + Info -->
+            <!-- Left Column: Map + Contact Info -->
             <div class="col-lg-5">
                 <div class="mb-4 shadow rounded overflow-hidden" style="height: 320px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462117.05296393496!2d66.82581529773248!3d25.193458567990753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740514341752!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="bg-white p-4 rounded shadow-sm mb-3 border border-warning">
-                    <!-- Address -->
+                <div class="bg-white p-4 rounded shadow-sm border border-warning">
                     <div class="d-flex align-items-start mb-4">
                         <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center">
                             <i class="lnr lnr-home fs-5"></i>
@@ -39,7 +37,6 @@
                             <small class="text-muted">We deal all over Pakistan</small>
                         </div>
                     </div>
-                    <!-- Phone -->
                     <div class="d-flex align-items-start mb-4">
                         <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center">
                             <i class="lnr lnr-phone-handset fs-5"></i>
@@ -49,7 +46,6 @@
                             <small class="text-muted">Mon to Fri 9am - 6pm</small>
                         </div>
                     </div>
-                    <!-- Email -->
                     <div class="d-flex align-items-start">
                         <div class="icon bg-warning text-white rounded-circle me-3 p-3 d-flex align-items-center justify-content-center">
                             <i class="lnr lnr-envelope fs-5"></i>
@@ -59,8 +55,6 @@
                             <small class="text-muted">Send us your queries anytime</small>
                         </div>
                     </div>
-
-                    <!-- Social Links -->
                     <div class="d-flex gap-3 mt-4">
                         <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" class="btn btn-sm btn-warning rounded-circle">
                             <i class="fa fa-facebook"></i>
@@ -80,7 +74,6 @@
 
             <!-- Right Column: Contact Form + Quick Links -->
             <div class="col-lg-7">
-                <!-- Contact Form -->
                 <div class="p-4 bg-white shadow rounded mb-4 border border-warning">
                     <h3 class="fw-bold mb-4 text-warning text-center">Send Us a Message</h3>
                     @if (session()->has('message'))
@@ -113,7 +106,6 @@
                     </form>
                 </div>
 
-                <!-- Quick Links -->
                 <div class="p-4 bg-white shadow rounded border border-warning">
                     <h4 class="fw-bold mb-3 text-warning">Quick Links</h4>
                     <ul class="list-unstyled small mb-0">
@@ -130,11 +122,10 @@
         </div>
     </div>
 
-    <!-- Styles -->
     <style>
         .contact-page-area .form-control:focus {
             border-color: #ffc107;
-            box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.15);
+            box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.15);
         }
 
         .contact-page-area .btn-warning {
@@ -152,7 +143,7 @@
         .contact-page-area .icon {
             width: 48px;
             height: 48px;
-            font-size: 1.25rem;
+            font-size: 1.4rem;
         }
 
         .contact-page-area .shadow {
@@ -199,9 +190,8 @@
     </style>
 </section>
 
+
 </div>
 
-{{-- Make sure these are in your main layout (e.g., layouts/app.blade.php) --}}
-{{-- @livewireStyles --}}
-{{-- @livewireScripts --}}
+
 
