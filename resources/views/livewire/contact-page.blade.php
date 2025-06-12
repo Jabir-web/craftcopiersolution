@@ -4,16 +4,13 @@
 
 <div>
     <!-- Hero Section -->
-    <section class="relative about-banner">
+    
+ <section class="relative about-banner">
         <div class="overlay overlay-bg"></div>
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
-                    <h1 class="text-white">
-                        {{ $productsingle->name }}
-                    </h1>
-                    <p class="text-white link-nav">Home <span class="lnr lnr-arrow-right"></span>Products <span
-                            class="lnr lnr-arrow-right"></span> {{ $productsingle->name }} </p>
+                    <h1 class="text-white display-4 fw-bold">Contact Us</h1>
                 </div>
             </div>
         </div>
