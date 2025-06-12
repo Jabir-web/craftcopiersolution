@@ -90,19 +90,19 @@
                                 <input type="text" wire:model="name" class="form-control border-warning" placeholder="Your Name">
                                 @error('name') <small class="text-danger">{{ $message }}</small> @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 ">
                                 <input type="email" wire:model="email" class="form-control border-warning" placeholder="Your Email">
                                 @error('email') <small class="text-danger">{{ $message }}</small> @enderror
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-4"">
                                 <input type="text" wire:model="subject" class="form-control border-warning" placeholder="Subject">
                                 @error('subject') <small class="text-danger">{{ $message }}</small> @enderror
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-4"">
                                 <textarea wire:model="message" class="form-control border-warning" rows="5" placeholder="Message"></textarea>
                                 @error('message') <small class="text-danger">{{ $message }}</small> @enderror
                             </div>
-                            <div class="col-12 text-end">
+                            <div class="col-12 text-end mb-4"">
                                 <button type="submit" class="btn btn-warning px-5 py-2 rounded-pill fw-semibold">Send Message</button>
                             </div>
                         </div>
