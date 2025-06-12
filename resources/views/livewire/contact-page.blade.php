@@ -133,7 +133,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-primary text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-home"></i>
                         </span>
-                        <span>Home</span>
+                        <span class="mx-4">Home</span>
                     </a>
                 </li>
                 <li class="mb-3">
@@ -141,7 +141,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-success text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-info-circle"></i>
                         </span>
-                        <span>About Us</span>
+                        <span class="mx-4">About Us</span>
                     </a>
                 </li>
                 <li class="mb-3">
@@ -149,7 +149,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-danger text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-envelope"></i>
                         </span>
-                        <span>Contact</span>
+                        <span class="mx-4">Contact</span>
                     </a>
                 </li>
                 <li class="mb-3">
@@ -157,7 +157,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-warning text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-print"></i>
                         </span>
-                        <span>Machines</span>
+                        <span class="mx-4">Machines</span>
                     </a>
                 </li>
                 <li class="mb-3">
@@ -168,7 +168,7 @@
                         <span class="d-flex flex-column">
                             <span class="fw-bold" style="color: #0F172A; letter-spacing: 1px;">Blogs</span>
                             <span class="small text-success fw-medium" style="margin-top: -2px;">&nbsp;</span>
-                        </span>
+                        </span class="mx-4">
                     </a>
                 </li>
                 <li class="mb-3">
@@ -176,7 +176,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-secondary text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-star"></i>
                         </span>
-                        <span>Testimonials</span>
+                        <span class="mx-4">Testimonials</span>
                     </a>
                 </li>
                 <li>
@@ -184,7 +184,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-dark text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-question-circle"></i>
                         </span>
-                        <span>Other Issue</span>
+                        <span class="mx-4">Other Issue</span>
                     </a>
                 </li>
             </ul>
