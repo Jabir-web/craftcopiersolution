@@ -122,7 +122,7 @@
 
                     </div>
 
-      		<div class="col-lg-4 sidebar-widgets">
+      		<div class="col-lg-12 sidebar-widgets">
 					<div class="widget-wrap" style="font-family: 'Poppins', sans-serif;">
 						<!-- Internal Professional Links Widget -->
 						<div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded">
