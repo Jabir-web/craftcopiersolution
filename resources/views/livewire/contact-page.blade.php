@@ -124,12 +124,12 @@
 
     <style>
         .contact-page-area .form-control:focus {
-            border-color: #000000;
+            border-color: #000000 !important;
             box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.15);
         }
 
         .contact-page-area .btn-warning {
-            background: linear-gradient(45deg, #ffc107, #ffb300);
+            background: linear-gradient(45deg, #ffc107, #ffb300) !important;
             border: none;
             color: #fff;
             transition: all 0.3s ease;
@@ -170,7 +170,7 @@
         }
 
         .contact-page-area ul.list-unstyled li a:hover {
-            color: #ffc107;
+            color: #ffc107 !important;
             text-decoration: underline;
         }
 
