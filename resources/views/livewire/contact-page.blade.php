@@ -86,7 +86,7 @@
                     <form wire:submit.prevent="submit">
                         @csrf
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-4">
                                 <input type="text" wire:model="name" class="form-control border-warning" placeholder="Your Name">
                                 @error('name') <small class="text-danger">{{ $message }}</small> @enderror
                             </div>
