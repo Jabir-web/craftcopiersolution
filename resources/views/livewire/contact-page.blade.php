@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="bg-white p-4 rounded shadow border border-warning">
-                 <div class="d-flex align-items-center gap-3 my-3">
+                        <div class="d-flex align-items-center gap-3 my-3">
 
 
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
@@ -42,7 +42,7 @@
                                 <small class="text-muted">We deal all over Pakistan</small>
                             </div>
                         </div>
-                   <div class="d-flex align-items-center gap-3 my-3">
+                        <div class="d-flex align-items-center gap-3 my-3">
 
 
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
@@ -54,36 +54,40 @@
                                 <small class="text-muted">Mon to Fri 9am - 6pm</small>
                             </div>
                         </div>
-            <div class="d-flex align-items-center gap-3 my-3">
+                      <div class="d-flex align-items-center gap-4 my-3">
+    <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center"
+         style="width: 48px; height: 48px;">
+        <i class="lnr lnr-envelope fs-5"></i>
+    </div>
+    <div>
+        <h6 class="fw-bold mb-1">info@craftcopiersolution.com</h6>
+        <small class="text-muted">Send us your queries anytime</small>
+    </div>
+</div>
 
-
-                            <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
-                                style="width: 48px; height: 48px;">
-                                <i class="lnr lnr-envelope fs-5"></i>
-                            </div>
-                            <div class="mx-4">
-                                <h6 class="fw-bold mb-1">info@craftcopiersolution.com</h6>
-                                <small class="text-muted ">Send us your queries anytime</small>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-3 mt-4">
-                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
-                                class="btn btn-sm btn-warning rounded-circle">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="https://wa.me/+923282499598" target="_blank"
-                                class="btn btn-sm btn-warning rounded-circle">
-                                <i class="fa fa-whatsapp"></i>
-                            </a>
-                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"
-                                class="btn btn-sm btn-warning rounded-circle">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"
-                                class="btn btn-sm btn-warning rounded-circle">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                        </div>
+<!-- Social Icons -->
+<div class="d-flex justify-content-between flex-wrap gap-3 mt-4">
+    <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
+       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+       style="width: 40px; height: 40px;">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/+923282499598" target="_blank"
+       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+       style="width: 40px; height: 40px;">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"
+       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+       style="width: 40px; height: 40px;">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"
+       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+       style="width: 40px; height: 40px;">
+        <i class="fa fa-youtube"></i>
+    </a>
+</div>
                     </div>
                 </div>
 
