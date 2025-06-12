@@ -175,57 +175,8 @@
 								</li>
 							</ul>
 						</div>
-						<!-- Author Info Widget -->
-						<div class="single-sidebar-widget user-info-widget text-center mb-4 p-4 bg-white shadow rounded">
-							<h4 class="mb-1" style="font-weight: 700;">CRAFT COPIER SOLUTION Team</h4>
-							<p class="text-muted">Professional Blog Writers</p>
-							<div class="d-flex justify-content-center gap-3 mb-3 ">
-								<a href="https://www.facebook.com/craftcopiersolutions" target="_blank" rel="noopener noreferrer" class="text-primary fs-5">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer" class="text-success fs-5 mx-2">
-									<i class="fa fa-whatsapp"></i>
-								</a>
-								<a href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer" class="text-danger fs-5 mx-2">
-									<i class="fa fa-instagram"></i>
-								</a>
-								<a href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer" class="text-danger fs-5 mx-2">
-									<i class="fa fa-youtube"></i>
-								</a>
-							</div>
-							<p class="text-secondary" style="font-size: 0.95rem;">
-								Sharing expert advice, troubleshooting tips, and maintenance guides to keep your
-								printing solutions smooth and efficient.
-							</p>
-						</div>
-						<!-- Popular Posts Widget -->
-						<div class="single-sidebar-widget popular-post-widget mb-4 p-4 bg-white shadow rounded">
-							<h4 class="mb-3" style="font-weight: 700;">Popular Posts</h4>
-							<div class="popular-post-list">
-								@foreach($blogs->take(5) as $popular)
-									<a href="{{ route('blogpage', ['title' => $popular->title]) }}" class="blog-link d-flex align-items-center mb-3" style="text-decoration: none;">
-										<img src="{{ url('storage/' . $popular->img) }}" alt="{{ $popular->title }}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px; margin-right: 12px;">
-										<div>
-											<h5 class="mb-1" style="font-size: 1rem; color: #0F172A;">{{ $popular->title }}</h5>
-											<small class="text-muted">{{ $popular->created_at->format('M d, Y') }}</small>
-										</div>
-									</a>
-								@endforeach
-							</div>
-						</div>
-						<!-- Post Categories Widget -->
-						<div class="single-sidebar-widget post-category-widget mb-4 p-4 bg-white shadow rounded">
-							<h4 class="mb-3" style="font-weight: 700;">Post Categories</h4>
-							<ul class="cat-list list-unstyled">
-								@foreach($blogs->unique('category') as $blogItem)
-									<li class="mb-2">
-										<span class="d-flex justify-content-between text-decoration-none text-dark">
-											<p class="mb-0">{{ $blogItem->category }}</p>
-										</span>
-									</li>
-								@endforeach
-							</ul>
-						</div>
+						
+						
 					</div>
 				</div>
 
