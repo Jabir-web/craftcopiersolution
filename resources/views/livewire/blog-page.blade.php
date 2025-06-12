@@ -86,7 +86,7 @@
 							itemscope itemtype="https://schema.org/BlogPosting">
 							<header>
 								<h1 class="mb-3 text-primary"
-									style="font-weight: 800; font-size: 1.75rem; color: #ffffff !important; line-height: 1.3; background-color: whitesmoke; border-radius: 12px; padding: 10px;"
+									style="font-weight: 800; font-size: 1.75rem; color: #000000 !important; line-height: 1.3; background-color: whitesmoke; border-radius: 12px; padding: 10px;"
 									itemprop="headline">
 									{{ $blog->title }}
 								</h1>
