@@ -124,7 +124,7 @@
 
     <style>
         .contact-page-area .form-control:focus {
-            border-color: #ffc107;
+            border-color: #000000;
             box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.15);
         }
 
