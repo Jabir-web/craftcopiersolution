@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="bg-white p-4 rounded shadow border border-warning">
-                 <div class="d-flex align-items-center gap-3">
+                 <div class="d-flex align-items-center gap-3 mx-3">
 
 
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
@@ -42,7 +42,8 @@
                                 <small class="text-muted">We deal all over Pakistan</small>
                             </div>
                         </div>
-                      <div class="d-flex align-items-center">
+                   <div class="d-flex align-items-center gap-3 mx-3">
+
 
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 48px; height: 48px;">
@@ -53,7 +54,8 @@
                                 <small class="text-muted">Mon to Fri 9am - 6pm</small>
                             </div>
                         </div>
-                      <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center gap-3 mx-3">
+
 
                             <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 48px; height: 48px;">
