@@ -134,7 +134,7 @@
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="{{ route('homepage') }}#blog-list-area" class="text-dark text-decoration-none">
+                            <a href="{{ route('homepage') }}#blog-list-area" class="text-info text-decoration-none">
                                 <i class="fa fa-list me-2 text-warning"></i>Blogs
                             </a>
                         </li>
