@@ -122,7 +122,7 @@
 
                     </div>
 
-      	<div class="col-lg-12 sidebar-widgets">
+   <div class="col-lg-12 sidebar-widgets">
     <div class="widget-wrap">
         <!-- Internal Professional Links Widget -->
         <div class="single-sidebar-widget mb-4 p-4 bg-white shadow rounded" style="font-family: 'Poppins', sans-serif;">
@@ -130,15 +130,15 @@
             <ul class="list-unstyled mb-0">
                 <li class="mb-3">
                     <a href="{{ route('homepage') }}" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-primary text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-primary text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-home"></i>
                         </span>
-                        <span class="mx-4">Home</span>
+                        <span>Home</span>
                     </a>
                 </li>
                 <li class="mb-3">
                     <a href="{{ route('aboutpage') }}" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-success text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-success text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-info-circle"></i>
                         </span>
                         <span>About Us</span>
@@ -146,7 +146,7 @@
                 </li>
                 <li class="mb-3">
                     <a href="{{ route('contactpage') }}" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-danger text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-danger text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-envelope"></i>
                         </span>
                         <span>Contact</span>
@@ -154,7 +154,7 @@
                 </li>
                 <li class="mb-3">
                     <a href="{{ route('homepage') }}#our-best-machines" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-warning text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-warning text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-print"></i>
                         </span>
                         <span>Machines</span>
@@ -162,7 +162,7 @@
                 </li>
                 <li class="mb-3">
                     <a href="{{ route('homepage') }}#blog-list-area" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-info text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-info text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-list"></i>
                         </span>
                         <span class="d-flex flex-column">
@@ -173,7 +173,7 @@
                 </li>
                 <li class="mb-3">
                     <a href="{{ route('homepage') }}#testimonials-area" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-secondary text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-secondary text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-star"></i>
                         </span>
                         <span>Testimonials</span>
@@ -181,7 +181,7 @@
                 </li>
                 <li>
                     <a href="{{ route('homepage') }}#other-issue-area" class="d-flex align-items-center text-decoration-none text-dark">
-                        <span class="d-inline-flex justify-content-center align-items-center bg-dark text-white rounded-circle me-3" style="width: 36px; height: 36px;">
+                        <span class="d-inline-flex justify-content-center align-items-center bg-dark text-white rounded-circle me-4" style="width: 36px; height: 36px;">
                             <i class="fa fa-question-circle"></i>
                         </span>
                         <span>Other Issue</span>
@@ -191,6 +191,7 @@
         </div>
     </div>
 </div>
+
 
 
                 </div>
