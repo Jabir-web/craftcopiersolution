@@ -66,7 +66,7 @@
                                 <small class="text-muted ">Send us your queries anytime</small>
                             </div>
                         </div>
-                       <div class="d-flex justify-content-between flex-wrap gap-3 mt-4">
+                       <div class="d-flex justify-content-around flex-wrap gap-3 mt-4">
     <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
        class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
        style="width: 40px; height: 40px;">
