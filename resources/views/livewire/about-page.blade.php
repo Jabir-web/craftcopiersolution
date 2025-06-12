@@ -153,59 +153,50 @@
 
     <!-- FAQ Section for SEO -->
     <section class="faq-area section-gap" aria-label="Frequently Asked Questions">
-      <section class="faq-area section-gap" aria-label="Frequently Asked Questions">
-    <div class="container">
-        <h2 class="mb-4">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="faq1">
-                    <button class="accordion-button collapsed" type="button" data-target="#collapse1"
-                        aria-expanded="false" aria-controls="collapse1">
-                        <span class="faq-icon me-2"><i class="fa fa-question-circle"></i></span>
-                        What services does Craft Copier Solution offer?
-                    </button>
-                </h3>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        We provide printer and copier sales, repairs, maintenance, rentals, and genuine accessories
-                        for all major brands in Karachi and across Pakistan.
+        <div class="container">
+            <h2 class="mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <span class="faq-icon me-2"><i class="fa fa-question-circle"></i></span>
+                            What services does Craft Copier Solution offer?
+                        </button>
+                    </h3>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We provide printer and copier sales, repairs, maintenance, rentals, and genuine accessories for all major brands in Karachi and across Pakistan.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="faq2">
-                    <button class="accordion-button collapsed" type="button" data-target="#collapse2"
-                        aria-expanded="false" aria-controls="collapse2">
-                        <span class="faq-icon me-2"><i class="fa fa-wrench"></i></span>
-                        Do you offer on-site printer repair in Karachi?
-                    </button>
-                </h3>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, our technicians provide fast on-site printer and copier repair services throughout Karachi.
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <span class="faq-icon me-2"><i class="fa fa-wrench"></i></span>
+                            Do you offer on-site printer repair in Karachi?
+                        </button>
+                    </h3>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, our technicians provide fast on-site printer and copier repair services throughout Karachi.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="faq3">
-                    <button class="accordion-button collapsed" type="button" data-target="#collapse3"
-                        aria-expanded="false" aria-controls="collapse3">
-                        <span class="faq-icon me-2"><i class="fa fa-envelope"></i></span>
-                        How can I request a quote or consultation?
-                    </button>
-                </h3>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Simply <a href="{{ route('contactpage') }}">contact us</a> or fill out our online form for a
-                        free, no-obligation quote.
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <span class="faq-icon me-2"><i class="fa fa-envelope"></i></span>
+                            How can I request a quote or consultation?
+                        </button>
+                    </h3>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Simply <a href="{{ route('contactpage') }}">contact us</a> or fill out our online form for a free, no-obligation quote.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <!-- FAQ Schema for SEO -->
         <script type="application/ld+json">
         {
