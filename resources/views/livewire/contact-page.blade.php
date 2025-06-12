@@ -35,7 +35,7 @@
                                 style="width: 48px; height: 48px;">
                                 <i class="lnr lnr-home fs-5"></i>
                             </div>
-                            <div>
+                            <div class="mx-5">
                                 <h6 class="fw-bold mb-1">Karachi, Pakistan</h6>
                                 <small class="text-muted">We deal all over Pakistan</small>
                             </div>
