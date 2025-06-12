@@ -307,31 +307,37 @@
             }
         </style>
         <script>
-            // FAQ: Toggle open/close on click (close if open, open if closed)
-            document.addEventListener('DOMContentLoaded', function () {
-                document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
-                    btn.addEventListener('click', function(e) {
-                        var target = btn.getAttribute('data-bs-target');
-                        var collapse = document.querySelector(target);
-                        if (collapse) {
-                            // Bootstrap handles open, so only force close if already open
-                            setTimeout(function() {
-                                if (collapse.classList.contains('show')) {
-                                    // Do nothing, let Bootstrap open it
-                                } else {
-                                    // If not open, close all others
-                                    document.querySelectorAll('.faq-area .accordion-collapse.show').forEach(function(el) {
-                                        if (el !== collapse) {
-                                            var bsCollapse = bootstrap.Collapse.getOrCreateInstance(el);
-                                            bsCollapse.hide();
-                                        }
-                                    });
-                                }
-                            }, 10);
-                        }
-                    });
+          document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.faq-area .accordion-button').forEach(function(btn) {
+        btn.addEventListener('click', function (e) {
+            var targetSelector = btn.getAttribute('data-bs-target');
+            var target = document.querySelector(targetSelector);
+
+            if (target) {
+                var isOpen = target.classList.contains('show');
+                var bsInstance = bootstrap.Collapse.getOrCreateInstance(target);
+
+                // Close all others
+                document.querySelectorAll('.faq-area .accordion-collapse.show').forEach(function (el) {
+                    if (el !== target) {
+                        var otherInstance = bootstrap.Collapse.getOrCreateInstance(el);
+                        otherInstance.hide();
+                    }
                 });
-            });
+
+                // Toggle current one
+                if (isOpen) {
+                    bsInstance.hide(); // Close if open
+                } else {
+                    bsInstance.show(); // Open if not
+                }
+
+                e.preventDefault();
+            }
+        });
+    });
+});
+
         </script>
     </section>
     <!-- Other Issue Area -->
