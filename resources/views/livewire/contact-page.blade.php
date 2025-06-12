@@ -18,7 +18,7 @@
     <!-- Contact Section -->
  <section class="contact-page-area section-gap py-5" style="background: #fffbe7;">
     <div class="container">
-        <div class="row g-5 align-items-start">
+        <div class=" bg-warning row g-5 align-items-start">
             <!-- Left Column: Map + Contact Info -->
             <div class="col-lg-5">
                 <div class="mb-4 shadow rounded overflow-hidden" style="height: 320px;">
