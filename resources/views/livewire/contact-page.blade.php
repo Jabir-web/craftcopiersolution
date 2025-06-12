@@ -133,7 +133,7 @@
                         <span class="d-inline-flex justify-content-center align-items-center bg-primary text-white rounded-circle me-3" style="width: 36px; height: 36px;">
                             <i class="fa fa-home"></i>
                         </span>
-                        <span>Home</span>
+                        <span class="mx-4">Home</span>
                     </a>
                 </li>
                 <li class="mb-3">
