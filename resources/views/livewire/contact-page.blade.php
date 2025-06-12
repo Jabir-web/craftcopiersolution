@@ -122,72 +122,7 @@
         </div>
     </div>
 
-    <style>
-        .contact-page-area .form-control:focus {
-            border-color: #000000 !important;
-            box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.15);
-        }
-
-        .contact-page-area .btn-warning {
-            background: linear-gradient(45deg, #ffc107, #ffb300) !important;
-            border: none;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-
-        .contact-page-area .btn-warning:hover {
-            background: #0F172A;
-            color: #fff;
-        }
-
-        .contact-page-area .icon {
-            width: 48px;
-            height: 48px;
-            font-size: 1.4rem;
-        }
-
-        .contact-page-area .shadow {
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08) !important;
-        }
-
-        .contact-page-area .rounded {
-            border-radius: 14px !important;
-        }
-
-        .contact-page-area h3,
-        .contact-page-area h4 {
-            letter-spacing: 0.5px;
-        }
-
-        .contact-page-area ul.list-unstyled li a {
-            font-size: 1.08rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #22223b;
-            transition: color 0.2s ease;
-        }
-
-        .contact-page-area ul.list-unstyled li a:hover {
-            color: #ffc107 !important;
-            text-decoration: underline;
-        }
-
-        .contact-page-area .bg-white {
-            background: #fff !important;
-        }
-
-        .contact-page-area .border-warning {
-            border-color: #ffc107 !important;
-        }
-
-        @media (max-width: 767px) {
-            .contact-page-area .btn-lg {
-                width: 100%;
-            }
-        }
-    </style>
+    
 </section>
 
 
