@@ -125,14 +125,16 @@
     @livewireStyles
 
 
-    <!-- Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89Q28SH00Z"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-89Q28SH00Z');
-    </script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J9YLRX98T9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J9YLRX98T9');
+</script>
     <noscript><img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt="" style="display:none;" /></noscript>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZQ" async></script>
 
