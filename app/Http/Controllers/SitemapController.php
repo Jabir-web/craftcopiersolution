@@ -15,17 +15,15 @@ class SitemapController extends Controller
     {
         $urls = [
             url('/'),
-            url('/about'),
+            url('/aboutus'),
             url('/contact'),
-            // Add other static pages here
         ];
 
-        // Dynamic URLs
         foreach (Blog::all() as $blog) {
-            $urls[] = url('/blog/' . $blog->id);
+            $urls[] = url('/blogs/' . $blog->id);
         }
         foreach (Product::all() as $product) {
-            $urls[] = url('/products/' . $product->id);
+            $urls[] = url('/machines/' . $product->id);
         }
         foreach (Service::all() as $service) {
             $urls[] = url('/services/' . $service->id);
