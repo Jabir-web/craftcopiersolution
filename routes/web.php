@@ -3,6 +3,7 @@
 use App\Http\Controllers\AccessoryRequestController;
 use App\Http\Controllers\ClientRentalController;
 use App\Http\Controllers\ClientRepairController;
+use App\Http\Controllers\SitemapController;
 use App\Livewire\AboutPage;
 use App\Livewire\BlogPage;
 use App\Livewire\ContactPage;
@@ -27,7 +28,7 @@ Route::get('/blogs/{title?}', BlogPage::class)->name('blogpage');
 Route::post('/accessory-requests', [AccessoryRequestController::class, 'store'])->name('accessory-requests.store');
 Route::post('/client-rentals', [ClientRentalController::class, 'store'])->name('client-rentals.store');
 Route::post('/client-repairs', [ClientRepairController::class, 'store'])->name('client-repairs.store');
-
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 
 Route::get('/storage/{path}', function ($path) {
