@@ -10,7 +10,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- Favicons -->
+    <!-- Favicons area -->
     <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('front/img/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('front/img/favicon-32x32.png') }}">
