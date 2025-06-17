@@ -1,7 +1,7 @@
 <style>
 @media (min-width: 1270px) and (max-width: 1290px) and (min-height: 710px) and (max-height: 730px) {
     .form-wrap {
-        max-width: 340px;
+        max-width: 30px;
         margin: 32px auto;
         padding: 16px 18px 20px 18px;
         font-size: 15px;
