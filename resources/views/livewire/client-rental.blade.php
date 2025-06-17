@@ -1,26 +1,4 @@
-<style>
-@media (min-width: 1270px) and (max-width: 1290px) and (min-height: 710px) and (max-height: 730px) {
-    .form-wrap {
-        max-width: 30px !important;
-        margin: 32px auto;
-        padding: 16px 18px 20px 18px;
-        font-size: 15px;
-    }
-    .form-wrap .form-control {
-        margin-bottom: 10px;
-        padding: 7px 9px;
-        font-size: 15px;
-    }
-    .form-wrap textarea.form-control {
-        min-height: 60px;
-    }
-    .form-wrap .primary-btn {
-        width: 100%;
-        padding: 9px 0;
-        font-size: 15px;
-    }
-}
-</style>
+
 <div>
     @if (session()->has('rent'))
         <div class="alert alert-success">
