@@ -1,33 +1,23 @@
 <style>
-/* Compact and responsive form styles */
-.form-wrap {
-    max-width: 350px;
-    margin: 24px auto;
-    padding: 18px 20px 22px 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-}
-.form-wrap .form-control {
-    margin-bottom: 12px;
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 4px;
-}
-.form-wrap textarea.form-control {
-    min-height: 70px;
-    resize: vertical;
-}
-.form-wrap .primary-btn {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    border-radius: 4px;
-}
-@media (max-width: 600px) {
+@media (min-width: 1270px) and (max-width: 1290px) and (min-height: 710px) and (max-height: 730px) {
     .form-wrap {
-        max-width: 98vw;
-        padding: 10px 5px;
+        max-width: 340px;
+        margin: 32px auto;
+        padding: 16px 18px 20px 18px;
+        font-size: 15px;
+    }
+    .form-wrap .form-control {
+        margin-bottom: 10px;
+        padding: 7px 9px;
+        font-size: 15px;
+    }
+    .form-wrap textarea.form-control {
+        min-height: 60px;
+    }
+    .form-wrap .primary-btn {
+        width: 100%;
+        padding: 9px 0;
+        font-size: 15px;
     }
 }
 </style>
