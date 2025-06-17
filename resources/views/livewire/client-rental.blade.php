@@ -4,7 +4,7 @@
         <div class="alert alert-success">
             {{ session('rent') }}
         </div>
-    @endif
+    @endif 
    
 
     <form action="{{ route('client-rentals.store') }}" method="POST" class="form-wrap">
