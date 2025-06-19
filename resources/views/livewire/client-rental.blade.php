@@ -29,7 +29,7 @@
         @error('contact_number') <span class="text-danger">{{ $message }}</span> @enderror
 
         <!-- Requirements -->
-        <textarea class="form-control client-input" name="requirements" placeholder="Your Requirements .." cols="30"
+        <textarea class="form-control client-req" name="requirements" placeholder="Your Requirements .." cols="30"
             rows="5">{{ old('requirements') }}</textarea>
         @error('requirements') <span class="text-danger">{{ $message }}</span> @enderror
 
