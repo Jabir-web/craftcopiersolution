@@ -64,6 +64,12 @@
                                          itemprop="image">
                                 </a>
                             </div>
+                             <p class="mb-0 btn-style">
+            <i class="fas fa-eye"></i>
+            <strong>Views:</strong>
+            <span>{{ $blog->views }}</span>
+        </p>
+
                             <div class="details">
                                 <div class="tags">
                                     <ul>
