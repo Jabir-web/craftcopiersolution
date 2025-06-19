@@ -18,8 +18,10 @@
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
     <title>@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')</title>
-    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan. Trusted service for Canon, Kyocera, Ricoh & more.')">
-    <meta name="keywords" content="printer repair Karachi, printer sales Karachi, photocopier rental Pakistan, Canon Kyocera Ricoh repair Karachi, bulk printing service Karachi, office printer service Pakistan, laser printer repair Karachi, A3 printer sales, toner cartridge refill, best copier dealer in Pakistan">
+    <meta name="description"
+        content="@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan. Trusted service for Canon, Kyocera, Ricoh & more.')">
+    <meta name="keywords"
+        content="printer repair Karachi, printer sales Karachi, photocopier rental Pakistan, Canon Kyocera Ricoh repair Karachi, bulk printing service Karachi, office printer service Pakistan, laser printer repair Karachi, A3 printer sales, toner cartridge refill, best copier dealer in Pakistan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="@yield('canonical_url', url()->current())">
     <link rel="alternate" hreflang="en-PK" href="{{ url()->current() }}">
@@ -29,8 +31,10 @@
     <meta name="publisher" content="Craft Copier Solution">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer & Copier Services Karachi, Pakistan')">
-    <meta property="og:description" content="@yield('og_description', 'Looking for reliable printer repair or copier rentals in Karachi or Pakistan? Craft Copier Solution is your trusted source.')">
+    <meta property="og:title"
+        content="@yield('og_title', 'Craft Copier Solution | Printer & Copier Services Karachi, Pakistan')">
+    <meta property="og:description"
+        content="@yield('og_description', 'Looking for reliable printer repair or copier rentals in Karachi or Pakistan? Craft Copier Solution is your trusted source.')">
     <meta property="og:image" content="@yield('og_image', asset('front/img/og-image.jpg'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:type" content="website">
@@ -43,7 +47,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Services Karachi')">
-    <meta name="twitter:description" content="@yield('twitter_description', 'We provide expert printer repair, copier rental, and bulk printing in Karachi and Pakistan.')">
+    <meta name="twitter:description"
+        content="@yield('twitter_description', 'We provide expert printer repair, copier rental, and bulk printing in Karachi and Pakistan.')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
@@ -113,35 +118,37 @@
     </script>
 
     @hasSection('breadcrumbs')
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"BreadcrumbList",
-      "itemListElement":[@yield('breadcrumbs')]
-    }
-    </script>
+        <script type="application/ld+json">
+        {
+          "@context":"https://schema.org",
+          "@type":"BreadcrumbList",
+          "itemListElement":[@yield('breadcrumbs')]
+        }
+        </script>
     @endif
 
     @livewireStyles
 
 
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J9YLRX98T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-J9YLRX98T9');
-</script>
-    <noscript><img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt="" style="display:none;" /></noscript>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9YLRX98T9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J9YLRX98T9');
+    </script>
+    <noscript><img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt=""
+            style="display:none;" /></noscript>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZQ" async></script>
 
     <!-- Styles & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front/css/linearicons.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
@@ -158,21 +165,23 @@
 
 
 <style>
-     html, body {
+    html,
+    body {
         max-width: 100vw !important;
-        overflow-x: hidden  !important;
-        
+        overflow-x: hidden !important;
+
     }
-   @media (min-width: 600px) and (max-width: 1400px) {
-  
-  .client-rental-form {
- 
-background-color: black !important;
-    margin: 0 auto;
-  }
-}
-    
-    
+
+    @media (min-width: 600px) and (max-width: 1400px) {
+
+        .client-rental-form {
+
+            background-color: black !important;
+            margin: 0 auto;
+        }
+        form-wrap{padding: 10px 10px;
+            text-align:center}
+    }
 </style>
 
 <body>
@@ -193,7 +202,8 @@ background-color: black !important;
                     <div class="col-lg-6 col-sm-6 col-6 header-top-right">
                         <div class="header-social">
                             <!-- Facebook -->
-                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank" rel="noopener noreferrer me">
+                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
+                                rel="noopener noreferrer me">
                                 <i class="fa fa-facebook"></i>
                             </a>
                             <!-- WhatsApp -->
@@ -201,11 +211,13 @@ background-color: black !important;
                                 <i class="fa fa-whatsapp"></i>
                             </a>
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me">
+                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"
+                                rel="noopener noreferrer me">
                                 <i class="fa fa-instagram"></i>
                             </a>
                             <!-- YouTube -->
-                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me">
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"
+                                rel="noopener noreferrer me">
                                 <i class="fa fa-youtube"></i>
                             </a>
                         </div>
@@ -224,15 +236,18 @@ background-color: black !important;
                 <nav id="nav-menu-container" aria-label="Main Navigation">
                     <ul class="nav-menu">
                         <li>
-                            <a wire:navigate href="{{ route('homepage') }}" @if(request()->routeIs('homepage')) aria-current="page" @endif>Home</a>
+                            <a wire:navigate href="{{ route('homepage') }}" @if(request()->routeIs('homepage'))
+                            aria-current="page" @endif>Home</a>
                         </li>
                         <li>
-                            <a wire:navigate href="{{ route('aboutpage') }}" @if(request()->routeIs('aboutpage')) aria-current="page" @endif>About</a>
+                            <a wire:navigate href="{{ route('aboutpage') }}" @if(request()->routeIs('aboutpage'))
+                            aria-current="page" @endif>About</a>
                         </li>
                         @livewire('service-dropdown')
                         @livewire('product-dropdown')
                         <li>
-                            <a wire:navigate href="/contact" @if(request()->is('contact')) aria-current="page" @endif>Contact</a>
+                            <a wire:navigate href="/contact" @if(request()->is('contact')) aria-current="page"
+                            @endif>Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -285,10 +300,14 @@ background-color: black !important;
                         <h6>Our Social Media Accounts</h6>
                         <p>Stay updated with our latest printing solutions and exclusive offers.</p>
                         <div class="row footer-social">
-                            <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
-                            <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
-                            <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
-                            <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
+                            <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367"
+                                target="_blank" rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
+                            <a class="col-3" href="https://wa.me/+923282499598" target="_blank"
+                                rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
+                            <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank"
+                                rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
+                            <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"
+                                rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -299,10 +318,14 @@ background-color: black !important;
                     Copyright © 2015-@php echo date('Y'); @endphp Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank" rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
-                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
-                    <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank" rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
-                    <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank" rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
+                    <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"
+                        rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
+                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i
+                            class="fa fa-whatsapp"></i></a>
+                    <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank"
+                        rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
+                    <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"
+                        rel="noopener noreferrer me"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -332,8 +355,8 @@ background-color: black !important;
     </script>
     <script>
         // Add loading="lazy" to all images after DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('img').forEach(function(img) {
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('img').forEach(function (img) {
                 img.setAttribute('loading', 'lazy');
             });
         });
