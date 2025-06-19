@@ -176,7 +176,7 @@
 
         .client-rental-form {
 
-            background-color: black !important;
+            background-color: rgb(255, 255, 255) !important;
             margin: 0 auto;
         }
 
