@@ -17,11 +17,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('front/img/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('front/img/site.webmanifest') }}">
 
-    <title>@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')</title>
-    <meta name="description"
-        content="@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan. Trusted service for Canon, Kyocera, Ricoh & more.')">
+    <title>@yield('title', 'Printer Repair, Best Printer in Karachi | Craft Copier Solution')</title>
+    <meta name="description" content="@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan. Trusted service for Canon, Kyocera, Ricoh & more.')">
     <meta name="keywords"
-        content="printer repair Karachi, printer sales Karachi, photocopier rental Pakistan, Canon Kyocera Ricoh repair Karachi, bulk printing service Karachi, office printer service Pakistan, laser printer repair Karachi, A3 printer sales, toner cartridge refill, best copier dealer in Pakistan">
+        content="printer repair in Karachi, printer sales in Karachi, photocopier rental Pakistan, Canon Kyocera Ricoh repair in Karachi, bulk printing service in Karachi, office printer service in  Pakistan, laser printer repair in Karachi, A3 printer sales, toner cartridge refill, best copier dealer in Pakistan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="@yield('canonical_url', url()->current())">
     <link rel="alternate" hreflang="en-PK" href="{{ url()->current() }}">
@@ -31,10 +30,8 @@
     <meta name="publisher" content="Craft Copier Solution">
 
     <!-- Open Graph -->
-    <meta property="og:title"
-        content="@yield('og_title', 'Craft Copier Solution | Printer & Copier Services Karachi, Pakistan')">
-    <meta property="og:description"
-        content="@yield('og_description', 'Looking for reliable printer repair or copier rentals in Karachi or Pakistan? Craft Copier Solution is your trusted source.')">
+    <meta property="og:title" content="@yield('og_title', 'Craft Copier Solution | Printer Repair in karachi | Printer & Copier Services in Karachi, Pakistan')">
+    <meta property="og:description" content="@yield('og_description', 'Looking for reliable printer repair or copier rentals in Karachi or Pakistan? Craft Copier Solution is your trusted source.')">
     <meta property="og:image" content="@yield('og_image', asset('front/img/og-image.jpg'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:type" content="website">
@@ -47,8 +44,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('twitter_title', 'Craft Copier Solution | Printer Services Karachi')">
-    <meta name="twitter:description"
-        content="@yield('twitter_description', 'We provide expert printer repair, copier rental, and bulk printing in Karachi and Pakistan.')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'We provide expert printer repair, copier rental, and bulk printing in Karachi and Pakistan.')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
@@ -129,19 +125,22 @@
 
     @livewireStyles
 
-
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9YLRX98T9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-J9YLRX98T9');
     </script>
+
     <noscript><img src="https://www.googletagmanager.com/ns.html?id=G-89Q28SH00Z" alt=""
             style="display:none;" /></noscript>
+
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="f1Gix9bLikaAvYHKF8dZQ" async></script>
 
     <!-- Styles & Fonts -->
@@ -191,19 +190,21 @@
             height: 40px !important;
             background-color: rgb(255, 255, 255) !important;
         }
-        .client-repair-form{
-            
+
+        .client-repair-form {
+
             background-color: rgb(255, 255, 255) !important;
             padding: 0px 0px !important;
             text-align: center !important;
             height: 330px !important;
         }
-.client-accessory-form{
-    background-color: rgb(255, 255, 255) !important;
+
+        .client-accessory-form {
+            background-color: rgb(255, 255, 255) !important;
             padding: 0px 0px !important;
             text-align: center !important;
             height: 330px !important;
-}
+        }
     }
 </style>
 
@@ -259,18 +260,18 @@
                 <nav id="nav-menu-container" aria-label="Main Navigation">
                     <ul class="nav-menu">
                         <li>
-                            <a wire:navigate href="{{ route('homepage') }}" @if(request()->routeIs('homepage'))
-                            aria-current="page" @endif>Home</a>
+                            <a wire:navigate href="{{ route('homepage') }}"
+                                @if (request()->routeIs('homepage')) aria-current="page" @endif>Home</a>
                         </li>
                         <li>
-                            <a wire:navigate href="{{ route('aboutpage') }}" @if(request()->routeIs('aboutpage'))
-                            aria-current="page" @endif>About</a>
+                            <a wire:navigate href="{{ route('aboutpage') }}"
+                                @if (request()->routeIs('aboutpage')) aria-current="page" @endif>About</a>
                         </li>
                         @livewire('service-dropdown')
                         @livewire('product-dropdown')
                         <li>
-                            <a wire:navigate href="/contact" @if(request()->is('contact')) aria-current="page"
-                            @endif>Contact</a>
+                            <a wire:navigate href="/contact"
+                                @if (request()->is('contact')) aria-current="page" @endif>Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -294,7 +295,9 @@
                             Craft Copier Solution specializes in high-quality printing solutions, providing
                             cost-effective and innovative copier and printing services. Our mission is to bridge the gap
                             between high OEM prices and low-quality alternatives by delivering premium printing
-                            solutions at competitive rates.
+                            solutions at competitive rates.We also best in printer repair, <a href="https://craftcopiersolutions.com/services/8">printer rental</a>, and bulk
+                            printing services in Karachi and across Pakistan. Our team of experts is dedicated to
+                            ensuring that your printing needs are met with the highest standards of quality and service.
                         </p>
                     </div>
                 </div>
@@ -343,8 +346,8 @@
                 <div class="col-lg-4 col-sm-12 footer-social">
                     <a class="col-3" href="https://www.facebook.com/profile.php?id=61556891930367" target="_blank"
                         rel="noopener noreferrer me"><i class="fa fa-facebook"></i></a>
-                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank" rel="noopener noreferrer me"><i
-                            class="fa fa-whatsapp"></i></a>
+                    <a class="col-3" href="https://wa.me/+923282499598" target="_blank"
+                        rel="noopener noreferrer me"><i class="fa fa-whatsapp"></i></a>
                     <a class="col-3" href="https://www.instagram.com/craftcopiersolution/" target="_blank"
                         rel="noopener noreferrer me"><i class="fa fa-instagram"></i></a>
                     <a class="col-3" href="https://www.youtube.com/@craftcopiersolution" target="_blank"
@@ -378,8 +381,8 @@
     </script>
     <script>
         // Add loading="lazy" to all images after DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('img').forEach(function (img) {
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('img').forEach(function(img) {
                 img.setAttribute('loading', 'lazy');
             });
         });
