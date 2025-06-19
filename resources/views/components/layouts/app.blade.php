@@ -179,7 +179,7 @@
             background-color: rgb(255, 255, 255) !important;
             padding: 0px 0px !important;
             text-align: center !important;
-            height: 320px !important;
+            height: 330px !important;
         }
 
         .client-input {
