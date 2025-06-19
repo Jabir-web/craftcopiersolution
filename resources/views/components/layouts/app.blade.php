@@ -186,7 +186,7 @@
      background-color: black !important;
 }
 .client-input{
-    height: 40px !important;
+    height: 40px !important;  background-color: black !important;
 }
      
     }
