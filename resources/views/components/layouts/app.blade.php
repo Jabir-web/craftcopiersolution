@@ -183,7 +183,7 @@
         }
 
         .client-input {
-            padding: 5px 5px !important;
+            padding: 15px 10px !important;
             background-color: black !important;
         }
 
