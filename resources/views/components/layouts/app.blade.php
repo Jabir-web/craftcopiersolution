@@ -179,7 +179,7 @@
             background-color: black !important;
             margin: 0 auto;
         }
-        form-wrap{padding: 10px 10px;
+        .client-rental-form{padding: 10px 10px;
             text-align:center}
     }
 </style>
