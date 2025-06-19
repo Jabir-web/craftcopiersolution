@@ -5,7 +5,7 @@
 @section('meta_description', 'Read the latest blog posts, tips, and industry news from Craft Copier Solution. Stay updated on printer repairs, copier rentals, office productivity, and more in Karachi and Pakistan.')
 @section('meta_keywords', 'printer blog, copier tips, printer repair Karachi, office productivity, copier rental, printer maintenance, Craft Copier Solution blog')
 @section('og_title', 'Latest Blog Posts | Craft Copier Solution')
-@section('og_description', 'Explore expert advice, news, and tips on printers, copiers, and office solutions from Craft Copier Solution.')
+@section('og_description', 'Explore expert advice, news, and printers, copiers, and office solutions from Craft Copier Solution.')
 @section('og_image', asset('front/img/og-image.jpg'))
 @section('og_url', url()->current())
 @section('twitter_title', 'Latest Blog Posts | Craft Copier Solution')
