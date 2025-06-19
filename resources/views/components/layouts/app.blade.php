@@ -179,8 +179,10 @@
             background-color: black !important;
             margin: 0 auto;
         }
-        .client-rental-form{padding: 10px 10px;
-            text-align:center}
+        .client-rental-form{
+            padding: 10px 10px !important;
+            text-align:center !important;
+        }
     }
 </style>
 
