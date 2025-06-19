@@ -182,7 +182,7 @@
             height: 310px !important;
         }
 .client-input{
-    
+     padding: 0px 0px !important;
 }
      
     }
