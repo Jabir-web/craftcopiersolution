@@ -176,10 +176,10 @@
     .client-rental-form {
         background-color: black !important;
         margin: 24px auto !important;
-        padding: 2rem 1rem !important;
+        padding: 8px 8px !important; /* Reduced padding */
         text-align: center !important;
         width: 100% !important;
-        max-width: 600px !important;
+        max-width: 400px !important; /* Reduce max-width for less height */
         box-sizing: border-box !important;
         border-radius: 12px !important;
         color: #fff !important;
@@ -191,12 +191,16 @@
     .client-rental-form button {
         width: 100% !important;
         max-width: 100% !important;
-        margin-bottom: 1rem !important;
-        padding: 0.75rem !important;
+        margin-bottom: 8px !important; /* Less vertical spacing */
+        padding: 8px !important; /* Reduced input padding */
         box-sizing: border-box !important;
         border-radius: 6px !important;
         border: 1px solid #ccc !important;
         font-size: 1rem !important;
+    }
+
+    .client-rental-form textarea {
+        min-height: 60px !important; /* Reduce textarea height */
     }
 
     .client-rental-form button {
@@ -205,11 +209,13 @@
         border: none !important;
         cursor: pointer !important;
         transition: background 0.2s !important;
+        padding: 10px 0 !important; /* Reduce button height */
     }
 
     .client-rental-form button:hover {
         background: #0056b3 !important;
     }
+}
 </style>
 
 <body>
