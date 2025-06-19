@@ -161,7 +161,7 @@
      html, body {
         max-width: 100vw !important;
         overflow-x: hidden  !important;
-        background: yellow !important
+        background-color: purple !important;
     }
     
     
