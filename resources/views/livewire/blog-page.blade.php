@@ -106,6 +106,10 @@
 								<p class="mb-0 btn-style"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong>
 									<span itemprop="datePublished">{{ $blog->created_at->format('d M, Y') }}</span>
 								</p>
+							<p class="mb-0 btn-style">
+    <i class="fas fa-eye"></i> <strong>Views:</strong>
+    <span>{{ $blog->views }}</span>
+</p>
 							</div>
 							<section class="blog-description mt-4"
 								style="line-height: 1.8; color: #465263; font-size: 1.1rem; background-color: #f4f8fb; padding: 20px; border-radius: 8px; font-family: 'Arial', sans-serif; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
