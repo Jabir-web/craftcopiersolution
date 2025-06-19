@@ -119,12 +119,12 @@
 
     @hasSection('breadcrumbs')
         <script type="application/ld+json">
-        {
-          "@context":"https://schema.org",
-          "@type":"BreadcrumbList",
-          "itemListElement":[@yield('breadcrumbs')]
-        }
-        </script>
+            {
+              "@context":"https://schema.org",
+              "@type":"BreadcrumbList",
+              "itemListElement":[@yield('breadcrumbs')]
+            }
+            </script>
     @endif
 
     @livewireStyles
@@ -172,17 +172,43 @@
 
     }
 
-    @media (min-width: 600px) and (max-width: 1400px) {
+@media (min-width: 600px) and (max-width: 1400px) {
+    .client-rental-form {
+        background-color: black !important;
+        margin: 24px auto !important;
+        padding: 2rem 1rem !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 600px !important;
+        box-sizing: border-box !important;
+        border-radius: 12px !important;
+        color: #fff !important;
+    }
 
-        .client-rental-form {
+    .client-rental-form input,
+    .client-rental-form select,
+    .client-rental-form textarea,
+    .client-rental-form button {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1rem !important;
+        padding: 0.75rem !important;
+        box-sizing: border-box !important;
+        border-radius: 6px !important;
+        border: 1px solid #ccc !important;
+        font-size: 1rem !important;
+    }
 
-            background-color: black !important;
-            margin: 0 auto;
-        }
-        .client-rental-form{
-            padding: 10px 10px !important;
-            text-align:center !important;
-        }
+    .client-rental-form button {
+        background: #007bff !important;
+        color: #fff !important;
+        border: none !important;
+        cursor: pointer !important;
+        transition: background 0.2s !important;
+    }
+
+    .client-rental-form button:hover {
+        background: #0056b3 !important;
     }
 </style>
 
