@@ -172,50 +172,19 @@
 
     }
 
-@media (min-width: 600px) and (max-width: 1400px) {
-    .client-rental-form {
-        background-color: black !important;
-        margin: 24px auto !important;
-        padding: 8px 8px !important; /* Reduced padding */
-        text-align: center !important;
-        width: 100% !important;
-        max-width: 400px !important; /* Reduce max-width for less height */
-        box-sizing: border-box !important;
-        border-radius: 12px !important;
-        color: #fff !important;
-    }
+    @media (min-width: 600px) and (max-width: 1400px) {
 
-    .client-rental-form input,
-    .client-rental-form select,
-    .client-rental-form textarea,
-    .client-rental-form button {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin-bottom: 8px !important; /* Less vertical spacing */
-        padding: 8px !important; /* Reduced input padding */
-        box-sizing: border-box !important;
-        border-radius: 6px !important;
-        border: 1px solid #ccc !important;
-        font-size: 1rem !important;
-    }
+        .client-rental-form {
 
-    .client-rental-form textarea {
-        min-height: 60px !important; /* Reduce textarea height */
-    }
+            background-color: black !important;
+            margin: 0 auto;
+        }
 
-    .client-rental-form button {
-        background: #007bff !important;
-        color: #fff !important;
-        border: none !important;
-        cursor: pointer !important;
-        transition: background 0.2s !important;
-        padding: 10px 0 !important; /* Reduce button height */
+        .client-rental-form {
+            padding: 10px 10px !important;
+            text-align: center !important;
+        }
     }
-
-    .client-rental-form button:hover {
-        background: #0056b3 !important;
-    }
-}
 </style>
 
 <body>
