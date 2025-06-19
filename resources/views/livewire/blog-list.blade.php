@@ -64,11 +64,7 @@
                                          itemprop="image">
                                 </a>
                             </div>
-                             <p class="mb-0 btn-style">
-            <i class="fas fa-eye"></i>
-            <strong>Views:</strong>
-            <span>{{ $blog->views }}</span>
-        </p>
+                             
 
                             <div class="details">
                                 <div class="tags">
@@ -89,6 +85,11 @@
                                 <p class="blog-excerpt" itemprop="description">
                                     {{ Str::limit(strip_tags($blog->description), 120) }}
                                 </p>
+                                <p class="mb-0 btn-style">
+            <i class="fas fa-eye"></i>
+            <strong>Views:</strong>
+            <span>{{ $blog->views }}</span>
+        </p>
                                 <h6 class="date" itemprop="datePublished">{{ $blog->created_at->format('F j, Y') }}</h6>
                                 <!-- Share Buttons -->
                                 <div class="mt-2 mb-1 text-center">
