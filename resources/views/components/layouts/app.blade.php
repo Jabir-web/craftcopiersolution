@@ -341,7 +341,7 @@
             </div>
             <!-- Footer Bottom Section -->
             <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                <p class="col-lg-8 col-sm-12 footer-text m-0">
+                <p class="col-lg-8 text-white col-sm-12 footer-text m-0">
                     Copyright © 2015-@php echo date('Y'); @endphp Craft Copier Solution. All Rights Reserved.
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
