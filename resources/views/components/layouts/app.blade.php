@@ -185,6 +185,9 @@
      padding: 5px 5px !important;
      background-color: black !important;
 }
+.client-input{
+    height: 40px !important;
+}
      
     }
 </style>
