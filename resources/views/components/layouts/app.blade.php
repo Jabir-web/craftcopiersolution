@@ -177,7 +177,7 @@
         .client-rental-form {
 
             background-color: rgb(255, 255, 255) !important;
-               padding: 5px 5px !important;
+               padding: 0px 0px !important;
             text-align: center !important;
         }
 
