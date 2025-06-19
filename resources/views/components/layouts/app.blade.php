@@ -181,7 +181,7 @@
         }
 
         .client-rental-form {
-            padding: 10px 10px !important;
+            padding: 5px !important;
             text-align: center !important;
         }
     }
