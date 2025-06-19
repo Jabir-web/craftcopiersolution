@@ -5,7 +5,7 @@
         </div>
     @endif
 
-    <form action="{{ route('client-repairs.store') }}" method="POST" class="form-wrap">
+    <form action="{{ route('client-repairs.store') }}" method="POST" class="form-wrap client-repair-form">
         @csrf
         <!-- Client Name -->
         <input type="text" class="form-control" name="client_name" placeholder="Your Full Name" value="{{ old('client_name') }}">
