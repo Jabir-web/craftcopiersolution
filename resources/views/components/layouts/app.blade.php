@@ -163,9 +163,14 @@
         overflow-x: hidden  !important;
         
     }
-    .client-rental-form{
-        background-color: orange !important;
-    }
+   @media (min-width: 600px) and (max-width: 1400px) {
+  
+  .client-rental-form {
+ 
+background-color: black !important;
+    margin: 0 auto;
+  }
+}
     
     
 </style>
