@@ -5,7 +5,7 @@
             {{ session('rent') }}
         </div>
     @endif 
-   
+ 
 
     <form action="{{ route('client-rentals.store') }}" method="POST" class="form-wrap">
         @csrf
