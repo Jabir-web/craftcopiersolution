@@ -119,12 +119,12 @@
 
     @hasSection('breadcrumbs')
         <script type="application/ld+json">
-            {
-              "@context":"https://schema.org",
-              "@type":"BreadcrumbList",
-              "itemListElement":[@yield('breadcrumbs')]
-            }
-            </script>
+                {
+                  "@context":"https://schema.org",
+                  "@type":"BreadcrumbList",
+                  "itemListElement":[@yield('breadcrumbs')]
+                }
+                </script>
     @endif
 
     @livewireStyles
@@ -177,18 +177,21 @@
         .client-rental-form {
 
             background-color: rgb(255, 255, 255) !important;
-               padding: 0px 0px !important;
+            padding: 0px 0px !important;
             text-align: center !important;
             height: 310px !important;
         }
-.client-input{
-     padding: 5px 5px !important;
-     background-color: black !important;
-}
-.client-input{
-    height: 40px !important;  background-color: black !important;
-}
-     
+
+        .client-input {
+            padding: 5px 5px !important;
+            background-color: black !important;
+        }
+
+        .client-req {
+            height: 40px !important;
+            background-color: black !important;
+        }
+
     }
 </style>
 
