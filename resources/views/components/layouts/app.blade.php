@@ -48,7 +48,8 @@
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
-
+<!-- Add this inside <head> of your main Blade layout (e.g., resources/views/layouts/app.blade.php) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta property="article:published_time" content="@yield('article_published_time', now()->toIso8601String())">
 
     <!-- Schema.org Structured Data -->
