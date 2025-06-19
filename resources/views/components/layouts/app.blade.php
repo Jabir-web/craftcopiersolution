@@ -177,11 +177,11 @@
         .client-rental-form {
 
             background-color: rgb(255, 255, 255) !important;
-            margin: 0 auto;
+          margin-top: 20px !important;
         }
 
         .client-rental-form {
-            padding: 5px !important;
+            padding: 5px 5px !important;
             text-align: center !important;
         }
     }
