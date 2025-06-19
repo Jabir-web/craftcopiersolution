@@ -5,7 +5,7 @@
         </div>
     @endif
 
-    <form action="{{ route('accessory-requests.store') }}" method="POST" class="form-wrap">
+    <form action="{{ route('accessory-requests.store') }}" method="POST" class="form-wrap client-accessory-form">
         @csrf
         <!-- Company Name -->
         <input type="text" class="form-control" name="company_name" placeholder="Printer Company Name" value="{{ old('company_name') }}">
