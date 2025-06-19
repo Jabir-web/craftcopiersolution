@@ -184,12 +184,12 @@
 
         .client-input {
             padding: 10px 10px !important;
-            background-color: black !important;
+            background-color: rgb(255, 255, 255) !important;
         }
 
         .client-req {
             height: 40px !important;
-            background-color: black !important;
+            background-color: rgb(255, 255, 255) !important;
         }
 
     }
