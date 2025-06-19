@@ -161,7 +161,10 @@
      html, body {
         max-width: 100vw !important;
         overflow-x: hidden  !important;
-        background-color: purple !important;
+        
+    }
+    .client-rental-form{
+        background-color: orange !important;
     }
     
     
