@@ -191,6 +191,13 @@
             height: 40px !important;
             background-color: rgb(255, 255, 255) !important;
         }
+        .client-repair-form{
+            
+            background-color: rgb(255, 255, 255) !important;
+            padding: 0px 0px !important;
+            text-align: center !important;
+            height: 330px !important;
+        }
 
     }
 </style>
