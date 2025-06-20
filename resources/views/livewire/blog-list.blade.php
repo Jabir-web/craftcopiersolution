@@ -71,6 +71,13 @@
                                         <li>
                                             <a href="#" rel="tag" itemprop="about">{{ $blog->category }}</a>
                                         </li>
+                                        <li>
+                                             <p class="mb-0 btn-style">
+    <i class="fas fa-eye"></i>
+    <strong>Views:</strong>
+    <span>{{ $blog->views }}</span>
+</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <a href="{{ route('blogpage', ['title' => $blog->title]) }}">
@@ -114,11 +121,7 @@
                                         class="btn btn-sm btn-dark mx-1" title="Share via Email">
                                         <i class="fa fa-envelope"></i>
                                     </a>
-                                    <p class="mb-0 btn-style">
-    <i class="fas fa-eye"></i>
-    <strong>Views:</strong>
-    <span>{{ $blog->views }}</span>
-</p>
+                                   
                                 </div>
                             </div>
                             <script type="application/ld+json">
