@@ -60,7 +60,7 @@
                                 <a href="{{ route('blogpage', ['title' => $blog->title]) }}">
                                     <img src="{{ url('storage/' . $blog->img) }}"
                                         alt="{{ $blog->title }} - {{ $blog->category }} | Craft Copier Solution Blog"
-                                        class="img-fluid fixed-image" loading="lazy" itemprop="image">
+                                        class="" loading="lazy" itemprop="image">
                                 </a>
                             </div>
 
