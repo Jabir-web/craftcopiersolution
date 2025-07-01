@@ -9,6 +9,13 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
+<script src="https://cdn.botpress.cloud/webchat/v3.0/webchat.js"></script>
+<script>
+  window.botpressWebChat.init({
+    configUrl: "https://files.bpcontent.cloud/2025/07/01/01/20250701011822-W5MTPLZ8.json"
+  });
+</script>
+
 
     <!-- Favicons area -->
     <link rel="icon" href="{{ asset('front/img/favicon.ico') }}" type="image/x-icon">
@@ -48,80 +55,100 @@
     <meta name="twitter:image" content="@yield('twitter_image', asset('front/img/og-image.jpg'))">
     <meta name="twitter:site" content="@craftcopiersolution">
     <meta name="twitter:creator" content="@craftcopiersolution">
-<!-- Add this inside <head> of your main Blade layout (e.g., resources/views/layouts/app.blade.php) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Add this inside <head> of your main Blade layout (e.g., resources/views/layouts/app.blade.php) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta property="article:published_time" content="@yield('article_published_time', now()->toIso8601String())">
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context":"http://schema.org",
-      "@type":"LocalBusiness",
-      "name":"Craft Copier Solution",
-      "image":"https://craftcopiersolutions.com/logo.png",
-      "url":"https://craftcopiersolutions.com",
-      "telephone":"+92-339-0027031",
-      "email":"info@craftcopiersolutions.com",
-      "address":{"@type":"PostalAddress","streetAddress":"123 Copier St","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"74600","addressCountry":"PK"},
-      "geo":{"@type":"GeoCoordinates","latitude":24.8607,"longitude":67.0011},
-      "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},
-      "sameAs":["https://www.facebook.com/craftcopiersolutions","https://twitter.com/craftcopiersolution","https://www.linkedin.com/company/craftcopiersolutions","https://www.instagram.com/craftcopiersolution/"],
-      "paymentAccepted":["Cash","Credit Card","Bank Transfer"],
-      "priceRange":"$$"
-    }
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Craft Copier Solution",
+            "image": "https://craftcopiersolutions.com/logo.png",
+            "url": "https://craftcopiersolutions.com",
+            "telephone": "+92-339-0027031",
+            "email": "info@craftcopiersolutions.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Copier St",
+                "addressLocality": "Karachi",
+                "addressRegion": "Sindh",
+                "postalCode": "74600",
+                "addressCountry": "PK"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 24.8607,
+                "longitude": 67.0011
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            "sameAs": ["https://www.facebook.com/craftcopiersolutions", "https://twitter.com/craftcopiersolution", "https://www.linkedin.com/company/craftcopiersolutions", "https://www.instagram.com/craftcopiersolution/"],
+            "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+            "priceRange": "$$"
+        }
     </script>
 
     <!-- Services Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Service",
-      "serviceType": "Printer Repair & Bulk Printing",
-      "provider": {
-        "@type": "Organization",
-        "name": "Craft Copier Solution",
-        "url": "https://craftcopiersolutions.com"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Karachi, Pakistan"
-      },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://craftcopiersolutions.com",
-        "availableLanguage": "en"
-      }
-    }
+        {
+            "@context": "http://schema.org",
+            "@type": "Service",
+            "serviceType": "Printer Repair & Bulk Printing",
+            "provider": {
+                "@type": "Organization",
+                "name": "Craft Copier Solution",
+                "url": "https://craftcopiersolutions.com"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Karachi, Pakistan"
+            },
+            "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://craftcopiersolutions.com",
+                "availableLanguage": "en"
+            }
+        }
     </script>
 
     <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "url":"https://craftcopiersolutions.com",
-      "potentialAction":{"@type":"SearchAction","target":"https://craftcopiersolutions.com/search?q={search_term_string}","query-input":"required name=search_term_string"}
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://craftcopiersolutions.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://craftcopiersolutions.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
     </script>
 
     <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebPage",
-      "name":"@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')",
-      "description":"@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan.')",
-      "url":"@yield('canonical_url', url()->current())",
-      "inLanguage":"en-PK"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "@yield('title', 'Printer Repair, Sales & Bulk Printing in Karachi | Craft Copier Solution')",
+            "description": "@yield('meta_description', 'Craft Copier Solution offers expert printer repair, sales, rentals, and bulk printing services in Karachi and across Pakistan.')",
+            "url": "@yield('canonical_url', url()->current())",
+            "inLanguage": "en-PK"
+        }
     </script>
 
     @hasSection('breadcrumbs')
-        <script type="application/ld+json">
-                {
-                  "@context":"https://schema.org",
-                  "@type":"BreadcrumbList",
-                  "itemListElement":[@yield('breadcrumbs')]
-                }
-                </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [@yield('breadcrumbs')]
+        }
+    </script>
     @endif
 
     @livewireStyles
