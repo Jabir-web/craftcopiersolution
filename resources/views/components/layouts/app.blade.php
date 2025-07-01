@@ -411,8 +411,10 @@
     </script>
 
 
-    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/07/01/01/20250701011822-LAE59TNG.js"></script>
+ 
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+<script src="https://files.bpcontent.cloud/2025/07/01/01/20250701011822-LAE59TNG.js" defer></script>
+    
     @livewireScripts
 
 </body>
