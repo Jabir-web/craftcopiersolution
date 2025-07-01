@@ -410,23 +410,7 @@
         });
     </script>
 
-<script>
-  // 1) Initialize your bot
-  window.botpressWebChat.init({
-    configUrl: "https://files.bpcontent.cloud/2025/07/01/01/20250701011822-W5MTPLZ8.json"
-  });
 
-  // 2) Observe and remove the watermark link
-  const observer = new MutationObserver(() => {
-    document.querySelectorAll('a[href="https://botpress.com/?from=webchat"]')
-      .forEach(el => el.remove());
-  });
-
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
-</script>
  
 
     <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
