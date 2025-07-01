@@ -9,12 +9,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
-<script src="https://cdn.botpress.cloud/webchat/v3.0/webchat.js"></script>
-<script>
-  window.botpressWebChat.init({
-    configUrl: "https://files.bpcontent.cloud/2025/07/01/01/20250701011822-W5MTPLZ8.json"
-  });
-</script>
 
 
     <!-- Favicons area -->
@@ -415,6 +409,12 @@
             });
         });
     </script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/webchat.js"></script>
+<script>
+  window.botpressWebChat.init({
+    configUrl: "https://files.bpcontent.cloud/2025/07/01/01/20250701011822-W5MTPLZ8.json"
+  });
+</script>
     @livewireScripts
 </body>
 
