@@ -410,7 +410,12 @@
         });
     </script>
 
+<style>
+    a[href="https://botpress.com/?from=webchat"] {
+  display: none !important;
+}
 
+</style>
  
 
     <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
