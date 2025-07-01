@@ -409,12 +409,7 @@
             });
         });
     </script>
-    <script src="https://cdn.botpress.cloud/webchat/v3.0/webchat.js"></script>
-<script>
-  window.botpressWebChat.init({
-    configUrl: "https://files.bpcontent.cloud/2025/07/01/01/20250701011822-W5MTPLZ8.json"
-  });
-</script>
+<script src="https://files.bpcontent.cloud/2025/06/22/21/20250622210254-7SODCO70.js"></script>
     @livewireScripts
 </body>
 
