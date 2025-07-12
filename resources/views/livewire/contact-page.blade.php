@@ -62,32 +62,32 @@
                                 <i class="lnr lnr-envelope fs-5"></i>
                             </div>
                             <div class="mx-4">
-                                <h6 class="fw-bold mb-1">info@craftcopiersolution.com</h6>
+                                <h6 class="fw-bold mb-1">sales@craftcopiersolutions.com</h6>
                                 <small class="text-muted ">Send us your queries anytime</small>
                             </div>
                         </div>
-                       <div class="d-flex justify-content-around flex-wrap gap-3 mt-4">
-    <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
-       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
-       style="width: 40px; height: 40px;">
-        <i class="fa fa-facebook"></i>
-    </a>
-    <a href="https://wa.me/+923282499598" target="_blank"
-       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
-       style="width: 40px; height: 40px;">
-        <i class="fa fa-whatsapp"></i>
-    </a>
-    <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"
-       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
-       style="width: 40px; height: 40px;">
-        <i class="fa fa-instagram"></i>
-    </a>
-    <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"
-       class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
-       style="width: 40px; height: 40px;">
-        <i class="fa fa-youtube"></i>
-    </a>
-</div>
+                        <div class="d-flex justify-content-around flex-wrap gap-3 mt-4">
+                            <a href="https://www.facebook.com/craftcopiersolutions" target="_blank"
+                                class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://wa.me/+923282499598" target="_blank"
+                                class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/craftcopiersolution/" target="_blank"
+                                class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@craftcopiersolution" target="_blank"
+                                class="btn btn-sm btn-warning rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -106,22 +106,29 @@
                                 <div class="col-md-6 my-4">
                                     <input type="text" wire:model="name" class="form-control border-warning"
                                         placeholder="Your Name">
-                                    @error('name') <small class="text-danger">{{ $message }}</small> @enderror
+                                    @error('name')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                                 </div>
                                 <div class="col-md-6 my-4">
                                     <input type="email" wire:model="email" class="form-control border-warning"
                                         placeholder="Your Email">
-                                    @error('email') <small class="text-danger">{{ $message }}</small> @enderror
+                                    @error('email')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                                 </div>
                                 <div class="col-12 my-4">
                                     <input type="text" wire:model="subject" class="form-control border-warning"
                                         placeholder="Subject">
-                                    @error('subject') <small class="text-danger">{{ $message }}</small> @enderror
+                                    @error('subject')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                                 </div>
                                 <div class="col-12 my-4">
-                                    <textarea wire:model="message" class="form-control border-warning" rows="5"
-                                        placeholder="Message"></textarea>
-                                    @error('message') <small class="text-danger">{{ $message }}</small> @enderror
+                                    <textarea wire:model="message" class="form-control border-warning" rows="5" placeholder="Message"></textarea>
+                                    @error('message')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                                 </div>
                                 <div class="col-12 text-end my-4">
                                     <button type="submit"
