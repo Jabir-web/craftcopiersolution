@@ -1,5 +1,5 @@
 @section('title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
-@section('meta_description', 'Craft Copier Solution: Printer sales, rentals, repairs & accessories in Karachi, Pakistan & worldwide. High-quality printers, expert maintenance, genuine parts.')
+@section('meta_description', 'Craft Copier Solution: Printer sales, rentals, repairs & accessories in Karachi, Pakistan. High-quality printers & expert maintenance.')
 @section('meta_keywords', 'printer sales Karachi, printer rentals Pakistan, printer repairs, copier solutions, office printers, copier maintenance, printer accessories, Craft Copier Solution, photocopier dealer Pakistan, international printer sales, global copier services, office equipment export, Karachi, Pakistan, UAE, Saudi Arabia, Middle East, Africa, Europe, Asia')
 @section('og_title', 'Printer Sales, Repairs & Rentals | Craft Copier Solution')
 @section('og_description', 'Reliable printer solutions: sales, rentals, repairs, and accessories for your business in Pakistan and worldwide.')
