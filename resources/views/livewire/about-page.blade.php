@@ -1,5 +1,5 @@
 @section('title')
-    About Us - Craft Copier Solution | Printer Sales, Repairs & Bulk Printing in Karachi, Pakistan
+    About Us - Craft Copier Solutions | Printer Services in Karachi
 @endsection
 
 @section('meta_description', 'Craft Copier Solution is a leading printer repair, sales, and maintenance company based in Karachi, Pakistan. Learn about our professional services, mission, and why clients across Pakistan trust us for expert copier and printing solutions.')
